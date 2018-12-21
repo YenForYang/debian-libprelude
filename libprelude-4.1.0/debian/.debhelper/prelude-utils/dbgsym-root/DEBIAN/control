@@ -1,0 +1,12 @@
+Package: prelude-utils-dbgsym
+Source: libprelude
+Version: 4.1.0-4.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Installed-Size: 163
+Depends: prelude-utils (= 4.1.0-4.2)
+Section: debug
+Priority: optional
+Description: debug symbols for prelude-utils
+Build-Ids: f5b8a8810231986192f5c2b0c7082338e521701c 007ddfd6d2fcb969d233ee2cdde3b8632f89085a

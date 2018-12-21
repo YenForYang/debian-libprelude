@@ -1,0 +1,3 @@
+version=3
+
+opts=pgpsigurlmangle=s/$/.sig/ https://www.prelude-siem.org/pkg/src/([\d\.]*)/libprelude-([\d\.]*)\.tar\.gz

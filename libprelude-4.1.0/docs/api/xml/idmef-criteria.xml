@@ -1,0 +1,684 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-idmef-criteria">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-idmef-criteria.top_of_page">idmef-criteria</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>idmef-criteria</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-idmef-criteria.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="idmef-criterion-operator-to-string">idmef_criterion_operator_to_string</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criterion-new">idmef_criterion_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criterion-destroy">idmef_criterion_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criterion-clone">idmef_criterion_clone</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criterion-print">idmef_criterion_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criterion-to-string">idmef_criterion_to_string</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="idmef-path-t"><returnvalue>idmef_path_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="idmef-criterion-get-path">idmef_criterion_get_path</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="idmef-criterion-value-t"><returnvalue>idmef_criterion_value_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="idmef-criterion-get-value">idmef_criterion_get_value</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="idmef-criterion-operator-t"><returnvalue>idmef_criterion_operator_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criterion-get-operator">idmef_criterion_get_operator</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criterion-match">idmef_criterion_match</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-new">idmef_criteria_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="idmef-criteria-t"><returnvalue>idmef_criteria_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="idmef-criteria-ref">idmef_criteria_ref</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-destroy">idmef_criteria_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-clone">idmef_criteria_clone</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-print">idmef_criteria_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-to-string">idmef_criteria_to_string</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-is-criterion">idmef_criteria_is_criterion</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="idmef-criterion-t"><returnvalue>idmef_criterion_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="idmef-criteria-get-criterion">idmef_criteria_get_criterion</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-set-criterion">idmef_criteria_set_criterion</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-or-criteria">idmef_criteria_or_criteria</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-and-criteria">idmef_criteria_and_criteria</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-match">idmef_criteria_match</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="idmef-criteria-t"><returnvalue>idmef_criteria_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="idmef-criteria-get-or">idmef_criteria_get_or</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="idmef-criteria-t"><returnvalue>idmef_criteria_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="idmef-criteria-get-and">idmef_criteria_get_and</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-new-from-string">idmef_criteria_new_from_string</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-get-negation">idmef_criteria_get_negation</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-criteria-set-negation">idmef_criteria_set_negation</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-idmef-criteria.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="idmef-criterion-operator-t">idmef_criterion_operator_t</link></entry></row>
+<row><entry role="typedef_keyword">typedef</entry><entry role="function_name"><link linkend="idmef-criteria-t">idmef_criteria_t</link></entry></row>
+<row><entry role="typedef_keyword">typedef</entry><entry role="function_name"><link linkend="idmef-criterion-t">idmef_criterion_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-idmef-criteria.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-idmef-criteria.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="idmef-criterion-operator-to-string" role="function">
+<title>idmef_criterion_operator_to_string&#160;()</title>
+<indexterm zone="idmef-criterion-operator-to-string"><primary>idmef_criterion_operator_to_string</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+idmef_criterion_operator_to_string (<parameter><link linkend="idmef-criterion-operator-t"><type>idmef_criterion_operator_t</type></link> op</parameter>);</programlisting>
+<para>Transforms <parameter>op</parameter>
+ to string.</para>
+<refsect3 id="idmef-criterion-operator-to-string.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>op</para></entry>
+<entry role="parameter_description"><para><link linkend="idmef-criterion-operator-t"><type>idmef_criterion_operator_t</type></link> type.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criterion-operator-to-string.returns" role="returns">
+<title>Returns</title>
+<para> A pointer to an operator string or NULL.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criterion-new" role="function">
+<title>idmef_criterion_new&#160;()</title>
+<indexterm zone="idmef-criterion-new"><primary>idmef_criterion_new</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_criterion_new (<parameter><link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> **criterion</parameter>,
+                     <parameter><link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                     <parameter><link linkend="idmef-criterion-value-t"><type>idmef_criterion_value_t</type></link> *value</parameter>,
+                     <parameter><link linkend="idmef-criterion-operator-t"><type>idmef_criterion_operator_t</type></link> op</parameter>);</programlisting>
+<para>Creates a new <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> object and store it in <parameter>criterion</parameter>
+.
+Matching this criterion will result in comparing the object value
+pointed by <parameter>path</parameter>
+ against the provided <parameter>value</parameter>
+, using <parameter>op</parameter>
+.</para>
+<refsect3 id="idmef-criterion-new.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criterion</para></entry>
+<entry role="parameter_description"><para>Address where to store the created <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>value</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-criterion-value-t"><type>idmef_criterion_value_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>op</para></entry>
+<entry role="parameter_description"><para><link linkend="idmef-criterion-operator-t"><type>idmef_criterion_operator_t</type></link> to use for matching this criterion.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criterion-new.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criterion-destroy" role="function">
+<title>idmef_criterion_destroy&#160;()</title>
+<indexterm zone="idmef-criterion-destroy"><primary>idmef_criterion_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_criterion_destroy (<parameter><link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> *criterion</parameter>);</programlisting>
+<para>Destroys <parameter>criterion</parameter>
+ and its content.</para>
+<refsect3 id="idmef-criterion-destroy.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criterion</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-criterion-clone" role="function">
+<title>idmef_criterion_clone&#160;()</title>
+<indexterm zone="idmef-criterion-clone"><primary>idmef_criterion_clone</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_criterion_clone (<parameter>const <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> *criterion</parameter>,
+                       <parameter><link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> **dst</parameter>);</programlisting>
+<para>Clones <parameter>criterion</parameter>
+ and stores the cloned criterion within <parameter>dst</parameter>
+.</para>
+<refsect3 id="idmef-criterion-clone.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criterion</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> object to clone.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>dst</para></entry>
+<entry role="parameter_description"><para>Address where to store the cloned <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criterion-clone.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criterion-print" role="function">
+<title>idmef_criterion_print&#160;()</title>
+<indexterm zone="idmef-criterion-print"><primary>idmef_criterion_print</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_criterion_print (<parameter>const <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> *criterion</parameter>,
+                       <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>Dump <parameter>criterion</parameter>
+ to <parameter>fd</parameter>
+ in the form of:
+<link linkend="operator">path</link> [value]</para>
+<para>Or if there is no value associated with the criterion:
+<link linkend="path">operator</link></para>
+<refsect3 id="idmef-criterion-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criterion</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criterion-print.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criterion-to-string" role="function">
+<title>idmef_criterion_to_string&#160;()</title>
+<indexterm zone="idmef-criterion-to-string"><primary>idmef_criterion_to_string</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_criterion_to_string (<parameter>const <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> *criterion</parameter>,
+                           <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *out</parameter>);</programlisting>
+<para>Dump <parameter>criterion</parameter>
+ as a string to the <parameter>out</parameter>
+ buffer in the form of:
+<link linkend="operator">path</link> [value]</para>
+<para>Or if there is no value associated with the criterion:
+<link linkend="path">operator</link></para>
+<refsect3 id="idmef-criterion-to-string.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criterion</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>out</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criterion-to-string.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criterion-get-path" role="function">
+<title>idmef_criterion_get_path&#160;()</title>
+<indexterm zone="idmef-criterion-get-path"><primary>idmef_criterion_get_path</primary></indexterm>
+<programlisting language="C"><link linkend="idmef-path-t"><returnvalue>idmef_path_t</returnvalue></link>&#160;*
+idmef_criterion_get_path (<parameter>const <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> *criterion</parameter>);</programlisting>
+<para>Used to access the <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object associated with <parameter>criterion</parameter>
+.</para>
+<refsect3 id="idmef-criterion-get-path.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criterion</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criterion-get-path.returns" role="returns">
+<title>Returns</title>
+<para> the <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object associated with <parameter>criterion</parameter>
+.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criterion-get-value" role="function">
+<title>idmef_criterion_get_value&#160;()</title>
+<indexterm zone="idmef-criterion-get-value"><primary>idmef_criterion_get_value</primary></indexterm>
+<programlisting language="C"><link linkend="idmef-criterion-value-t"><returnvalue>idmef_criterion_value_t</returnvalue></link>&#160;*
+idmef_criterion_get_value (<parameter>const <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> *criterion</parameter>);</programlisting>
+<para>Used to access the <link linkend="idmef-criterion-value-t"><type>idmef_criterion_value_t</type></link> associated with <parameter>criterion</parameter>
+.
+There might be no value specifically if the provided <link linkend="idmef-criterion-operator-t"><type>idmef_criterion_operator_t</type></link>
+was IDMEF_CRITERION_OPERATOR_NULL or IDMEF_CRITERION_OPERATOR_NOT_NULL.</para>
+<refsect3 id="idmef-criterion-get-value.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criterion</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criterion-get-value.returns" role="returns">
+<title>Returns</title>
+<para> the <link linkend="idmef-criterion-value-t"><type>idmef_criterion_value_t</type></link> object associated with <parameter>criterion</parameter>
+.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criterion-get-operator" role="function">
+<title>idmef_criterion_get_operator&#160;()</title>
+<indexterm zone="idmef-criterion-get-operator"><primary>idmef_criterion_get_operator</primary></indexterm>
+<programlisting language="C"><link linkend="idmef-criterion-operator-t"><returnvalue>idmef_criterion_operator_t</returnvalue></link>
+idmef_criterion_get_operator (<parameter>const <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> *criterion</parameter>);</programlisting>
+<para>Used to access the <link linkend="idmef-criterion-operator-t"><type>idmef_criterion_operator_t</type></link> enumeration associated with <parameter>criterion</parameter>
+.</para>
+<refsect3 id="idmef-criterion-get-operator.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criterion</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criterion-get-operator.returns" role="returns">
+<title>Returns</title>
+<para> the <link linkend="idmef-criterion-operator-t"><type>idmef_criterion_operator_t</type></link> associated with <parameter>criterion</parameter>
+.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criterion-match" role="function">
+<title>idmef_criterion_match&#160;()</title>
+<indexterm zone="idmef-criterion-match"><primary>idmef_criterion_match</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_criterion_match (<parameter>const <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> *criterion</parameter>,
+                       <parameter><link linkend="void"><type>void</type></link> *object</parameter>);</programlisting>
+<para>Matches <parameter>message</parameter>
+ against the provided <parameter>criterion</parameter>
+. This implies retrieving the
+value associated with <parameter>criterion</parameter>
+ path, and matching it with the <parameter>idmef_criterion_value_t</parameter>
+
+object within <parameter>criterion</parameter>
+.</para>
+<refsect3 id="idmef-criterion-match.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criterion</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>object</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-object-t"><type>idmef_object_t</type></link> object to match against <parameter>criterion</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criterion-match.returns" role="returns">
+<title>Returns</title>
+<para> 1 for a match, 0 for no match, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criteria-new" role="function">
+<title>idmef_criteria_new&#160;()</title>
+<indexterm zone="idmef-criteria-new"><primary>idmef_criteria_new</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_criteria_new (<parameter><link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> **criteria</parameter>);</programlisting>
+<para>Creates a new <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> object and store it into <parameter>criteria</parameter>
+.</para>
+<refsect3 id="idmef-criteria-new.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criteria</para></entry>
+<entry role="parameter_description"><para>Address where to store the created <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criteria-new.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criteria-ref" role="function">
+<title>idmef_criteria_ref&#160;()</title>
+<indexterm zone="idmef-criteria-ref"><primary>idmef_criteria_ref</primary></indexterm>
+<programlisting language="C"><link linkend="idmef-criteria-t"><returnvalue>idmef_criteria_t</returnvalue></link>&#160;*
+idmef_criteria_ref (<parameter><link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>);</programlisting>
+<para>Increases <parameter>criteria</parameter>
+ reference count.</para>
+<para>idmef_criteria_destroy() will decrease the refcount until it reaches
+0, at which point <parameter>criteria</parameter>
+ will be destroyed.</para>
+<refsect3 id="idmef-criteria-ref.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criteria</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> object to reference.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criteria-ref.returns" role="returns">
+<title>Returns</title>
+<para> <parameter>criteria</parameter>
+.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criteria-destroy" role="function">
+<title>idmef_criteria_destroy&#160;()</title>
+<indexterm zone="idmef-criteria-destroy"><primary>idmef_criteria_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_criteria_destroy (<parameter><link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>);</programlisting>
+<para>Destroys <parameter>criteria</parameter>
+ and its content.</para>
+<refsect3 id="idmef-criteria-destroy.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criteria</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-criteria-clone" role="function">
+<title>idmef_criteria_clone&#160;()</title>
+<indexterm zone="idmef-criteria-clone"><primary>idmef_criteria_clone</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_criteria_clone (<parameter><link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *src</parameter>,
+                      <parameter><link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> **dst</parameter>);</programlisting>
+<para>Clones <parameter>src</parameter>
+ and stores the cloned criteria within <parameter>dst</parameter>
+.</para>
+<refsect3 id="idmef-criteria-clone.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>src</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> object to clone.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>dst</para></entry>
+<entry role="parameter_description"><para>Address where to store the cloned <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criteria-clone.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criteria-print" role="function">
+<title>idmef_criteria_print&#160;()</title>
+<indexterm zone="idmef-criteria-print"><primary>idmef_criteria_print</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_criteria_print (<parameter>const <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>,
+                      <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-criteria-to-string" role="function">
+<title>idmef_criteria_to_string&#160;()</title>
+<indexterm zone="idmef-criteria-to-string"><primary>idmef_criteria_to_string</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_criteria_to_string (<parameter>const <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>,
+                          <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *out</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-criteria-is-criterion" role="function">
+<title>idmef_criteria_is_criterion&#160;()</title>
+<indexterm zone="idmef-criteria-is-criterion"><primary>idmef_criteria_is_criterion</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+idmef_criteria_is_criterion (<parameter>const <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-criteria-get-criterion" role="function">
+<title>idmef_criteria_get_criterion&#160;()</title>
+<indexterm zone="idmef-criteria-get-criterion"><primary>idmef_criteria_get_criterion</primary></indexterm>
+<programlisting language="C"><link linkend="idmef-criterion-t"><returnvalue>idmef_criterion_t</returnvalue></link>&#160;*
+idmef_criteria_get_criterion (<parameter>const <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-criteria-set-criterion" role="function">
+<title>idmef_criteria_set_criterion&#160;()</title>
+<indexterm zone="idmef-criteria-set-criterion"><primary>idmef_criteria_set_criterion</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_criteria_set_criterion (<parameter><link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>,
+                              <parameter><link linkend="idmef-criterion-t"><type>idmef_criterion_t</type></link> *criterion</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-criteria-or-criteria" role="function">
+<title>idmef_criteria_or_criteria&#160;()</title>
+<indexterm zone="idmef-criteria-or-criteria"><primary>idmef_criteria_or_criteria</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_criteria_or_criteria (<parameter><link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>,
+                            <parameter><link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-criteria-and-criteria" role="function">
+<title>idmef_criteria_and_criteria&#160;()</title>
+<indexterm zone="idmef-criteria-and-criteria"><primary>idmef_criteria_and_criteria</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_criteria_and_criteria (<parameter><link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>,
+                             <parameter><link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-criteria-match" role="function">
+<title>idmef_criteria_match&#160;()</title>
+<indexterm zone="idmef-criteria-match"><primary>idmef_criteria_match</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_criteria_match (<parameter>const <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>,
+                      <parameter><link linkend="void"><type>void</type></link> *object</parameter>);</programlisting>
+<para>Matches <parameter>object</parameter>
+ against the provided criteria.</para>
+<refsect3 id="idmef-criteria-match.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>criteria</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>object</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-object-t"><type>idmef_object_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-criteria-match.returns" role="returns">
+<title>Returns</title>
+<para> 1 if criteria match, 0 if it did not, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-criteria-get-or" role="function">
+<title>idmef_criteria_get_or&#160;()</title>
+<indexterm zone="idmef-criteria-get-or"><primary>idmef_criteria_get_or</primary></indexterm>
+<programlisting language="C"><link linkend="idmef-criteria-t"><returnvalue>idmef_criteria_t</returnvalue></link>&#160;*
+idmef_criteria_get_or (<parameter>const <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-criteria-get-and" role="function">
+<title>idmef_criteria_get_and&#160;()</title>
+<indexterm zone="idmef-criteria-get-and"><primary>idmef_criteria_get_and</primary></indexterm>
+<programlisting language="C"><link linkend="idmef-criteria-t"><returnvalue>idmef_criteria_t</returnvalue></link>&#160;*
+idmef_criteria_get_and (<parameter>const <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-criteria-new-from-string" role="function">
+<title>idmef_criteria_new_from_string&#160;()</title>
+<indexterm zone="idmef-criteria-new-from-string"><primary>idmef_criteria_new_from_string</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_criteria_new_from_string (<parameter><link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> **criteria</parameter>,
+                                <parameter>const <link linkend="char"><type>char</type></link> *str</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-criteria-get-negation" role="function">
+<title>idmef_criteria_get_negation&#160;()</title>
+<indexterm zone="idmef-criteria-get-negation"><primary>idmef_criteria_get_negation</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+idmef_criteria_get_negation (<parameter>const <link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-criteria-set-negation" role="function">
+<title>idmef_criteria_set_negation&#160;()</title>
+<indexterm zone="idmef-criteria-set-negation"><primary>idmef_criteria_set_negation</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_criteria_set_negation (<parameter><link linkend="idmef-criteria-t"><type>idmef_criteria_t</type></link> *criteria</parameter>,
+                             <parameter><link linkend="prelude-bool-t"><type>prelude_bool_t</type></link> negate</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-idmef-criteria.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="idmef-criterion-operator-t" role="enum">
+<title>enum idmef_criterion_operator_t</title>
+<indexterm zone="idmef-criterion-operator-t"><primary>idmef_criterion_operator_t</primary></indexterm>
+<refsect3 id="idmef-criterion-operator-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-NOT:CAPS">IDMEF_CRITERION_OPERATOR_NOT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-NOCASE:CAPS">IDMEF_CRITERION_OPERATOR_NOCASE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-EQUAL:CAPS">IDMEF_CRITERION_OPERATOR_EQUAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-EQUAL-NOCASE:CAPS">IDMEF_CRITERION_OPERATOR_EQUAL_NOCASE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-NOT-EQUAL:CAPS">IDMEF_CRITERION_OPERATOR_NOT_EQUAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-NOT-EQUAL-NOCASE:CAPS">IDMEF_CRITERION_OPERATOR_NOT_EQUAL_NOCASE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-LESSER:CAPS">IDMEF_CRITERION_OPERATOR_LESSER</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-LESSER-OR-EQUAL:CAPS">IDMEF_CRITERION_OPERATOR_LESSER_OR_EQUAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-GREATER:CAPS">IDMEF_CRITERION_OPERATOR_GREATER</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-GREATER-OR-EQUAL:CAPS">IDMEF_CRITERION_OPERATOR_GREATER_OR_EQUAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-SUBSTR:CAPS">IDMEF_CRITERION_OPERATOR_SUBSTR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-SUBSTR-NOCASE:CAPS">IDMEF_CRITERION_OPERATOR_SUBSTR_NOCASE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-NOT-SUBSTR:CAPS">IDMEF_CRITERION_OPERATOR_NOT_SUBSTR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-NOT-SUBSTR-NOCASE:CAPS">IDMEF_CRITERION_OPERATOR_NOT_SUBSTR_NOCASE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-REGEX:CAPS">IDMEF_CRITERION_OPERATOR_REGEX</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-REGEX-NOCASE:CAPS">IDMEF_CRITERION_OPERATOR_REGEX_NOCASE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-NOT-REGEX:CAPS">IDMEF_CRITERION_OPERATOR_NOT_REGEX</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-NOT-REGEX-NOCASE:CAPS">IDMEF_CRITERION_OPERATOR_NOT_REGEX_NOCASE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-NULL:CAPS">IDMEF_CRITERION_OPERATOR_NULL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="IDMEF-CRITERION-OPERATOR-NOT-NULL:CAPS">IDMEF_CRITERION_OPERATOR_NOT_NULL</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-criteria-t" role="typedef">
+<title>idmef_criteria_t</title>
+<indexterm zone="idmef-criteria-t"><primary>idmef_criteria_t</primary></indexterm>
+<programlisting language="C">typedef struct idmef_criteria idmef_criteria_t;
+</programlisting>
+</refsect2>
+<refsect2 id="idmef-criterion-t" role="typedef">
+<title>idmef_criterion_t</title>
+<indexterm zone="idmef-criterion-t"><primary>idmef_criterion_t</primary></indexterm>
+<programlisting language="C">typedef struct idmef_criterion idmef_criterion_t;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

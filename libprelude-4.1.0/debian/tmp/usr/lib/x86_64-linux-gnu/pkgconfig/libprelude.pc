@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib/x86_64-linux-gnu
+includedir=${prefix}/include
+
+threadlib=-lpthread
+
+Name: LibPrelude
+Description: The Prelude Library provide API for communicating with PreludeIDS SIM components.
+Version: 4.1.0
+Libs: -L${libdir} -lprelude
+Libs.private:  -lgnutls    -lpthread 
+Cflags: 
+

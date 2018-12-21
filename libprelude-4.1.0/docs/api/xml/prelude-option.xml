@@ -1,0 +1,857 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-prelude-option">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-prelude-option.top_of_page">prelude-option</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>prelude-option</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-prelude-option.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><phrase role="c_punctuation">(</phrase><link linkend="prelude-option-destroy-callback-t">*prelude_option_destroy_callback_t</link><phrase role="c_punctuation">)</phrase>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><phrase role="c_punctuation">(</phrase><link linkend="prelude-option-commit-callback-t">*prelude_option_commit_callback_t</link><phrase role="c_punctuation">)</phrase>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><phrase role="c_punctuation">(</phrase><link linkend="prelude-option-get-callback-t">*prelude_option_get_callback_t</link><phrase role="c_punctuation">)</phrase>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><phrase role="c_punctuation">(</phrase><link linkend="prelude-option-set-callback-t">*prelude_option_set_callback_t</link><phrase role="c_punctuation">)</phrase>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-priority">prelude_option_set_priority</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-print">prelude_option_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-wide-send-msg">prelude_option_wide_send_msg</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-destroy">prelude_option_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-read">prelude_option_read</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-add">prelude_option_add</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-type">prelude_option_set_type</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-option-type-t"><returnvalue>prelude_option_type_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-get-type">prelude_option_get_type</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-warnings">prelude_option_set_warnings</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="char"><returnvalue>char</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-get-shortname">prelude_option_get_shortname</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-get-longname">prelude_option_get_longname</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-data">prelude_option_set_data</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-get-data">prelude_option_get_data</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-context-get-data">prelude_option_context_get_data</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-context-set-data">prelude_option_context_set_data</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-invoke-commit">prelude_option_invoke_commit</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-invoke-set">prelude_option_invoke_set</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-invoke-get">prelude_option_invoke_get</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-invoke-destroy">prelude_option_invoke_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-new-root">prelude_option_new_root</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-new">prelude_option_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-longopt">prelude_option_set_longopt</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-get-longopt">prelude_option_get_longopt</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-description">prelude_option_set_description</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-get-description">prelude_option_get_description</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-has-arg">prelude_option_set_has_arg</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-option-argument-t"><returnvalue>prelude_option_argument_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-get-has-arg">prelude_option_get_has_arg</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-value">prelude_option_set_value</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-get-value">prelude_option_get_value</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-help">prelude_option_set_help</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-get-help">prelude_option_get_help</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-input-validation-regex">prelude_option_set_input_validation_regex</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-get-input-validation-regex">prelude_option_get_input_validation_regex</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-input-type">prelude_option_set_input_type</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-option-input-type-t"><returnvalue>prelude_option_input_type_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-get-input-type">prelude_option_get_input_type</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-list-t"><returnvalue>prelude_list_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-get-optlist">prelude_option_get_optlist</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-option-t"><returnvalue>prelude_option_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-get-next">prelude_option_get_next</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-has-optlist">prelude_option_has_optlist</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-option-t"><returnvalue>prelude_option_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-get-parent">prelude_option_get_parent</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-destroy-callback">prelude_option_set_destroy_callback</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-option-destroy-callback-t"><returnvalue>prelude_option_destroy_callback_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-get-destroy-callback">prelude_option_get_destroy_callback</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-set-callback">prelude_option_set_set_callback</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-option-set-callback-t"><returnvalue>prelude_option_set_callback_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-get-set-callback">prelude_option_get_set_callback</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-get-callback">prelude_option_set_get_callback</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-option-get-callback-t"><returnvalue>prelude_option_get_callback_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-get-get-callback">prelude_option_get_get_callback</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-commit-callback">prelude_option_set_commit_callback</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-option-commit-callback-t"><returnvalue>prelude_option_commit_callback_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-get-commit-callback">prelude_option_get_commit_callback</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-set-default-context">prelude_option_set_default_context</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-new-context">prelude_option_new_context</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-option-context-destroy">prelude_option_context_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-option-t"><returnvalue>prelude_option_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-search">prelude_option_search</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-option-context-t"><returnvalue>prelude_option_context_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-option-search-context">prelude_option_search_context</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-prelude-option.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-option-type-t">prelude_option_type_t</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-option-input-type-t">prelude_option_input_type_t</link></entry></row>
+<row><entry role="typedef_keyword">typedef</entry><entry role="function_name"><link linkend="prelude-option-t">prelude_option_t</link></entry></row>
+<row><entry role="typedef_keyword">typedef</entry><entry role="function_name"><link linkend="prelude-option-context-t">prelude_option_context_t</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-option-argument-t">prelude_option_argument_t</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-option-priority-t">prelude_option_priority_t</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-option-warning-t">prelude_option_warning_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-prelude-option.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-option.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="prelude-option-destroy-callback-t" role="function">
+<title>prelude_option_destroy_callback_t&#160;()</title>
+<indexterm zone="prelude-option-destroy-callback-t"><primary>prelude_option_destroy_callback_t</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+<phrase role="c_punctuation">(</phrase>*prelude_option_destroy_callback_t<phrase role="c_punctuation">)</phrase> (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                                      <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *out</parameter>,
+                                      <parameter><link linkend="void"><type>void</type></link> *context</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-commit-callback-t" role="function">
+<title>prelude_option_commit_callback_t&#160;()</title>
+<indexterm zone="prelude-option-commit-callback-t"><primary>prelude_option_commit_callback_t</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+<phrase role="c_punctuation">(</phrase>*prelude_option_commit_callback_t<phrase role="c_punctuation">)</phrase> (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                                     <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *out</parameter>,
+                                     <parameter><link linkend="void"><type>void</type></link> *context</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-callback-t" role="function">
+<title>prelude_option_get_callback_t&#160;()</title>
+<indexterm zone="prelude-option-get-callback-t"><primary>prelude_option_get_callback_t</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+<phrase role="c_punctuation">(</phrase>*prelude_option_get_callback_t<phrase role="c_punctuation">)</phrase> (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                                  <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *out</parameter>,
+                                  <parameter><link linkend="void"><type>void</type></link> *context</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-callback-t" role="function">
+<title>prelude_option_set_callback_t&#160;()</title>
+<indexterm zone="prelude-option-set-callback-t"><primary>prelude_option_set_callback_t</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+<phrase role="c_punctuation">(</phrase>*prelude_option_set_callback_t<phrase role="c_punctuation">)</phrase> (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                                  <parameter>const <link linkend="char"><type>char</type></link> *optarg</parameter>,
+                                  <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *err</parameter>,
+                                  <parameter><link linkend="void"><type>void</type></link> *context</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-priority" role="function">
+<title>prelude_option_set_priority&#160;()</title>
+<indexterm zone="prelude-option-set-priority"><primary>prelude_option_set_priority</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_priority (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *option</parameter>,
+                             <parameter><link linkend="prelude-option-priority-t"><type>prelude_option_priority_t</type></link> priority</parameter>);</programlisting>
+<para>prelude_option_set_priority() can be used to associate a priority
+with an option. This can be used to solve dependancies problem within
+differents options.</para>
+<para>A priority of -1 mean an option will always be executed last (with
+all other option with a -1 priority).</para>
+<para>The default priority for an option is 0, the caller is responssible
+for the way it assign priority (knowing that highest priority are always
+executed first).</para>
+<refsect3 id="prelude-option-set-priority.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>option</para></entry>
+<entry role="parameter_description"><para>Pointer on an option object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>priority</para></entry>
+<entry role="parameter_description"><para>Priority of the option object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-option-print" role="function">
+<title>prelude_option_print&#160;()</title>
+<indexterm zone="prelude-option-print"><primary>prelude_option_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_print (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                      <parameter><link linkend="prelude-option-type-t"><type>prelude_option_type_t</type></link> type</parameter>,
+                      <parameter><link linkend="int"><type>int</type></link> descoff</parameter>,
+                      <parameter><link linkend="FILE:CAPS"><type>FILE</type></link> *fd</parameter>);</programlisting>
+<para>Dump option available in <parameter>opt</parameter>
+ and hooked to the given types.
+If <parameter>opt</parameter>
+ is NULL, then the root of the option list is used.</para>
+<refsect3 id="prelude-option-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>opt</para></entry>
+<entry role="parameter_description"><para>Option(s) to print out.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>type</para></entry>
+<entry role="parameter_description"><para>Only option with specified types will be printed.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>descoff</para></entry>
+<entry role="parameter_description"><para>offset from the begining of the line where the description should start.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>File descriptor where the option should be dumped.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-option-wide-send-msg" role="function">
+<title>prelude_option_wide_send_msg&#160;()</title>
+<indexterm zone="prelude-option-wide-send-msg"><primary>prelude_option_wide_send_msg</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_option_wide_send_msg (<parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msgbuf</parameter>,
+                              <parameter><link linkend="void"><type>void</type></link> *context</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-destroy" role="function">
+<title>prelude_option_destroy&#160;()</title>
+<indexterm zone="prelude-option-destroy"><primary>prelude_option_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_destroy (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *option</parameter>);</programlisting>
+<para>Destroy a <link linkend="prelude-option-t"><type>prelude_option_t</type></link> object and all data associated
+with it (including all suboption).</para>
+<refsect3 id="prelude-option-destroy.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>option</para></entry>
+<entry role="parameter_description"><para>Pointer on an option object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-option-read" role="function">
+<title>prelude_option_read&#160;()</title>
+<indexterm zone="prelude-option-read"><primary>prelude_option_read</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_option_read (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *option</parameter>,
+                     <parameter>const <link linkend="char"><type>char</type></link> **filename</parameter>,
+                     <parameter><link linkend="int"><type>int</type></link> *argc</parameter>,
+                     <parameter><link linkend="char"><type>char</type></link> **argv</parameter>,
+                     <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> **err</parameter>,
+                     <parameter><link linkend="void"><type>void</type></link> *context</parameter>);</programlisting>
+<para>prelude_option_read(), parse the given argument and try to
+match them against option in <parameter>option</parameter>
+. If an option match, it's associated
+callback function is called with the eventual option argument if any.</para>
+<para>Option not matched on the command line are searched in the configuration file
+specified by <parameter>filename</parameter>
+.</para>
+<para>if <parameter>option</parameter>
+ is NULL, all system option will be matched against argc, and argv.</para>
+<refsect3 id="prelude-option-read.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>option</para></entry>
+<entry role="parameter_description"><para>A pointer on an option (list).</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>filename</para></entry>
+<entry role="parameter_description"><para>Pointer to the config filename.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>argc</para></entry>
+<entry role="parameter_description"><para>Number of argument.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>argv</para></entry>
+<entry role="parameter_description"><para>Argument list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>err</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object where to store an error string.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>context</para></entry>
+<entry role="parameter_description"><para>Pointer to an optional option context.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-option-read.returns" role="returns">
+<title>Returns</title>
+<para> The index of the first unhandled parameter if option parsing succeeded,
+or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-option-add" role="function">
+<title>prelude_option_add&#160;()</title>
+<indexterm zone="prelude-option-add"><primary>prelude_option_add</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_option_add (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *parent</parameter>,
+                    <parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> **retopt</parameter>,
+                    <parameter><link linkend="prelude-option-type-t"><type>prelude_option_type_t</type></link> type</parameter>,
+                    <parameter><link linkend="char"><type>char</type></link> shortopt</parameter>,
+                    <parameter>const <link linkend="char"><type>char</type></link> *longopt</parameter>,
+                    <parameter>const <link linkend="char"><type>char</type></link> *desc</parameter>,
+                    <parameter><link linkend="prelude-option-argument-t"><type>prelude_option_argument_t</type></link> has_arg</parameter>,
+                    <parameter><link linkend="int"><type>int</type></link> (*set) (prelude_option_t *opt, const char *optarg, prelude_string_t *err, void *context)</parameter>,
+                    <parameter><link linkend="int"><type>int</type></link> (*get) (prelude_option_t *opt, prelude_string_t *out, void *context)</parameter>);</programlisting>
+<para>prelude_option_add() create a new option. The option is set to be the child
+of <parameter>parent</parameter>
+, unless it is NULL. In this case the option is a root option.</para>
+<para>The <parameter>type</parameter>
+ parameters can be set to PRELUDE_OPTION_TYPE_CLI (telling the
+option may be searched on the command line), PRELUDE_OPTION_TYPE_CFG (telling
+the option may be searched in the configuration file) or both.</para>
+<refsect3 id="prelude-option-add.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>parent</para></entry>
+<entry role="parameter_description"><para>Pointer on a parent option.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>retopt</para></entry>
+<entry role="parameter_description"><para>Pointer where to store the created option.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>type</para></entry>
+<entry role="parameter_description"><para>bitfields.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>shortopt</para></entry>
+<entry role="parameter_description"><para>Short option name.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>longopt</para></entry>
+<entry role="parameter_description"><para>Long option name.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>desc</para></entry>
+<entry role="parameter_description"><para>Description of the option.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>has_arg</para></entry>
+<entry role="parameter_description"><para>Define if the option has argument.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>set</para></entry>
+<entry role="parameter_description"><para>Callback to be called when the value for this option change.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>get</para></entry>
+<entry role="parameter_description"><para>Callback to be called to get the value for this option.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-option-add.returns" role="returns">
+<title>Returns</title>
+<para> Pointer on the option object, or NULL if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-option-set-type" role="function">
+<title>prelude_option_set_type&#160;()</title>
+<indexterm zone="prelude-option-set-type"><primary>prelude_option_set_type</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_type (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                         <parameter><link linkend="prelude-option-type-t"><type>prelude_option_type_t</type></link> type</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-type" role="function">
+<title>prelude_option_get_type&#160;()</title>
+<indexterm zone="prelude-option-get-type"><primary>prelude_option_get_type</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-option-type-t"><returnvalue>prelude_option_type_t</returnvalue></link>
+prelude_option_get_type (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-warnings" role="function">
+<title>prelude_option_set_warnings&#160;()</title>
+<indexterm zone="prelude-option-set-warnings"><primary>prelude_option_set_warnings</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_warnings (<parameter><link linkend="prelude-option-warning-t"><type>prelude_option_warning_t</type></link> new_warnings</parameter>,
+                             <parameter><link linkend="prelude-option-warning-t"><type>prelude_option_warning_t</type></link> *old_warnings</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-shortname" role="function">
+<title>prelude_option_get_shortname&#160;()</title>
+<indexterm zone="prelude-option-get-shortname"><primary>prelude_option_get_shortname</primary></indexterm>
+<programlisting language="C"><link linkend="char"><returnvalue>char</returnvalue></link>
+prelude_option_get_shortname (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-longname" role="function">
+<title>prelude_option_get_longname&#160;()</title>
+<indexterm zone="prelude-option-get-longname"><primary>prelude_option_get_longname</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_option_get_longname (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-data" role="function">
+<title>prelude_option_set_data&#160;()</title>
+<indexterm zone="prelude-option-set-data"><primary>prelude_option_set_data</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_data (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                         <parameter><link linkend="void"><type>void</type></link> *data</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-data" role="function">
+<title>prelude_option_get_data&#160;()</title>
+<indexterm zone="prelude-option-get-data"><primary>prelude_option_get_data</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>&#160;*
+prelude_option_get_data (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-context-get-data" role="function">
+<title>prelude_option_context_get_data&#160;()</title>
+<indexterm zone="prelude-option-context-get-data"><primary>prelude_option_context_get_data</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>&#160;*
+prelude_option_context_get_data (<parameter><link linkend="prelude-option-context-t"><type>prelude_option_context_t</type></link> *oc</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-context-set-data" role="function">
+<title>prelude_option_context_set_data&#160;()</title>
+<indexterm zone="prelude-option-context-set-data"><primary>prelude_option_context_set_data</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_context_set_data (<parameter><link linkend="prelude-option-context-t"><type>prelude_option_context_t</type></link> *oc</parameter>,
+                                 <parameter><link linkend="void"><type>void</type></link> *data</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-invoke-commit" role="function">
+<title>prelude_option_invoke_commit&#160;()</title>
+<indexterm zone="prelude-option-invoke-commit"><primary>prelude_option_invoke_commit</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_option_invoke_commit (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                              <parameter>const <link linkend="char"><type>char</type></link> *ctname</parameter>,
+                              <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *value</parameter>,
+                              <parameter><link linkend="void"><type>void</type></link> *context</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-invoke-set" role="function">
+<title>prelude_option_invoke_set&#160;()</title>
+<indexterm zone="prelude-option-invoke-set"><primary>prelude_option_invoke_set</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_option_invoke_set (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                           <parameter>const <link linkend="char"><type>char</type></link> *ctname</parameter>,
+                           <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *value</parameter>,
+                           <parameter><link linkend="void"><type>void</type></link> **context</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-invoke-get" role="function">
+<title>prelude_option_invoke_get&#160;()</title>
+<indexterm zone="prelude-option-invoke-get"><primary>prelude_option_invoke_get</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_option_invoke_get (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                           <parameter>const <link linkend="char"><type>char</type></link> *ctname</parameter>,
+                           <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *value</parameter>,
+                           <parameter><link linkend="void"><type>void</type></link> *context</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-invoke-destroy" role="function">
+<title>prelude_option_invoke_destroy&#160;()</title>
+<indexterm zone="prelude-option-invoke-destroy"><primary>prelude_option_invoke_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_option_invoke_destroy (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                               <parameter>const <link linkend="char"><type>char</type></link> *ctname</parameter>,
+                               <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *value</parameter>,
+                               <parameter><link linkend="void"><type>void</type></link> *context</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-new-root" role="function">
+<title>prelude_option_new_root&#160;()</title>
+<indexterm zone="prelude-option-new-root"><primary>prelude_option_new_root</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_option_new_root (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> **retopt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-new" role="function">
+<title>prelude_option_new&#160;()</title>
+<indexterm zone="prelude-option-new"><primary>prelude_option_new</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_option_new (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *parent</parameter>,
+                    <parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> **retopt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-longopt" role="function">
+<title>prelude_option_set_longopt&#160;()</title>
+<indexterm zone="prelude-option-set-longopt"><primary>prelude_option_set_longopt</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_longopt (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                            <parameter>const <link linkend="char"><type>char</type></link> *longopt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-longopt" role="function">
+<title>prelude_option_get_longopt&#160;()</title>
+<indexterm zone="prelude-option-get-longopt"><primary>prelude_option_get_longopt</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_option_get_longopt (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-description" role="function">
+<title>prelude_option_set_description&#160;()</title>
+<indexterm zone="prelude-option-set-description"><primary>prelude_option_set_description</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_description (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                                <parameter>const <link linkend="char"><type>char</type></link> *description</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-description" role="function">
+<title>prelude_option_get_description&#160;()</title>
+<indexterm zone="prelude-option-get-description"><primary>prelude_option_get_description</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_option_get_description (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-has-arg" role="function">
+<title>prelude_option_set_has_arg&#160;()</title>
+<indexterm zone="prelude-option-set-has-arg"><primary>prelude_option_set_has_arg</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_has_arg (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                            <parameter><link linkend="prelude-option-argument-t"><type>prelude_option_argument_t</type></link> has_arg</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-has-arg" role="function">
+<title>prelude_option_get_has_arg&#160;()</title>
+<indexterm zone="prelude-option-get-has-arg"><primary>prelude_option_get_has_arg</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-option-argument-t"><returnvalue>prelude_option_argument_t</returnvalue></link>
+prelude_option_get_has_arg (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-value" role="function">
+<title>prelude_option_set_value&#160;()</title>
+<indexterm zone="prelude-option-set-value"><primary>prelude_option_set_value</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_value (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                          <parameter>const <link linkend="char"><type>char</type></link> *value</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-value" role="function">
+<title>prelude_option_get_value&#160;()</title>
+<indexterm zone="prelude-option-get-value"><primary>prelude_option_get_value</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_option_get_value (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-help" role="function">
+<title>prelude_option_set_help&#160;()</title>
+<indexterm zone="prelude-option-set-help"><primary>prelude_option_set_help</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_help (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                         <parameter>const <link linkend="char"><type>char</type></link> *help</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-help" role="function">
+<title>prelude_option_get_help&#160;()</title>
+<indexterm zone="prelude-option-get-help"><primary>prelude_option_get_help</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_option_get_help (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-input-validation-regex" role="function">
+<title>prelude_option_set_input_validation_regex&#160;()</title>
+<indexterm zone="prelude-option-set-input-validation-regex"><primary>prelude_option_set_input_validation_regex</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_input_validation_regex
+                               (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                                <parameter>const <link linkend="char"><type>char</type></link> *regex</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-input-validation-regex" role="function">
+<title>prelude_option_get_input_validation_regex&#160;()</title>
+<indexterm zone="prelude-option-get-input-validation-regex"><primary>prelude_option_get_input_validation_regex</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_option_get_input_validation_regex
+                               (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-input-type" role="function">
+<title>prelude_option_set_input_type&#160;()</title>
+<indexterm zone="prelude-option-set-input-type"><primary>prelude_option_set_input_type</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_input_type (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                               <parameter><link linkend="prelude-option-input-type-t"><type>prelude_option_input_type_t</type></link> input_type</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-input-type" role="function">
+<title>prelude_option_get_input_type&#160;()</title>
+<indexterm zone="prelude-option-get-input-type"><primary>prelude_option_get_input_type</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-option-input-type-t"><returnvalue>prelude_option_input_type_t</returnvalue></link>
+prelude_option_get_input_type (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-optlist" role="function">
+<title>prelude_option_get_optlist&#160;()</title>
+<indexterm zone="prelude-option-get-optlist"><primary>prelude_option_get_optlist</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-list-t"><returnvalue>prelude_list_t</returnvalue></link>&#160;*
+prelude_option_get_optlist (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-next" role="function">
+<title>prelude_option_get_next&#160;()</title>
+<indexterm zone="prelude-option-get-next"><primary>prelude_option_get_next</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-option-t"><returnvalue>prelude_option_t</returnvalue></link>&#160;*
+prelude_option_get_next (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *start</parameter>,
+                         <parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *cur</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-has-optlist" role="function">
+<title>prelude_option_has_optlist&#160;()</title>
+<indexterm zone="prelude-option-has-optlist"><primary>prelude_option_has_optlist</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+prelude_option_has_optlist (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-parent" role="function">
+<title>prelude_option_get_parent&#160;()</title>
+<indexterm zone="prelude-option-get-parent"><primary>prelude_option_get_parent</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-option-t"><returnvalue>prelude_option_t</returnvalue></link>&#160;*
+prelude_option_get_parent (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-destroy-callback" role="function">
+<title>prelude_option_set_destroy_callback&#160;()</title>
+<indexterm zone="prelude-option-set-destroy-callback"><primary>prelude_option_set_destroy_callback</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_destroy_callback (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                                     <parameter><link linkend="prelude-option-destroy-callback-t"><type>prelude_option_destroy_callback_t</type></link> destroy</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-destroy-callback" role="function">
+<title>prelude_option_get_destroy_callback&#160;()</title>
+<indexterm zone="prelude-option-get-destroy-callback"><primary>prelude_option_get_destroy_callback</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-option-destroy-callback-t"><returnvalue>prelude_option_destroy_callback_t</returnvalue></link>
+prelude_option_get_destroy_callback (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-set-callback" role="function">
+<title>prelude_option_set_set_callback&#160;()</title>
+<indexterm zone="prelude-option-set-set-callback"><primary>prelude_option_set_set_callback</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_set_callback (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                                 <parameter><link linkend="prelude-option-set-callback-t"><type>prelude_option_set_callback_t</type></link> set</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-set-callback" role="function">
+<title>prelude_option_get_set_callback&#160;()</title>
+<indexterm zone="prelude-option-get-set-callback"><primary>prelude_option_get_set_callback</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-option-set-callback-t"><returnvalue>prelude_option_set_callback_t</returnvalue></link>
+prelude_option_get_set_callback (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-get-callback" role="function">
+<title>prelude_option_set_get_callback&#160;()</title>
+<indexterm zone="prelude-option-set-get-callback"><primary>prelude_option_set_get_callback</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_get_callback (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                                 <parameter><link linkend="int"><type>int</type></link> (*get) (prelude_option_t *opt, prelude_string_t *out, void *context)</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-get-callback" role="function">
+<title>prelude_option_get_get_callback&#160;()</title>
+<indexterm zone="prelude-option-get-get-callback"><primary>prelude_option_get_get_callback</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-option-get-callback-t"><returnvalue>prelude_option_get_callback_t</returnvalue></link>
+prelude_option_get_get_callback (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-commit-callback" role="function">
+<title>prelude_option_set_commit_callback&#160;()</title>
+<indexterm zone="prelude-option-set-commit-callback"><primary>prelude_option_set_commit_callback</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_commit_callback (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                                    <parameter><link linkend="prelude-option-commit-callback-t"><type>prelude_option_commit_callback_t</type></link> commit</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-get-commit-callback" role="function">
+<title>prelude_option_get_commit_callback&#160;()</title>
+<indexterm zone="prelude-option-get-commit-callback"><primary>prelude_option_get_commit_callback</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-option-commit-callback-t"><returnvalue>prelude_option_commit_callback_t</returnvalue></link>
+prelude_option_get_commit_callback (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-set-default-context" role="function">
+<title>prelude_option_set_default_context&#160;()</title>
+<indexterm zone="prelude-option-set-default-context"><primary>prelude_option_set_default_context</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_set_default_context (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                                    <parameter><link linkend="void"><type>void</type></link> *context</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-new-context" role="function">
+<title>prelude_option_new_context&#160;()</title>
+<indexterm zone="prelude-option-new-context"><primary>prelude_option_new_context</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_option_new_context (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                            <parameter><link linkend="prelude-option-context-t"><type>prelude_option_context_t</type></link> **ctx</parameter>,
+                            <parameter>const <link linkend="char"><type>char</type></link> *name</parameter>,
+                            <parameter><link linkend="void"><type>void</type></link> *data</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-context-destroy" role="function">
+<title>prelude_option_context_destroy&#160;()</title>
+<indexterm zone="prelude-option-context-destroy"><primary>prelude_option_context_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_option_context_destroy (<parameter><link linkend="prelude-option-context-t"><type>prelude_option_context_t</type></link> *oc</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-search" role="function">
+<title>prelude_option_search&#160;()</title>
+<indexterm zone="prelude-option-search"><primary>prelude_option_search</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-option-t"><returnvalue>prelude_option_t</returnvalue></link>&#160;*
+prelude_option_search (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *parent</parameter>,
+                       <parameter>const <link linkend="char"><type>char</type></link> *name</parameter>,
+                       <parameter><link linkend="prelude-option-type-t"><type>prelude_option_type_t</type></link> type</parameter>,
+                       <parameter><link linkend="prelude-bool-t"><type>prelude_bool_t</type></link> walk_children</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-search-context" role="function">
+<title>prelude_option_search_context&#160;()</title>
+<indexterm zone="prelude-option-search-context"><primary>prelude_option_search_context</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-option-context-t"><returnvalue>prelude_option_context_t</returnvalue></link>&#160;*
+prelude_option_search_context (<parameter><link linkend="prelude-option-t"><type>prelude_option_t</type></link> *opt</parameter>,
+                               <parameter>const <link linkend="char"><type>char</type></link> *name</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-option.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="prelude-option-type-t" role="enum">
+<title>enum prelude_option_type_t</title>
+<indexterm zone="prelude-option-type-t"><primary>prelude_option_type_t</primary></indexterm>
+<refsect3 id="prelude-option-type-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-TYPE-CLI:CAPS">PRELUDE_OPTION_TYPE_CLI</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-TYPE-CFG:CAPS">PRELUDE_OPTION_TYPE_CFG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-TYPE-WIDE:CAPS">PRELUDE_OPTION_TYPE_WIDE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-TYPE-CONTEXT:CAPS">PRELUDE_OPTION_TYPE_CONTEXT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-TYPE-ROOT:CAPS">PRELUDE_OPTION_TYPE_ROOT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-TYPE-DESTROY:CAPS">PRELUDE_OPTION_TYPE_DESTROY</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-option-input-type-t" role="enum">
+<title>enum prelude_option_input_type_t</title>
+<indexterm zone="prelude-option-input-type-t"><primary>prelude_option_input_type_t</primary></indexterm>
+<refsect3 id="prelude-option-input-type-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-INPUT-TYPE-STRING:CAPS">PRELUDE_OPTION_INPUT_TYPE_STRING</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-INPUT-TYPE-INTEGER:CAPS">PRELUDE_OPTION_INPUT_TYPE_INTEGER</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-INPUT-TYPE-BOOLEAN:CAPS">PRELUDE_OPTION_INPUT_TYPE_BOOLEAN</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-option-t" role="typedef">
+<title>prelude_option_t</title>
+<indexterm zone="prelude-option-t"><primary>prelude_option_t</primary></indexterm>
+<programlisting language="C">typedef struct prelude_option prelude_option_t;
+</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-context-t" role="typedef">
+<title>prelude_option_context_t</title>
+<indexterm zone="prelude-option-context-t"><primary>prelude_option_context_t</primary></indexterm>
+<programlisting language="C">typedef struct prelude_option_context prelude_option_context_t;
+</programlisting>
+</refsect2>
+<refsect2 id="prelude-option-argument-t" role="enum">
+<title>enum prelude_option_argument_t</title>
+<indexterm zone="prelude-option-argument-t"><primary>prelude_option_argument_t</primary></indexterm>
+<refsect3 id="prelude-option-argument-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-ARGUMENT-REQUIRED:CAPS">PRELUDE_OPTION_ARGUMENT_REQUIRED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-ARGUMENT-OPTIONAL:CAPS">PRELUDE_OPTION_ARGUMENT_OPTIONAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-ARGUMENT-NONE:CAPS">PRELUDE_OPTION_ARGUMENT_NONE</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-option-priority-t" role="enum">
+<title>enum prelude_option_priority_t</title>
+<indexterm zone="prelude-option-priority-t"><primary>prelude_option_priority_t</primary></indexterm>
+<refsect3 id="prelude-option-priority-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-PRIORITY-IMMEDIATE:CAPS">PRELUDE_OPTION_PRIORITY_IMMEDIATE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-PRIORITY-FIRST:CAPS">PRELUDE_OPTION_PRIORITY_FIRST</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-PRIORITY-NONE:CAPS">PRELUDE_OPTION_PRIORITY_NONE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-PRIORITY-LAST:CAPS">PRELUDE_OPTION_PRIORITY_LAST</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-option-warning-t" role="enum">
+<title>enum prelude_option_warning_t</title>
+<indexterm zone="prelude-option-warning-t"><primary>prelude_option_warning_t</primary></indexterm>
+<refsect3 id="prelude-option-warning-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-WARNING-OPTION:CAPS">PRELUDE_OPTION_WARNING_OPTION</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-OPTION-WARNING-ARG:CAPS">PRELUDE_OPTION_WARNING_ARG</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+
+</refentry>

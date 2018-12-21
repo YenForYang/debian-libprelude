@@ -1,0 +1,915 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-idmef-message-print">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-idmef-message-print.top_of_page">idmef-message-print</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>idmef-message-print</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-idmef-message-print.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-additional-data-print">idmef_additional_data_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-reference-print">idmef_reference_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-classification-print">idmef_classification_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-user-id-print">idmef_user_id_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-user-print">idmef_user_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-address-print">idmef_address_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-process-print">idmef_process_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-web-service-print">idmef_web_service_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-snmp-service-print">idmef_snmp_service_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-service-print">idmef_service_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-node-print">idmef_node_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-source-print">idmef_source_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-file-access-print">idmef_file_access_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-inode-print">idmef_inode_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-checksum-print">idmef_checksum_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-file-print">idmef_file_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-linkage-print">idmef_linkage_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-target-print">idmef_target_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-analyzer-print">idmef_analyzer_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-alertident-print">idmef_alertident_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-impact-print">idmef_impact_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-action-print">idmef_action_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-confidence-print">idmef_confidence_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-assessment-print">idmef_assessment_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-tool-alert-print">idmef_tool_alert_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-correlation-alert-print">idmef_correlation_alert_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-overflow-alert-print">idmef_overflow_alert_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-alert-print">idmef_alert_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-heartbeat-print">idmef_heartbeat_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-message-print">idmef_message_print</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-idmef-message-print.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-idmef-message-print.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="idmef-additional-data-print" role="function">
+<title>idmef_additional_data_print&#160;()</title>
+<indexterm zone="idmef-additional-data-print"><primary>idmef_additional_data_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_additional_data_print (<parameter><link linkend="idmef-additional-data-t"><type>idmef_additional_data_t</type></link> *ptr</parameter>,
+                             <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-additional-data-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_additional_data_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-reference-print" role="function">
+<title>idmef_reference_print&#160;()</title>
+<indexterm zone="idmef-reference-print"><primary>idmef_reference_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_reference_print (<parameter><link linkend="idmef-reference-t"><type>idmef_reference_t</type></link> *ptr</parameter>,
+                       <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-reference-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_reference_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-classification-print" role="function">
+<title>idmef_classification_print&#160;()</title>
+<indexterm zone="idmef-classification-print"><primary>idmef_classification_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_classification_print (<parameter><link linkend="idmef-classification-t"><type>idmef_classification_t</type></link> *ptr</parameter>,
+                            <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-classification-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_classification_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-user-id-print" role="function">
+<title>idmef_user_id_print&#160;()</title>
+<indexterm zone="idmef-user-id-print"><primary>idmef_user_id_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_user_id_print (<parameter><link linkend="idmef-user-id-t"><type>idmef_user_id_t</type></link> *ptr</parameter>,
+                     <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-user-id-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_user_id_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-user-print" role="function">
+<title>idmef_user_print&#160;()</title>
+<indexterm zone="idmef-user-print"><primary>idmef_user_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_user_print (<parameter><link linkend="idmef-user-t"><type>idmef_user_t</type></link> *ptr</parameter>,
+                  <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-user-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_user_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-address-print" role="function">
+<title>idmef_address_print&#160;()</title>
+<indexterm zone="idmef-address-print"><primary>idmef_address_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_address_print (<parameter><link linkend="idmef-address-t"><type>idmef_address_t</type></link> *ptr</parameter>,
+                     <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-address-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_address_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-process-print" role="function">
+<title>idmef_process_print&#160;()</title>
+<indexterm zone="idmef-process-print"><primary>idmef_process_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_process_print (<parameter><link linkend="idmef-process-t"><type>idmef_process_t</type></link> *ptr</parameter>,
+                     <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-process-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_process_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-web-service-print" role="function">
+<title>idmef_web_service_print&#160;()</title>
+<indexterm zone="idmef-web-service-print"><primary>idmef_web_service_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_web_service_print (<parameter><link linkend="idmef-web-service-t"><type>idmef_web_service_t</type></link> *ptr</parameter>,
+                         <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-web-service-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_web_service_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-snmp-service-print" role="function">
+<title>idmef_snmp_service_print&#160;()</title>
+<indexterm zone="idmef-snmp-service-print"><primary>idmef_snmp_service_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_snmp_service_print (<parameter><link linkend="idmef-snmp-service-t"><type>idmef_snmp_service_t</type></link> *ptr</parameter>,
+                          <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-snmp-service-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_snmp_service_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-service-print" role="function">
+<title>idmef_service_print&#160;()</title>
+<indexterm zone="idmef-service-print"><primary>idmef_service_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_service_print (<parameter><link linkend="idmef-service-t"><type>idmef_service_t</type></link> *ptr</parameter>,
+                     <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-service-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_service_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-node-print" role="function">
+<title>idmef_node_print&#160;()</title>
+<indexterm zone="idmef-node-print"><primary>idmef_node_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_node_print (<parameter><link linkend="idmef-node-t"><type>idmef_node_t</type></link> *ptr</parameter>,
+                  <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-node-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_node_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-source-print" role="function">
+<title>idmef_source_print&#160;()</title>
+<indexterm zone="idmef-source-print"><primary>idmef_source_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_source_print (<parameter><link linkend="idmef-source-t"><type>idmef_source_t</type></link> *ptr</parameter>,
+                    <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-source-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_source_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-file-access-print" role="function">
+<title>idmef_file_access_print&#160;()</title>
+<indexterm zone="idmef-file-access-print"><primary>idmef_file_access_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_file_access_print (<parameter><link linkend="idmef-file-access-t"><type>idmef_file_access_t</type></link> *ptr</parameter>,
+                         <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-file-access-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_file_access_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-inode-print" role="function">
+<title>idmef_inode_print&#160;()</title>
+<indexterm zone="idmef-inode-print"><primary>idmef_inode_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_inode_print (<parameter><link linkend="idmef-inode-t"><type>idmef_inode_t</type></link> *ptr</parameter>,
+                   <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-inode-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_inode_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-checksum-print" role="function">
+<title>idmef_checksum_print&#160;()</title>
+<indexterm zone="idmef-checksum-print"><primary>idmef_checksum_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_checksum_print (<parameter><link linkend="idmef-checksum-t"><type>idmef_checksum_t</type></link> *ptr</parameter>,
+                      <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-checksum-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_checksum_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-file-print" role="function">
+<title>idmef_file_print&#160;()</title>
+<indexterm zone="idmef-file-print"><primary>idmef_file_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_file_print (<parameter><link linkend="idmef-file-t"><type>idmef_file_t</type></link> *ptr</parameter>,
+                  <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-file-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_file_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-linkage-print" role="function">
+<title>idmef_linkage_print&#160;()</title>
+<indexterm zone="idmef-linkage-print"><primary>idmef_linkage_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_linkage_print (<parameter><link linkend="idmef-linkage-t"><type>idmef_linkage_t</type></link> *ptr</parameter>,
+                     <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-linkage-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_linkage_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-target-print" role="function">
+<title>idmef_target_print&#160;()</title>
+<indexterm zone="idmef-target-print"><primary>idmef_target_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_target_print (<parameter><link linkend="idmef-target-t"><type>idmef_target_t</type></link> *ptr</parameter>,
+                    <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-target-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_target_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-analyzer-print" role="function">
+<title>idmef_analyzer_print&#160;()</title>
+<indexterm zone="idmef-analyzer-print"><primary>idmef_analyzer_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_analyzer_print (<parameter><link linkend="idmef-analyzer-t"><type>idmef_analyzer_t</type></link> *ptr</parameter>,
+                      <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-analyzer-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_analyzer_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-alertident-print" role="function">
+<title>idmef_alertident_print&#160;()</title>
+<indexterm zone="idmef-alertident-print"><primary>idmef_alertident_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_alertident_print (<parameter><link linkend="idmef-alertident-t"><type>idmef_alertident_t</type></link> *ptr</parameter>,
+                        <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-alertident-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_alertident_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-impact-print" role="function">
+<title>idmef_impact_print&#160;()</title>
+<indexterm zone="idmef-impact-print"><primary>idmef_impact_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_impact_print (<parameter><link linkend="idmef-impact-t"><type>idmef_impact_t</type></link> *ptr</parameter>,
+                    <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-impact-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_impact_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-action-print" role="function">
+<title>idmef_action_print&#160;()</title>
+<indexterm zone="idmef-action-print"><primary>idmef_action_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_action_print (<parameter><link linkend="idmef-action-t"><type>idmef_action_t</type></link> *ptr</parameter>,
+                    <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-action-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_action_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-confidence-print" role="function">
+<title>idmef_confidence_print&#160;()</title>
+<indexterm zone="idmef-confidence-print"><primary>idmef_confidence_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_confidence_print (<parameter><link linkend="idmef-confidence-t"><type>idmef_confidence_t</type></link> *ptr</parameter>,
+                        <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-confidence-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_confidence_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-assessment-print" role="function">
+<title>idmef_assessment_print&#160;()</title>
+<indexterm zone="idmef-assessment-print"><primary>idmef_assessment_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_assessment_print (<parameter><link linkend="idmef-assessment-t"><type>idmef_assessment_t</type></link> *ptr</parameter>,
+                        <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-assessment-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_assessment_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-tool-alert-print" role="function">
+<title>idmef_tool_alert_print&#160;()</title>
+<indexterm zone="idmef-tool-alert-print"><primary>idmef_tool_alert_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_tool_alert_print (<parameter><link linkend="idmef-tool-alert-t"><type>idmef_tool_alert_t</type></link> *ptr</parameter>,
+                        <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-tool-alert-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_tool_alert_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-correlation-alert-print" role="function">
+<title>idmef_correlation_alert_print&#160;()</title>
+<indexterm zone="idmef-correlation-alert-print"><primary>idmef_correlation_alert_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_correlation_alert_print (<parameter><link linkend="idmef-correlation-alert-t"><type>idmef_correlation_alert_t</type></link> *ptr</parameter>,
+                               <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-correlation-alert-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_correlation_alert_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-overflow-alert-print" role="function">
+<title>idmef_overflow_alert_print&#160;()</title>
+<indexterm zone="idmef-overflow-alert-print"><primary>idmef_overflow_alert_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_overflow_alert_print (<parameter><link linkend="idmef-overflow-alert-t"><type>idmef_overflow_alert_t</type></link> *ptr</parameter>,
+                            <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-overflow-alert-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_overflow_alert_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-alert-print" role="function">
+<title>idmef_alert_print&#160;()</title>
+<indexterm zone="idmef-alert-print"><primary>idmef_alert_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_alert_print (<parameter><link linkend="idmef-alert-t"><type>idmef_alert_t</type></link> *ptr</parameter>,
+                   <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-alert-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_alert_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-heartbeat-print" role="function">
+<title>idmef_heartbeat_print&#160;()</title>
+<indexterm zone="idmef-heartbeat-print"><primary>idmef_heartbeat_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_heartbeat_print (<parameter><link linkend="idmef-heartbeat-t"><type>idmef_heartbeat_t</type></link> *ptr</parameter>,
+                       <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-heartbeat-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_heartbeat_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-message-print" role="function">
+<title>idmef_message_print&#160;()</title>
+<indexterm zone="idmef-message-print"><primary>idmef_message_print</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_message_print (<parameter><link linkend="idmef-message-t"><type>idmef_message_t</type></link> *ptr</parameter>,
+                     <parameter><link linkend="prelude-io-t"><type>prelude_io_t</type></link> *fd</parameter>);</programlisting>
+<para>This function will convert <parameter>ptr</parameter>
+ to a string suitable for writing,
+and write it to the provided <parameter>fd</parameter>
+ descriptor.</para>
+<refsect3 id="idmef-message-print.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>ptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an idmef_message_t object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fd</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> object where to print <parameter>ptr</parameter>
+to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-idmef-message-print.other_details" role="details">
+<title role="details.title">Types and Values</title>
+
+</refsect1>
+
+</refentry>

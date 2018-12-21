@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-prelude-msgbuf">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-prelude-msgbuf.top_of_page">prelude-msgbuf</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>prelude-msgbuf</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-prelude-msgbuf.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-msgbuf-new">prelude_msgbuf_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-msgbuf-destroy">prelude_msgbuf_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-msgbuf-mark-end">prelude_msgbuf_mark_end</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-msgbuf-set">prelude_msgbuf_set</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-msg-t"><returnvalue>prelude_msg_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-msgbuf-get-msg">prelude_msgbuf_get_msg</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-msgbuf-set-callback">prelude_msgbuf_set_callback</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-msgbuf-set-data">prelude_msgbuf_set_data</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-msgbuf-get-data">prelude_msgbuf_get_data</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-msgbuf-set-flags">prelude_msgbuf_set_flags</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-msgbuf-flags-t"><returnvalue>prelude_msgbuf_flags_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-msgbuf-get-flags">prelude_msgbuf_get_flags</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-prelude-msgbuf.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="typedef_keyword">typedef</entry><entry role="function_name"><link linkend="prelude-msgbuf-t">prelude_msgbuf_t</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-msgbuf-flags-t">prelude_msgbuf_flags_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-prelude-msgbuf.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-msgbuf.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="prelude-msgbuf-new" role="function">
+<title>prelude_msgbuf_new&#160;()</title>
+<indexterm zone="prelude-msgbuf-new"><primary>prelude_msgbuf_new</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_msgbuf_new (<parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> **msgbuf</parameter>);</programlisting>
+<para>Create a new <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object and store it into <parameter>msgbuf</parameter>
+.
+You can then write data to <parameter>msgbuf</parameter>
+ using the <link linkend="prelude-msgbuf-set"><function>prelude_msgbuf_set()</function></link> function.</para>
+<para>When the message buffer is full, the message will be flushed using the
+user provided callback.</para>
+<refsect3 id="prelude-msgbuf-new.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>msgbuf</para></entry>
+<entry role="parameter_description"><para>Pointer where to store the created <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-msgbuf-new.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-msgbuf-destroy" role="function">
+<title>prelude_msgbuf_destroy&#160;()</title>
+<indexterm zone="prelude-msgbuf-destroy"><primary>prelude_msgbuf_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_msgbuf_destroy (<parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msgbuf</parameter>);</programlisting>
+<para>Destroy <parameter>msgbuf</parameter>
+, all data remaining will be flushed.</para>
+<refsect3 id="prelude-msgbuf-destroy.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>msgbuf</para></entry>
+<entry role="parameter_description"><para>Pointer on a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-msgbuf-mark-end" role="function">
+<title>prelude_msgbuf_mark_end&#160;()</title>
+<indexterm zone="prelude-msgbuf-mark-end"><primary>prelude_msgbuf_mark_end</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_msgbuf_mark_end (<parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msgbuf</parameter>);</programlisting>
+<para>This function should be called to tell the msgbuf subsystem
+that you finished writing your message.</para>
+<refsect3 id="prelude-msgbuf-mark-end.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>msgbuf</para></entry>
+<entry role="parameter_description"><para>Pointer on <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-msgbuf-set" role="function">
+<title>prelude_msgbuf_set&#160;()</title>
+<indexterm zone="prelude-msgbuf-set"><primary>prelude_msgbuf_set</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_msgbuf_set (<parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msgbuf</parameter>,
+                    <parameter><link linkend="uint8-t"><type>uint8_t</type></link> tag</parameter>,
+                    <parameter><link linkend="uint32-t"><type>uint32_t</type></link> len</parameter>,
+                    <parameter>const <link linkend="void"><type>void</type></link> *data</parameter>);</programlisting>
+<para>prelude_msgbuf_set() append <parameter>len</parameter>
+ bytes of data from the <parameter>data</parameter>
+ buffer
+to the <parameter>msgbuf</parameter>
+ object representing a message. The data is tagged with <parameter>tag</parameter>
+.</para>
+<refsect3 id="prelude-msgbuf-set.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>msgbuf</para></entry>
+<entry role="parameter_description"><para>Pointer on a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object to store the data to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>tag</para></entry>
+<entry role="parameter_description"><para>8 bits unsigned integer describing the kind of data.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>len</para></entry>
+<entry role="parameter_description"><para>len of the data chunk.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>data</para></entry>
+<entry role="parameter_description"><para>Pointer to the data.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-msgbuf-set.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-msgbuf-get-msg" role="function">
+<title>prelude_msgbuf_get_msg&#160;()</title>
+<indexterm zone="prelude-msgbuf-get-msg"><primary>prelude_msgbuf_get_msg</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-msg-t"><returnvalue>prelude_msg_t</returnvalue></link>&#160;*
+prelude_msgbuf_get_msg (<parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msgbuf</parameter>);</programlisting>
+<refsect3 id="prelude-msgbuf-get-msg.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>msgbuf</para></entry>
+<entry role="parameter_description"><para>Pointer on a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-msgbuf-get-msg.returns" role="returns">
+<title>Returns</title>
+<para> This function return the current message associated with
+the message buffer.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-msgbuf-set-callback" role="function">
+<title>prelude_msgbuf_set_callback&#160;()</title>
+<indexterm zone="prelude-msgbuf-set-callback"><primary>prelude_msgbuf_set_callback</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_msgbuf_set_callback (<parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msgbuf</parameter>,
+                             <parameter><link linkend="int"><type>int</type></link> (*send_msg) (prelude_msgbuf_t *msgbuf, prelude_msg_t *msg)</parameter>);</programlisting>
+<para>Associate an application specific callback to this <parameter>msgbuf</parameter>
+.</para>
+<refsect3 id="prelude-msgbuf-set-callback.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>msgbuf</para></entry>
+<entry role="parameter_description"><para>Pointer on a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>send_msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a function for sending a message.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-msgbuf-set-data" role="function">
+<title>prelude_msgbuf_set_data&#160;()</title>
+<indexterm zone="prelude-msgbuf-set-data"><primary>prelude_msgbuf_set_data</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_msgbuf_set_data (<parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msgbuf</parameter>,
+                         <parameter><link linkend="void"><type>void</type></link> *data</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-msgbuf-get-data" role="function">
+<title>prelude_msgbuf_get_data&#160;()</title>
+<indexterm zone="prelude-msgbuf-get-data"><primary>prelude_msgbuf_get_data</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>&#160;*
+prelude_msgbuf_get_data (<parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msgbuf</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-msgbuf-set-flags" role="function">
+<title>prelude_msgbuf_set_flags&#160;()</title>
+<indexterm zone="prelude-msgbuf-set-flags"><primary>prelude_msgbuf_set_flags</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_msgbuf_set_flags (<parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msgbuf</parameter>,
+                          <parameter><link linkend="prelude-msgbuf-flags-t"><type>prelude_msgbuf_flags_t</type></link> flags</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-msgbuf-get-flags" role="function">
+<title>prelude_msgbuf_get_flags&#160;()</title>
+<indexterm zone="prelude-msgbuf-get-flags"><primary>prelude_msgbuf_get_flags</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-msgbuf-flags-t"><returnvalue>prelude_msgbuf_flags_t</returnvalue></link>
+prelude_msgbuf_get_flags (<parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msgbuf</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-msgbuf.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="prelude-msgbuf-t" role="typedef">
+<title>prelude_msgbuf_t</title>
+<indexterm zone="prelude-msgbuf-t"><primary>prelude_msgbuf_t</primary></indexterm>
+<programlisting language="C">typedef struct prelude_msgbuf prelude_msgbuf_t;
+</programlisting>
+</refsect2>
+<refsect2 id="prelude-msgbuf-flags-t" role="enum">
+<title>enum prelude_msgbuf_flags_t</title>
+<indexterm zone="prelude-msgbuf-flags-t"><primary>prelude_msgbuf_flags_t</primary></indexterm>
+<refsect3 id="prelude-msgbuf-flags-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-MSGBUF-FLAGS-ASYNC:CAPS">PRELUDE_MSGBUF_FLAGS_ASYNC</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+
+</refentry>

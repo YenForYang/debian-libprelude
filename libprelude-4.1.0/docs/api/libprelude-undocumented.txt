@@ -1,0 +1,707 @@
+0% symbol docs coverage.
+1063 symbols documented.
+401 symbols incomplete.
+697 not documented.
+
+
+IDMEF_CLASS_ID_ACTION
+IDMEF_CLASS_ID_ACTION_CATEGORY
+IDMEF_CLASS_ID_ADDITIONAL_DATA
+IDMEF_CLASS_ID_ADDITIONAL_DATA_TYPE
+IDMEF_CLASS_ID_ADDRESS
+IDMEF_CLASS_ID_ADDRESS_CATEGORY
+IDMEF_CLASS_ID_ALERT
+IDMEF_CLASS_ID_ALERTIDENT
+IDMEF_CLASS_ID_ALERT_TYPE
+IDMEF_CLASS_ID_ANALYZER
+IDMEF_CLASS_ID_ASSESSMENT
+IDMEF_CLASS_ID_CHECKSUM
+IDMEF_CLASS_ID_CHECKSUM_ALGORITHM
+IDMEF_CLASS_ID_CLASSIFICATION
+IDMEF_CLASS_ID_CONFIDENCE
+IDMEF_CLASS_ID_CONFIDENCE_RATING
+IDMEF_CLASS_ID_CORRELATION_ALERT
+IDMEF_CLASS_ID_FILE
+IDMEF_CLASS_ID_FILE_ACCESS
+IDMEF_CLASS_ID_FILE_CATEGORY
+IDMEF_CLASS_ID_FILE_FSTYPE
+IDMEF_CLASS_ID_HEARTBEAT
+IDMEF_CLASS_ID_IMPACT
+IDMEF_CLASS_ID_IMPACT_COMPLETION
+IDMEF_CLASS_ID_IMPACT_SEVERITY
+IDMEF_CLASS_ID_IMPACT_TYPE
+IDMEF_CLASS_ID_INODE
+IDMEF_CLASS_ID_LINKAGE
+IDMEF_CLASS_ID_LINKAGE_CATEGORY
+IDMEF_CLASS_ID_MESSAGE
+IDMEF_CLASS_ID_MESSAGE_TYPE
+IDMEF_CLASS_ID_NODE
+IDMEF_CLASS_ID_NODE_CATEGORY
+IDMEF_CLASS_ID_OVERFLOW_ALERT
+IDMEF_CLASS_ID_PROCESS
+IDMEF_CLASS_ID_REFERENCE
+IDMEF_CLASS_ID_REFERENCE_ORIGIN
+IDMEF_CLASS_ID_SERVICE
+IDMEF_CLASS_ID_SERVICE_TYPE
+IDMEF_CLASS_ID_SNMP_SERVICE
+IDMEF_CLASS_ID_SOURCE
+IDMEF_CLASS_ID_SOURCE_SPOOFED
+IDMEF_CLASS_ID_TARGET
+IDMEF_CLASS_ID_TARGET_DECOY
+IDMEF_CLASS_ID_TOOL_ALERT
+IDMEF_CLASS_ID_USER
+IDMEF_CLASS_ID_USER_CATEGORY
+IDMEF_CLASS_ID_USER_ID
+IDMEF_CLASS_ID_USER_ID_TYPE
+IDMEF_CLASS_ID_WEB_SERVICE
+IDMEF_LIST_APPEND
+IDMEF_LIST_PREPEND
+LIBPRELUDE_VERSION
+PRELUDE_ASYNC_OBJECT
+PRELUDE_ERROR_SOURCE_DEFAULT
+PRELUDE_ERROR_SYSTEM_ERROR
+PRELUDE_INT16_MAX
+PRELUDE_INT16_MIN
+PRELUDE_INT32_MAX
+PRELUDE_INT32_MIN
+PRELUDE_INT64_MAX
+PRELUDE_INT64_MIN
+PRELUDE_INT8_MAX
+PRELUDE_INT8_MIN
+PRELUDE_INTMAX_MAX
+PRELUDE_INTMAX_MIN
+PRELUDE_LINKED_OBJECT
+PRELUDE_LIST (<parameters>)
+PRELUDE_OPTION_REPLY_TYPE_ERROR
+PRELUDE_OPTION_REPLY_TYPE_GET
+PRELUDE_OPTION_REPLY_TYPE_LIST
+PRELUDE_OPTION_REPLY_TYPE_SET
+PRELUDE_PLUGIN_API_VERSION
+PRELUDE_PLUGIN_GENERIC
+PRELUDE_PLUGIN_OPTION_DECLARE_STRING_CB (<parameters>)
+PRELUDE_PLUGIN_SET_PRELOADED_SYMBOLS
+PRELUDE_PRIX16
+PRELUDE_PRIX32
+PRELUDE_PRIX64
+PRELUDE_PRIX8
+PRELUDE_PRId16
+PRELUDE_PRId32
+PRELUDE_PRId64
+PRELUDE_PRId8
+PRELUDE_PRIi16
+PRELUDE_PRIi32
+PRELUDE_PRIi64
+PRELUDE_PRIi8
+PRELUDE_PRIo16
+PRELUDE_PRIo32
+PRELUDE_PRIo64
+PRELUDE_PRIo8
+PRELUDE_PRIu16
+PRELUDE_PRIu32
+PRELUDE_PRIu64
+PRELUDE_PRIu8
+PRELUDE_PRIx16
+PRELUDE_PRIx32
+PRELUDE_PRIx64
+PRELUDE_PRIx8
+PRELUDE_SCNd64
+PRELUDE_SCNi64
+PRELUDE_SCNo64
+PRELUDE_SCNu64
+PRELUDE_SCNx64
+PRELUDE_UINT16_MAX
+PRELUDE_UINT32_MAX
+PRELUDE_UINT64_MAX
+PRELUDE_UINT8_MAX
+PRELUDE_UINTMAX_MAX
+data
+idmef_action_category_t (<items>)
+idmef_action_category_to_numeric
+idmef_action_t
+idmef_additional_data_copy_dup (<parameters>)
+idmef_additional_data_copy_ref (<parameters>)
+idmef_additional_data_data_to_string (<parameters>)
+idmef_additional_data_get_boolean (<parameters>)
+idmef_additional_data_get_byte (<parameters>)
+idmef_additional_data_get_character (<parameters>)
+idmef_additional_data_get_integer (<parameters>)
+idmef_additional_data_get_len (<parameters>)
+idmef_additional_data_get_real (<parameters>)
+idmef_additional_data_is_empty (<parameters>)
+idmef_additional_data_new_boolean (<parameters>)
+idmef_additional_data_new_byte (<parameters>)
+idmef_additional_data_new_byte_string_dup (<parameters>)
+idmef_additional_data_new_byte_string_nodup (<parameters>)
+idmef_additional_data_new_byte_string_ref (<parameters>)
+idmef_additional_data_new_character (<parameters>)
+idmef_additional_data_new_integer (<parameters>)
+idmef_additional_data_new_real (<parameters>)
+idmef_additional_data_set_boolean (<parameters>)
+idmef_additional_data_set_byte (<parameters>)
+idmef_additional_data_set_byte_string_dup (<parameters>)
+idmef_additional_data_set_byte_string_nodup (<parameters>)
+idmef_additional_data_set_byte_string_ref (<parameters>)
+idmef_additional_data_set_character (<parameters>)
+idmef_additional_data_set_integer (<parameters>)
+idmef_additional_data_set_real (<parameters>)
+idmef_additional_data_t
+idmef_additional_data_type_t (<items>)
+idmef_additional_data_type_to_numeric
+idmef_address_category_t (<items>)
+idmef_address_category_to_numeric
+idmef_address_t
+idmef_address_unset_vlan_num (<parameters>)
+idmef_alert_t
+idmef_alert_type_t (<items>)
+idmef_alert_type_to_numeric
+idmef_alertident_t
+idmef_analyzer_t
+idmef_assessment_t
+idmef_checksum_algorithm_t (<items>)
+idmef_checksum_algorithm_to_numeric
+idmef_checksum_t
+idmef_classification_t
+idmef_confidence_rating_t (<items>)
+idmef_confidence_rating_to_numeric
+idmef_confidence_t
+idmef_correlation_alert_t
+idmef_criteria_and_criteria (<parameters>)
+idmef_criteria_get_and (<parameters>)
+idmef_criteria_get_criterion (<parameters>)
+idmef_criteria_get_negation (<parameters>)
+idmef_criteria_get_or (<parameters>)
+idmef_criteria_is_criterion (<parameters>)
+idmef_criteria_new_from_string (<parameters>)
+idmef_criteria_or_criteria (<parameters>)
+idmef_criteria_print (<parameters>)
+idmef_criteria_set_criterion (<parameters>)
+idmef_criteria_set_negation (<parameters>)
+idmef_criteria_t
+idmef_criteria_to_string (<parameters>)
+idmef_criterion_operator_t (<items>)
+idmef_criterion_t
+idmef_criterion_value_clone (<parameters>)
+idmef_criterion_value_destroy (<parameters>)
+idmef_criterion_value_get_broken_down_time (<parameters>)
+idmef_criterion_value_get_regex (<parameters>)
+idmef_criterion_value_get_type (<parameters>)
+idmef_criterion_value_get_value (<parameters>)
+idmef_criterion_value_match (<parameters>)
+idmef_criterion_value_new (<parameters>)
+idmef_criterion_value_new_broken_down_time (<parameters>)
+idmef_criterion_value_new_from_string (<parameters>)
+idmef_criterion_value_new_regex (<parameters>)
+idmef_criterion_value_new_value (<parameters>)
+idmef_criterion_value_print (<parameters>)
+idmef_criterion_value_t
+idmef_criterion_value_to_string (<parameters>)
+idmef_criterion_value_type_t (<items>)
+idmef_data_clone (<parameters>)
+idmef_data_compare (<parameters>)
+idmef_data_destroy_internal (<parameters>)
+idmef_data_get_byte (<parameters>)
+idmef_data_get_byte_string (<parameters>)
+idmef_data_get_char (<parameters>)
+idmef_data_get_char_string (<parameters>)
+idmef_data_get_data
+idmef_data_get_float (<parameters>)
+idmef_data_get_len
+idmef_data_get_type
+idmef_data_is_empty
+idmef_data_new (<parameters>)
+idmef_data_new_byte (<parameters>)
+idmef_data_new_byte_string_dup (<parameters>)
+idmef_data_new_byte_string_nodup (<parameters>)
+idmef_data_new_byte_string_ref (<parameters>)
+idmef_data_new_char (<parameters>)
+idmef_data_new_char_string_dup (<parameters>)
+idmef_data_new_char_string_dup_fast (<parameters>)
+idmef_data_new_char_string_nodup (<parameters>)
+idmef_data_new_char_string_nodup_fast (<parameters>)
+idmef_data_new_char_string_ref (<parameters>)
+idmef_data_new_char_string_ref_fast (<parameters>)
+idmef_data_new_float (<parameters>)
+idmef_data_new_ptr_dup_fast (<parameters>)
+idmef_data_new_ptr_nodup_fast (<parameters>)
+idmef_data_new_ptr_ref_fast (<parameters>)
+idmef_data_ref (<parameters>)
+idmef_data_set_byte (<parameters>)
+idmef_data_set_byte_string_dup (<parameters>)
+idmef_data_set_byte_string_nodup (<parameters>)
+idmef_data_set_byte_string_ref (<parameters>)
+idmef_data_set_char (<parameters>)
+idmef_data_set_char_string_constant (<parameters>)
+idmef_data_set_char_string_dup (<parameters>)
+idmef_data_set_char_string_dup_fast (<parameters>)
+idmef_data_set_char_string_nodup (<parameters>)
+idmef_data_set_char_string_nodup_fast (<parameters>)
+idmef_data_set_char_string_ref (<parameters>)
+idmef_data_set_char_string_ref_fast (<parameters>)
+idmef_data_set_float (<parameters>)
+idmef_data_set_ptr_dup_fast (<parameters>)
+idmef_data_set_ptr_nodup_fast (<parameters>)
+idmef_data_set_ptr_ref_fast (<parameters>)
+idmef_data_type_t (<items>)
+idmef_file_access_t
+idmef_file_category_t (<items>)
+idmef_file_category_to_numeric
+idmef_file_fstype_t (<items>)
+idmef_file_fstype_to_numeric
+idmef_file_t
+idmef_file_unset_data_size (<parameters>)
+idmef_file_unset_disk_size (<parameters>)
+idmef_file_unset_fstype (<parameters>)
+idmef_heartbeat_t
+idmef_heartbeat_unset_heartbeat_interval (<parameters>)
+idmef_impact_completion_t (<items>)
+idmef_impact_completion_to_numeric
+idmef_impact_severity_t (<items>)
+idmef_impact_severity_to_numeric
+idmef_impact_t
+idmef_impact_type_t (<items>)
+idmef_impact_type_to_numeric
+idmef_impact_unset_completion (<parameters>)
+idmef_impact_unset_severity (<parameters>)
+idmef_inode_t
+idmef_inode_unset_c_major_device (<parameters>)
+idmef_inode_unset_c_minor_device (<parameters>)
+idmef_inode_unset_major_device (<parameters>)
+idmef_inode_unset_minor_device (<parameters>)
+idmef_inode_unset_number (<parameters>)
+idmef_linkage_category_t (<items>)
+idmef_linkage_category_to_numeric
+idmef_linkage_t
+idmef_message_get_data (<parameters>)
+idmef_message_get_pmsg (<parameters>)
+idmef_message_set_pmsg (<parameters>)
+idmef_message_t
+idmef_message_type_t (<items>)
+idmef_message_type_to_numeric
+idmef_node_category_t (<items>)
+idmef_node_category_to_numeric
+idmef_node_t
+idmef_overflow_alert_t
+idmef_overflow_alert_unset_size (<parameters>)
+idmef_path_get (object)
+idmef_path_get_depth
+idmef_path_has_lists
+idmef_path_is_list (<parameters>)
+idmef_path_set (object)
+idmef_path_t
+idmef_process_t
+idmef_process_unset_pid (<parameters>)
+idmef_reference_origin_t (<items>)
+idmef_reference_origin_to_numeric
+idmef_reference_t
+idmef_service_t
+idmef_service_type_t (<items>)
+idmef_service_type_to_numeric
+idmef_service_unset_iana_protocol_number (<parameters>)
+idmef_service_unset_ip_version (<parameters>)
+idmef_service_unset_port (<parameters>)
+idmef_snmp_service_get_community
+idmef_snmp_service_new_community
+idmef_snmp_service_set_community
+idmef_snmp_service_t
+idmef_snmp_service_unset_message_processing_model (<parameters>)
+idmef_snmp_service_unset_security_level (<parameters>)
+idmef_snmp_service_unset_security_model (<parameters>)
+idmef_source_spoofed_t (<items>)
+idmef_source_spoofed_to_numeric
+idmef_source_t
+idmef_target_decoy_t (<items>)
+idmef_target_decoy_to_numeric
+idmef_target_t
+idmef_time_compare
+idmef_time_destroy_internal (<parameters>)
+idmef_time_t
+idmef_tool_alert_t
+idmef_user_category_t (<items>)
+idmef_user_category_to_numeric
+idmef_user_id_t
+idmef_user_id_type_t (<items>)
+idmef_user_id_type_to_numeric
+idmef_user_id_unset_number (<parameters>)
+idmef_user_t
+idmef_value_clone (<parameters>)
+idmef_value_dont_have_own_data (<parameters>)
+idmef_value_get (<parameters>)
+idmef_value_get_class (<parameters>)
+idmef_value_get_count (<parameters>)
+idmef_value_get_data (<parameters>)
+idmef_value_get_double (<parameters>)
+idmef_value_get_enum (<parameters>)
+idmef_value_get_float (<parameters>)
+idmef_value_get_int16 (<parameters>)
+idmef_value_get_int32 (<parameters>)
+idmef_value_get_int64 (<parameters>)
+idmef_value_get_int8 (<parameters>)
+idmef_value_get_nth (<parameters>)
+idmef_value_get_object (<parameters>)
+idmef_value_get_string (<parameters>)
+idmef_value_get_time (<parameters>)
+idmef_value_get_type (<parameters>)
+idmef_value_get_uint16 (<parameters>)
+idmef_value_get_uint32 (<parameters>)
+idmef_value_get_uint64 (<parameters>)
+idmef_value_get_uint8 (<parameters>)
+idmef_value_have_own_data (<parameters>)
+idmef_value_is_list (<parameters>)
+idmef_value_iterate (<parameters>)
+idmef_value_iterate_reversed (<parameters>)
+idmef_value_list_add (<parameters>)
+idmef_value_list_is_empty (<parameters>)
+idmef_value_new (<parameters>)
+idmef_value_new_class (<parameters>)
+idmef_value_new_data (<parameters>)
+idmef_value_new_double (<parameters>)
+idmef_value_new_enum (<parameters>)
+idmef_value_new_enum_from_numeric (<parameters>)
+idmef_value_new_enum_from_string (<parameters>)
+idmef_value_new_float (<parameters>)
+idmef_value_new_from_path (<parameters>)
+idmef_value_new_from_string (<parameters>)
+idmef_value_new_int16 (<parameters>)
+idmef_value_new_int32 (<parameters>)
+idmef_value_new_int64 (<parameters>)
+idmef_value_new_int8 (<parameters>)
+idmef_value_new_list (<parameters>)
+idmef_value_new_string (<parameters>)
+idmef_value_new_time (<parameters>)
+idmef_value_new_uint16 (<parameters>)
+idmef_value_new_uint32 (<parameters>)
+idmef_value_new_uint64 (<parameters>)
+idmef_value_new_uint8 (<parameters>)
+idmef_value_print (<parameters>)
+idmef_value_ref (<parameters>)
+idmef_value_set_class (<parameters>)
+idmef_value_set_data (<parameters>)
+idmef_value_set_double (<parameters>)
+idmef_value_set_enum (<parameters>)
+idmef_value_set_enum_from_numeric (<parameters>)
+idmef_value_set_enum_from_string (<parameters>)
+idmef_value_set_float (<parameters>)
+idmef_value_set_int16 (<parameters>)
+idmef_value_set_int32 (<parameters>)
+idmef_value_set_int64 (<parameters>)
+idmef_value_set_int8 (<parameters>)
+idmef_value_set_string (<parameters>)
+idmef_value_set_time (<parameters>)
+idmef_value_set_uint16 (<parameters>)
+idmef_value_set_uint32 (<parameters>)
+idmef_value_set_uint64 (<parameters>)
+idmef_value_set_uint8 (<parameters>)
+idmef_value_t
+idmef_value_to_string (<parameters>)
+idmef_web_service_t
+int16_t
+int32_t
+int64_t
+int8_t
+lt_preloaded_symbols
+prelude_async_callback_t (<parameters>)
+prelude_async_exit
+prelude_async_object_t
+prelude_bool_t (<items>)
+prelude_client_exit_status_t (<items>)
+prelude_client_flags_t (<items>)
+prelude_client_get_profile (<parameters>)
+prelude_client_get_required_permission
+prelude_client_get_unique_ident (<parameters>)
+prelude_client_handle_msg_default (<parameters>)
+prelude_client_new_msgbuf (<parameters>)
+prelude_client_print_setup_error (<parameters>)
+prelude_client_profile_get_credentials (<parameters>)
+prelude_client_profile_get_default_config_dirname (<parameters>)
+prelude_client_profile_get_profile_dirname (<parameters>)
+prelude_client_profile_ref (<parameters>)
+prelude_client_profile_t
+prelude_client_ref (<parameters>)
+prelude_client_t
+prelude_connection_close (<parameters>)
+prelude_connection_connect (<parameters>)
+prelude_connection_forward (<parameters>)
+prelude_connection_get_data (<parameters>)
+prelude_connection_get_default_socket_filename
+prelude_connection_get_fd
+prelude_connection_get_local_addr
+prelude_connection_get_local_port
+prelude_connection_get_peer_addr (<parameters>)
+prelude_connection_get_peer_analyzerid (<parameters>)
+prelude_connection_get_peer_port (<parameters>)
+prelude_connection_get_permission (<parameters>)
+prelude_connection_get_state (<parameters>)
+prelude_connection_is_alive
+prelude_connection_new (<parameters>)
+prelude_connection_new_msgbuf (<parameters>)
+prelude_connection_permission_new_from_string (<parameters>)
+prelude_connection_permission_t (<items>)
+prelude_connection_permission_to_string (<parameters>)
+prelude_connection_pool_event_t (<items>)
+prelude_connection_pool_flags_t (<items>)
+prelude_connection_pool_get_connection_list
+prelude_connection_pool_get_flags
+prelude_connection_pool_set_required_permission (<parameters>)
+prelude_connection_pool_t
+prelude_connection_recv (<parameters>)
+prelude_connection_recv_idmef (<parameters>)
+prelude_connection_send (<parameters>)
+prelude_connection_set_data (<parameters>)
+prelude_connection_set_fd_nodup (<parameters>)
+prelude_connection_set_fd_ref (<parameters>)
+prelude_connection_set_peer_analyzerid (<parameters>)
+prelude_connection_set_state (<parameters>)
+prelude_connection_state_t (<items>)
+prelude_connection_t
+prelude_error_code_from_errno
+prelude_error_code_t (<items>)
+prelude_error_code_to_errno
+prelude_error_get_code
+prelude_error_get_source
+prelude_error_is_verbose
+prelude_error_source_t (<items>)
+prelude_error_t
+prelude_failover_commit (<parameters>)
+prelude_failover_destroy (<parameters>)
+prelude_failover_disable_transaction (<parameters>)
+prelude_failover_enable_transaction (<parameters>)
+prelude_failover_get_available_msg_count (<parameters>)
+prelude_failover_get_deleted_msg_count (<parameters>)
+prelude_failover_get_saved_msg (<parameters>)
+prelude_failover_new (<parameters>)
+prelude_failover_rollback (<parameters>)
+prelude_failover_save_msg (<parameters>)
+prelude_failover_set_quota (<parameters>)
+prelude_failover_t
+prelude_fork_child
+prelude_fork_parent
+prelude_fork_prepare
+prelude_gid_t
+prelude_hash_destroy (<parameters>)
+prelude_hash_elem_destroy (<parameters>)
+prelude_hash_get (<parameters>)
+prelude_hash_iterate (<parameters>)
+prelude_hash_new (<parameters>)
+prelude_hash_new2 (<parameters>)
+prelude_hash_set (<parameters>)
+prelude_hash_t
+prelude_ident_t
+prelude_io_get_fd
+prelude_io_get_fdptr
+prelude_io_set_buffer_io (<parameters>)
+prelude_io_t
+prelude_linked_object_get_object (<parameters>)
+prelude_linked_object_t
+prelude_list_get_next (<parameters>)
+prelude_list_get_next_safe (<parameters>)
+prelude_list_t (<items>)
+prelude_log (<parameters>)
+prelude_log_debug (<parameters>)
+prelude_log_debug_v (<parameters>)
+prelude_log_flags_t (<items>)
+prelude_log_get_flags
+prelude_log_get_prefix
+prelude_log_set_debug_level (<parameters>)
+prelude_log_set_flags
+prelude_log_set_level (<parameters>)
+prelude_log_set_logfile (<parameters>)
+prelude_log_t (<items>)
+prelude_log_v (<parameters>)
+prelude_msg_get_message_data (<parameters>)
+prelude_msg_get_time (<parameters>)
+prelude_msg_is_empty
+prelude_msg_is_fragment
+prelude_msg_priority_t (<items>)
+prelude_msg_ref (<parameters>)
+prelude_msg_t
+prelude_msgbuf_flags_t (<items>)
+prelude_msgbuf_get_data (<parameters>)
+prelude_msgbuf_get_flags (<parameters>)
+prelude_msgbuf_get_msg
+prelude_msgbuf_set_data (<parameters>)
+prelude_msgbuf_set_flags (<parameters>)
+prelude_msgbuf_t
+prelude_option_argument_t (<items>)
+prelude_option_commit_callback_t (<parameters>)
+prelude_option_context_destroy (<parameters>)
+prelude_option_context_get_data (<parameters>)
+prelude_option_context_set_data (<parameters>)
+prelude_option_context_t
+prelude_option_destroy_callback_t (<parameters>)
+prelude_option_get_callback_t (<parameters>)
+prelude_option_get_commit_callback (<parameters>)
+prelude_option_get_data (<parameters>)
+prelude_option_get_description (<parameters>)
+prelude_option_get_destroy_callback (<parameters>)
+prelude_option_get_get_callback (<parameters>)
+prelude_option_get_has_arg (<parameters>)
+prelude_option_get_help (<parameters>)
+prelude_option_get_input_type (<parameters>)
+prelude_option_get_input_validation_regex (<parameters>)
+prelude_option_get_longname (<parameters>)
+prelude_option_get_longopt (<parameters>)
+prelude_option_get_next (<parameters>)
+prelude_option_get_optlist (<parameters>)
+prelude_option_get_parent (<parameters>)
+prelude_option_get_set_callback (<parameters>)
+prelude_option_get_shortname (<parameters>)
+prelude_option_get_type (<parameters>)
+prelude_option_get_value (<parameters>)
+prelude_option_has_optlist (<parameters>)
+prelude_option_input_type_t (<items>)
+prelude_option_invoke_commit (<parameters>)
+prelude_option_invoke_destroy (<parameters>)
+prelude_option_invoke_get (<parameters>)
+prelude_option_invoke_set (<parameters>)
+prelude_option_new (<parameters>)
+prelude_option_new_context (<parameters>)
+prelude_option_new_request (<parameters>)
+prelude_option_new_root (<parameters>)
+prelude_option_priority_t (<items>)
+prelude_option_process_request (<parameters>)
+prelude_option_push_request (<parameters>)
+prelude_option_recv_reply (<parameters>)
+prelude_option_search (<parameters>)
+prelude_option_search_context (<parameters>)
+prelude_option_set_callback_t (<parameters>)
+prelude_option_set_commit_callback (<parameters>)
+prelude_option_set_data (<parameters>)
+prelude_option_set_default_context (<parameters>)
+prelude_option_set_description (<parameters>)
+prelude_option_set_destroy_callback (<parameters>)
+prelude_option_set_get_callback (<parameters>)
+prelude_option_set_has_arg (<parameters>)
+prelude_option_set_help (<parameters>)
+prelude_option_set_input_type (<parameters>)
+prelude_option_set_input_validation_regex (<parameters>)
+prelude_option_set_longopt (<parameters>)
+prelude_option_set_set_callback (<parameters>)
+prelude_option_set_type (<parameters>)
+prelude_option_set_value (<parameters>)
+prelude_option_set_warnings (<parameters>)
+prelude_option_t
+prelude_option_type_t (<items>)
+prelude_option_warning_t (<items>)
+prelude_option_wide_send_msg (<parameters>)
+prelude_plugin_compute_stats (<parameters>)
+prelude_plugin_entry_set_plugin (<parameters>)
+prelude_plugin_entry_t
+prelude_plugin_generic_t
+prelude_plugin_get_name (<parameters>)
+prelude_plugin_get_next (<parameters>)
+prelude_plugin_instance_call_commit_func (<parameters>)
+prelude_plugin_instance_compute_time (<parameters>)
+prelude_plugin_instance_get_data (<parameters>)
+prelude_plugin_instance_get_name (<parameters>)
+prelude_plugin_instance_get_plugin (<parameters>)
+prelude_plugin_instance_get_plugin_data (<parameters>)
+prelude_plugin_instance_has_commit_func (<parameters>)
+prelude_plugin_instance_set_data (<parameters>)
+prelude_plugin_instance_set_plugin_data (<parameters>)
+prelude_plugin_instance_subscribe (<parameters>)
+prelude_plugin_instance_t
+prelude_plugin_new_instance (<parameters>)
+prelude_plugin_run (<parameters>)
+prelude_plugin_search_instance_by_name (<parameters>)
+prelude_plugin_set_activation_option (<parameters>)
+prelude_plugin_set_destroy_func (<parameters>)
+prelude_plugin_set_name (<parameters>)
+prelude_plugin_set_preloaded_symbols (<parameters>)
+prelude_plugin_unload (<parameters>)
+prelude_strerror (<parameters>)
+prelude_string_destroy_internal (<parameters>)
+prelude_string_ncat (<parameters>)
+prelude_string_new_constant (<parameters>)
+prelude_string_set_constant (<parameters>)
+prelude_string_t
+prelude_strsource (<parameters>)
+prelude_thread_init (<parameters>)
+prelude_timer_get_callback (<parameters>)
+prelude_timer_get_data (<parameters>)
+prelude_timer_get_expire (<parameters>)
+prelude_timer_set_callback (<parameters>)
+prelude_timer_set_data (<parameters>)
+prelude_timer_set_expire (<parameters>)
+prelude_timer_t (<items>)
+prelude_uid_t
+uint16_t
+uint32_t
+uint64_t
+uint8_t
+
+idmef_data_get_uint32 (<parameters>)
+idmef_data_get_uint64 (<parameters>)
+idmef_data_new_uint32 (<parameters>)
+idmef_data_new_uint64 (<parameters>)
+idmef_data_set_uint32 (<parameters>)
+idmef_data_set_uint64 (<parameters>)
+prelude_client_get_setup_error (<parameters>)
+
+idmef-additional-data:Long_Description
+idmef-additional-data:Short_Description
+idmef-criteria:Long_Description
+idmef-criteria:Short_Description
+idmef-criterion-value:Long_Description
+idmef-criterion-value:Short_Description
+idmef-data:Long_Description
+idmef-data:Short_Description
+idmef-message-print:Long_Description
+idmef-message-print:Short_Description
+idmef-message-read:Long_Description
+idmef-message-read:Short_Description
+idmef-message-write:Long_Description
+idmef-message-write:Short_Description
+idmef-path:Long_Description
+idmef-path:Short_Description
+idmef-time:Long_Description
+idmef-time:Short_Description
+idmef-tree-wrap:Long_Description
+idmef-tree-wrap:Short_Description
+idmef-value:Long_Description
+idmef-value:Short_Description
+idmef:Long_Description
+idmef:Short_Description
+prelude-async:Long_Description
+prelude-async:Short_Description
+prelude-client-profile:Long_Description
+prelude-client-profile:Short_Description
+prelude-client:Long_Description
+prelude-client:Short_Description
+prelude-connection-pool:Long_Description
+prelude-connection-pool:Short_Description
+prelude-connection:Long_Description
+prelude-connection:Short_Description
+prelude-error:Long_Description
+prelude-error:Short_Description
+prelude-failover:Long_Description
+prelude-failover:Short_Description
+prelude-hash:Long_Description
+prelude-hash:Short_Description
+prelude-ident:Long_Description
+prelude-ident:Short_Description
+prelude-inttypes:Long_Description
+prelude-inttypes:Short_Description
+prelude-io:Long_Description
+prelude-io:Short_Description
+prelude-linked-object:Long_Description
+prelude-linked-object:Short_Description
+prelude-list:Long_Description
+prelude-list:Short_Description
+prelude-log:Long_Description
+prelude-log:Short_Description
+prelude-msg:Long_Description
+prelude-msg:Short_Description
+prelude-msgbuf:Long_Description
+prelude-msgbuf:Short_Description
+prelude-option-wide:Long_Description
+prelude-option-wide:Short_Description
+prelude-option:Long_Description
+prelude-option:Short_Description
+prelude-plugin:Long_Description
+prelude-plugin:Short_Description
+prelude-string:Long_Description
+prelude-string:Short_Description
+prelude-timer:Long_Description
+prelude-timer:Short_Description
+prelude:Long_Description
+prelude:Short_Description

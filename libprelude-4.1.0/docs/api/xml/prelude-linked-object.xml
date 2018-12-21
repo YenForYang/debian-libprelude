@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-prelude-linked-object">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-prelude-linked-object.top_of_page">prelude-linked-object</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>prelude-linked-object</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-prelude-linked-object.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-linked-object-get-object">prelude_linked_object_get_object</link><phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-prelude-linked-object.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="PRELUDE-LINKED-OBJECT:CAPS">PRELUDE_LINKED_OBJECT</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="prelude-linked-object-t">prelude_linked_object_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-prelude-linked-object.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-linked-object.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="prelude-linked-object-get-object" role="macro">
+<title>prelude_linked_object_get_object()</title>
+<indexterm zone="prelude-linked-object-get-object"><primary>prelude_linked_object_get_object</primary></indexterm>
+<programlisting language="C">#define             prelude_linked_object_get_object(object)</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-linked-object.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="PRELUDE-LINKED-OBJECT:CAPS" role="macro">
+<title>PRELUDE_LINKED_OBJECT</title>
+<indexterm zone="PRELUDE-LINKED-OBJECT:CAPS"><primary>PRELUDE_LINKED_OBJECT</primary></indexterm>
+<programlisting language="C">#define             PRELUDE_LINKED_OBJECT</programlisting>
+</refsect2>
+<refsect2 id="prelude-linked-object-t" role="struct">
+<title>prelude_linked_object_t</title>
+<indexterm zone="prelude-linked-object-t"><primary>prelude_linked_object_t</primary></indexterm>
+<programlisting language="C">typedef struct {
+        PRELUDE_LINKED_OBJECT;
+} prelude_linked_object_t;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

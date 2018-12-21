@@ -1,0 +1,13 @@
+Package: libprelude-lua-dbgsym
+Source: libprelude
+Version: 4.1.0-4.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Installed-Size: 491
+Depends: libprelude-lua (= 4.1.0-4.2)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libprelude-lua
+Build-Ids: 3a873ebb3f5245c024f068e8d7306878c4953cc8 c80221648c0b2dbdf0b4e0962b59c6f44c17cbbc

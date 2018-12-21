@@ -1,0 +1,7 @@
+<!ENTITY package "libprelude">
+<!ENTITY package_bugreport "">
+<!ENTITY package_name "libprelude">
+<!ENTITY package_string "libprelude 4.1.0">
+<!ENTITY package_tarname "libprelude">
+<!ENTITY package_url "">
+<!ENTITY package_version "4.1.0">

@@ -1,0 +1,13 @@
+Package: libprelude23-dbgsym
+Source: libprelude
+Version: 4.1.0-4.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Installed-Size: 2303
+Depends: libprelude23 (= 4.1.0-4.2)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libprelude23
+Build-Ids: 852287bc46777edd7cfa2c729812ed8eff93b91b b57475c08efe34f2b0d3c9d39a5df33e7141534f

@@ -1,0 +1,22 @@
+Package: libprelude-perl
+Source: libprelude
+Version: 4.1.0-4.2
+Architecture: amd64
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Installed-Size: 471
+Depends: perl (>= 5.28.1-1), perlapi-5.28.1, libprelude23 (= 4.1.0-4.2), libc6 (>= 2.2.5), libpreludecpp8 (>= 3.1.0-0.5~)
+Section: perl
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.prelude-siem.org/
+Description: Security Information and Events Management system [ Perl bindings ]
+ The Prelude Library is a collection of generic functions providing
+ communication between the Prelude SIEM suite components. It provides a
+ convenient interface for sending alerts to Prelude Manager with transparent
+ SSL, failover and replication support, asynchronous events and timer
+ interfaces, an abstracted configuration API (hooking at the commandline, the
+ configuration line, or wide configuration, available from the Manager), and a
+ generic plugin API. It allows you to easily turn your favorite security
+ program into a Prelude sensor.
+ .
+ This package contains the perl bindings for Prelude.

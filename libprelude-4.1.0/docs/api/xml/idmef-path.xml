@@ -1,0 +1,796 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-idmef-path">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-idmef-path.top_of_page">idmef-path</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>idmef-path</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-idmef-path.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-get">idmef_path_get</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-set">idmef_path_set</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-new">idmef_path_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-new-v">idmef_path_new_v</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-new-fast">idmef_path_new_fast</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="idmef-class-id-t"><returnvalue>idmef_class_id_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-get-class">idmef_path_get_class</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="idmef-value-type-id-t"><returnvalue>idmef_value_type_id_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-get-value-type">idmef_path_get_value_type</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-set-index">idmef_path_set_index</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-undefine-index">idmef_path_undefine_index</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-get-index">idmef_path_get_index</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-make-child">idmef_path_make_child</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-make-parent">idmef_path_make_parent</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-destroy">idmef_path_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-ncompare">idmef_path_ncompare</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-compare">idmef_path_compare</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-clone">idmef_path_clone</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="idmef-path-t"><returnvalue>idmef_path_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="idmef-path-ref">idmef_path_ref</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="idmef-path-get-name">idmef_path_get_name</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-is-ambiguous">idmef_path_is_ambiguous</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-has-lists">idmef_path_has_lists</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-is-list">idmef_path_is_list</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">unsigned <link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-get-depth">idmef_path_get_depth</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-check-operator">idmef_path_check_operator</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-path-get-applicable-operators">idmef_path_get_applicable_operators</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-idmef-path.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="typedef_keyword">typedef</entry><entry role="function_name"><link linkend="idmef-path-t">idmef_path_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-idmef-path.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-idmef-path.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="idmef-path-get" role="function">
+<title>idmef_path_get&#160;()</title>
+<indexterm zone="idmef-path-get"><primary>idmef_path_get</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_get (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                <parameter><link linkend="void"><type>void</type></link> *object</parameter>,
+                <parameter><link linkend="idmef-value-t"><type>idmef_value_t</type></link> **ret</parameter>);</programlisting>
+<para>This function retrieves the value for <parameter>path</parameter>
+ within <parameter>message</parameter>
+,
+and stores it into the provided <parameter>ret</parameter>
+ address of type <link linkend="idmef-value-t"><type>idmef_value_t</type></link>.</para>
+<refsect3 id="idmef-path-get.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>obj</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-object-t"><type>idmef_object_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>ret</para></entry>
+<entry role="parameter_description"><para>Address where to store the retrieved <link linkend="idmef-value-t"><type>idmef_value_t</type></link>.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-get.returns" role="returns">
+<title>Returns</title>
+<para> The number of element retrieved, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-set" role="function">
+<title>idmef_path_set&#160;()</title>
+<indexterm zone="idmef-path-set"><primary>idmef_path_set</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_set (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                <parameter><link linkend="void"><type>void</type></link> *object</parameter>,
+                <parameter><link linkend="idmef-value-t"><type>idmef_value_t</type></link> *value</parameter>);</programlisting>
+<para>This function sets the provided <parameter>value</parameter>
+ for <parameter>path</parameter>
+ within <parameter>message</parameter>
+.</para>
+<refsect3 id="idmef-path-set.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>obj</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-object-t"><type>idmef_object_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>value</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-value-t"><type>idmef_value_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-set.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-new" role="function">
+<title>idmef_path_new&#160;()</title>
+<indexterm zone="idmef-path-new"><primary>idmef_path_new</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_new (<parameter><link linkend="idmef-path-t"><type>idmef_path_t</type></link> **path</parameter>,
+                <parameter>const <link linkend="char"><type>char</type></link> *format</parameter>);</programlisting>
+<para>Creates an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object pointing to the provided format
+string <parameter>format</parameter>
+ and @..., and stores it within <parameter>path</parameter>
+.</para>
+<refsect3 id="idmef-path-new.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Address where to store the created <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>format</para></entry>
+<entry role="parameter_description"><para>Format string.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>...</para></entry>
+<entry role="parameter_description"><para>Arguments list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-new.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-new-v" role="function">
+<title>idmef_path_new_v&#160;()</title>
+<indexterm zone="idmef-path-new-v"><primary>idmef_path_new_v</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_new_v (<parameter><link linkend="idmef-path-t"><type>idmef_path_t</type></link> **path</parameter>,
+                  <parameter>const <link linkend="char"><type>char</type></link> *format</parameter>);</programlisting>
+<para>Creates an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object pointing to the provided format
+string <parameter>format</parameter>
+ and <parameter>args</parameter>
+, and stores it within <parameter>path</parameter>
+.</para>
+<refsect3 id="idmef-path-new-v.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Address where to store the created <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>format</para></entry>
+<entry role="parameter_description"><para>Format string.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>args</para></entry>
+<entry role="parameter_description"><para>Pointer to a variable argument list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-new-v.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-new-fast" role="function">
+<title>idmef_path_new_fast&#160;()</title>
+<indexterm zone="idmef-path-new-fast"><primary>idmef_path_new_fast</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_new_fast (<parameter><link linkend="idmef-path-t"><type>idmef_path_t</type></link> **path</parameter>,
+                     <parameter>const <link linkend="char"><type>char</type></link> *buffer</parameter>);</programlisting>
+<para>Creates a <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object pointing to <parameter>buffer</parameter>
+, and stores it within <parameter>path</parameter>
+.</para>
+<refsect3 id="idmef-path-new-fast.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Address where to store the created <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>buffer</para></entry>
+<entry role="parameter_description"><para>Name of the path to create.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-new-fast.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-get-class" role="function">
+<title>idmef_path_get_class&#160;()</title>
+<indexterm zone="idmef-path-get-class"><primary>idmef_path_get_class</primary></indexterm>
+<programlisting language="C"><link linkend="idmef-class-id-t"><returnvalue>idmef_class_id_t</returnvalue></link>
+idmef_path_get_class (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                      <parameter><link linkend="int"><type>int</type></link> depth</parameter>);</programlisting>
+<para>Retrieves the <link linkend="idmef-class-id-t"><type>idmef_class_id_t</type></link> value for the element of <parameter>path</parameter>
+
+located at <parameter>depth</parameter>
+. If depth is -1, the last element depth is addressed.</para>
+<refsect3 id="idmef-path-get-class.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>depth</para></entry>
+<entry role="parameter_description"><para>Depth of <parameter>path</parameter>
+to retrieve the <link linkend="idmef-class-id-t"><type>idmef_class_id_t</type></link> from.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-get-class.returns" role="returns">
+<title>Returns</title>
+<para> The <link linkend="idmef-class-id-t"><type>idmef_class_id_t</type></link> for the elemnt, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-get-value-type" role="function">
+<title>idmef_path_get_value_type&#160;()</title>
+<indexterm zone="idmef-path-get-value-type"><primary>idmef_path_get_value_type</primary></indexterm>
+<programlisting language="C"><link linkend="idmef-value-type-id-t"><returnvalue>idmef_value_type_id_t</returnvalue></link>
+idmef_path_get_value_type (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                           <parameter><link linkend="int"><type>int</type></link> depth</parameter>);</programlisting>
+<para>Retrieves the <link linkend="idmef-value-type-id-t"><type>idmef_value_type_id_t</type></link> identifying the type of value
+acceptable for this path element, for the <parameter>path</parameter>
+ element located at
+<parameter>depth</parameter>
+. If depth is -1, the last element depth is addressed.</para>
+<refsect3 id="idmef-path-get-value-type.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>depth</para></entry>
+<entry role="parameter_description"><para>Depth of <parameter>path</parameter>
+to retrieve the <link linkend="idmef-value-type-id-t"><type>idmef_value_type_id_t</type></link> from.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-get-value-type.returns" role="returns">
+<title>Returns</title>
+<para> The <link linkend="idmef-value-type-id-t"><type>idmef_value_type_id_t</type></link> for the element, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-set-index" role="function">
+<title>idmef_path_set_index&#160;()</title>
+<indexterm zone="idmef-path-set-index"><primary>idmef_path_set_index</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_set_index (<parameter><link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                      <parameter>unsigned <link linkend="int"><type>int</type></link> depth</parameter>,
+                      <parameter><link linkend="int"><type>int</type></link> index</parameter>);</programlisting>
+<para>Modifies <parameter>index</parameter>
+ for the element located at <parameter>depth</parameter>
+ of provided <parameter>path</parameter>
+.
+This function is only applicable for element that accept listed value.</para>
+<refsect3 id="idmef-path-set-index.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>depth</para></entry>
+<entry role="parameter_description"><para>Depth of <parameter>path</parameter>
+to set <parameter>index</parameter>
+for.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>index</para></entry>
+<entry role="parameter_description"><para>Index for the provided element <parameter>depth</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-set-index.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-undefine-index" role="function">
+<title>idmef_path_undefine_index&#160;()</title>
+<indexterm zone="idmef-path-undefine-index"><primary>idmef_path_undefine_index</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_undefine_index (<parameter><link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                           <parameter>unsigned <link linkend="int"><type>int</type></link> depth</parameter>);</programlisting>
+<para>Modifies the element located at <parameter>depth</parameter>
+ of provided <parameter>path</parameter>
+ so that it's
+index is undefined.</para>
+<para>This function is only applicable for element that accept listed value.</para>
+<refsect3 id="idmef-path-undefine-index.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>depth</para></entry>
+<entry role="parameter_description"><para>Depth of <parameter>path</parameter>
+to undefine the index for.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-undefine-index.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-get-index" role="function">
+<title>idmef_path_get_index&#160;()</title>
+<indexterm zone="idmef-path-get-index"><primary>idmef_path_get_index</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_get_index (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                      <parameter>unsigned <link linkend="int"><type>int</type></link> depth</parameter>);</programlisting>
+<para>Gets the current index for element located at <parameter>depth</parameter>
+ of <parameter>path</parameter>
+.
+This function is only applicable for element that accepts listed value.</para>
+<refsect3 id="idmef-path-get-index.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>depth</para></entry>
+<entry role="parameter_description"><para>Depth of <parameter>path</parameter>
+to retrieve the index from.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-get-index.returns" role="returns">
+<title>Returns</title>
+<para> The element index, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-make-child" role="function">
+<title>idmef_path_make_child&#160;()</title>
+<indexterm zone="idmef-path-make-child"><primary>idmef_path_make_child</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_make_child (<parameter><link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                       <parameter>const <link linkend="char"><type>char</type></link> *child_name</parameter>,
+                       <parameter><link linkend="int"><type>int</type></link> index</parameter>);</programlisting>
+<para>Modifies <parameter>path</parameter>
+ so that it points to the child node identified by <parameter>child_name</parameter>
+,
+children of the current path. That is if the path is currently pointing to
+alert.classification, and <parameter>child_name</parameter>
+ is set to "text", <parameter>path</parameter>
+ will be
+modified to point to alert.classification.text.</para>
+<refsect3 id="idmef-path-make-child.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>child_name</para></entry>
+<entry role="parameter_description"><para>Name of the child element to create.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>index</para></entry>
+<entry role="parameter_description"><para>Index for <parameter>child_name</parameter>
+, if applicable.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-make-child.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-make-parent" role="function">
+<title>idmef_path_make_parent&#160;()</title>
+<indexterm zone="idmef-path-make-parent"><primary>idmef_path_make_parent</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_make_parent (<parameter><link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>);</programlisting>
+<para>Removes the last element of the path. That is, if <parameter>path</parameter>
+ is currently pointing to
+alert.classification, <parameter>path</parameter>
+ will be modified to point to alert.</para>
+<refsect3 id="idmef-path-make-parent.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-make-parent.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-destroy" role="function">
+<title>idmef_path_destroy&#160;()</title>
+<indexterm zone="idmef-path-destroy"><primary>idmef_path_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_path_destroy (<parameter><link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>);</programlisting>
+<para>Destroys the provided <parameter>path</parameter>
+ object.</para>
+<refsect3 id="idmef-path-destroy.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-ncompare" role="function">
+<title>idmef_path_ncompare&#160;()</title>
+<indexterm zone="idmef-path-ncompare"><primary>idmef_path_ncompare</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_ncompare (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *p1</parameter>,
+                     <parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *p2</parameter>,
+                     <parameter>unsigned <link linkend="int"><type>int</type></link> depth</parameter>);</programlisting>
+<para>Compares <parameter>p1</parameter>
+ and <parameter>p2</parameter>
+ elements up to <parameter>depth</parameter>
+.</para>
+<refsect3 id="idmef-path-ncompare.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>p1</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>p2</para></entry>
+<entry role="parameter_description"><para>Pointer to another <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>depth</para></entry>
+<entry role="parameter_description"><para>Maximum depth to use for path comparison.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-ncompare.returns" role="returns">
+<title>Returns</title>
+<para> 0 if both element match, a negative value otherwise.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-compare" role="function">
+<title>idmef_path_compare&#160;()</title>
+<indexterm zone="idmef-path-compare"><primary>idmef_path_compare</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_compare (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *p1</parameter>,
+                    <parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *p2</parameter>);</programlisting>
+<para>Compares <parameter>p1</parameter>
+ and <parameter>p2</parameter>
+ elements.</para>
+<refsect3 id="idmef-path-compare.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>p1</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>p2</para></entry>
+<entry role="parameter_description"><para>Pointer to another <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-compare.returns" role="returns">
+<title>Returns</title>
+<para> 0 if both element match, a negative value otherwise.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-clone" role="function">
+<title>idmef_path_clone&#160;()</title>
+<indexterm zone="idmef-path-clone"><primary>idmef_path_clone</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_clone (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *src</parameter>,
+                  <parameter><link linkend="idmef-path-t"><type>idmef_path_t</type></link> **dst</parameter>);</programlisting>
+<para>Clones <parameter>src</parameter>
+ and stores the result in the provided <parameter>dst</parameter>
+ address.</para>
+<refsect3 id="idmef-path-clone.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>src</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>dst</para></entry>
+<entry role="parameter_description"><para>Address where to store the copy of <parameter>src</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-clone.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value otherwise.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-ref" role="function">
+<title>idmef_path_ref&#160;()</title>
+<indexterm zone="idmef-path-ref"><primary>idmef_path_ref</primary></indexterm>
+<programlisting language="C"><link linkend="idmef-path-t"><returnvalue>idmef_path_t</returnvalue></link>&#160;*
+idmef_path_ref (<parameter><link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>);</programlisting>
+<para>Increases <parameter>path</parameter>
+ reference count.</para>
+<para>idmef_path_destroy() will destroy the refcount until it reaches 0,
+at which point the path will be destroyed.</para>
+<refsect3 id="idmef-path-ref.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-ref.returns" role="returns">
+<title>Returns</title>
+<para> The provided <parameter>path</parameter>
+is returned.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-get-name" role="function">
+<title>idmef_path_get_name&#160;()</title>
+<indexterm zone="idmef-path-get-name"><primary>idmef_path_get_name</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+idmef_path_get_name (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                     <parameter><link linkend="int"><type>int</type></link> depth</parameter>);</programlisting>
+<para>Returns the full path name if the provided <parameter>depth</parameter>
+ is -1, or the specific
+element name if depth is set. That is, for a <parameter>path</parameter>
+ pointing to
+"alert.classification.text": A depth of -1 would return "alert.classification.text";
+a depth of 0 would return "alert"; a depth of 1 would return "classification"; and
+a depth of 2 would return "text".</para>
+<refsect3 id="idmef-path-get-name.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>depth</para></entry>
+<entry role="parameter_description"><para>Depth of the <parameter>path</parameter>
+element to get the name from.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-get-name.returns" role="returns">
+<title>Returns</title>
+<para> <parameter>path</parameter>
+name relative to the provided <parameter>dept</parameter>
+.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-is-ambiguous" role="function">
+<title>idmef_path_is_ambiguous&#160;()</title>
+<indexterm zone="idmef-path-is-ambiguous"><primary>idmef_path_is_ambiguous</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+idmef_path_is_ambiguous (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>);</programlisting>
+<para>Returns TRUE if <parameter>path</parameter>
+ contain elements that are supposed
+to be listed, but for which no index were provided.</para>
+<refsect3 id="idmef-path-is-ambiguous.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-is-ambiguous.returns" role="returns">
+<title>Returns</title>
+<para> TRUE if the object is ambiguous, FALSE otherwise.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-has-lists" role="function">
+<title>idmef_path_has_lists&#160;()</title>
+<indexterm zone="idmef-path-has-lists"><primary>idmef_path_has_lists</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_has_lists (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>);</programlisting>
+<refsect3 id="idmef-path-has-lists.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-has-lists.returns" role="returns">
+<title>Returns</title>
+<para> the number of listed element within <parameter>path</parameter>
+.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-is-list" role="function">
+<title>idmef_path_is_list&#160;()</title>
+<indexterm zone="idmef-path-is-list"><primary>idmef_path_is_list</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+idmef_path_is_list (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                    <parameter><link linkend="int"><type>int</type></link> depth</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-path-get-depth" role="function">
+<title>idmef_path_get_depth&#160;()</title>
+<indexterm zone="idmef-path-get-depth"><primary>idmef_path_get_depth</primary></indexterm>
+<programlisting language="C">unsigned <link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_get_depth (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>);</programlisting>
+<refsect3 id="idmef-path-get-depth.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-get-depth.returns" role="returns">
+<title>Returns</title>
+<para> <parameter>depth</parameter>
+number of elements.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-check-operator" role="function">
+<title>idmef_path_check_operator&#160;()</title>
+<indexterm zone="idmef-path-check-operator"><primary>idmef_path_check_operator</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_check_operator (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                           <parameter><link linkend="idmef-criterion-operator-t"><type>idmef_criterion_operator_t</type></link> op</parameter>);</programlisting>
+<para>Check whether <parameter>op</parameter>
+ can apply to value pointed to by <parameter>path</parameter>
+.</para>
+<refsect3 id="idmef-path-check-operator.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>op</para></entry>
+<entry role="parameter_description"><para>Operator to check compatibility with.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-check-operator.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-path-get-applicable-operators" role="function">
+<title>idmef_path_get_applicable_operators&#160;()</title>
+<indexterm zone="idmef-path-get-applicable-operators"><primary>idmef_path_get_applicable_operators</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_path_get_applicable_operators (<parameter>const <link linkend="idmef-path-t"><type>idmef_path_t</type></link> *path</parameter>,
+                                     <parameter><link linkend="idmef-criterion-operator-t"><type>idmef_criterion_operator_t</type></link> *result</parameter>);</programlisting>
+<para>Retrieve all applicable operator that might be used by the type of
+value pointed to by <parameter>path</parameter>
+.</para>
+<refsect3 id="idmef-path-get-applicable-operators.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>path</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-path-t"><type>idmef_path_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>result</para></entry>
+<entry role="parameter_description"><para>Pointer to storage for applicable operator.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-path-get-applicable-operators.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-idmef-path.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="idmef-path-t" role="typedef">
+<title>idmef_path_t</title>
+<indexterm zone="idmef-path-t"><primary>idmef_path_t</primary></indexterm>
+<programlisting language="C">typedef struct idmef_path idmef_path_t;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

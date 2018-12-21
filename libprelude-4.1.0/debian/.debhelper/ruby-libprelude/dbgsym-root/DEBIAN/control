@@ -1,0 +1,13 @@
+Package: ruby-libprelude-dbgsym
+Source: libprelude
+Version: 4.1.0-4.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Installed-Size: 803
+Depends: ruby-libprelude (= 4.1.0-4.2)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for ruby-libprelude
+Build-Ids: 0841cfd3489465b4e492d5162b558aeb6cca30af 45e314e249a7b050a77f5f9738723d280a45feba

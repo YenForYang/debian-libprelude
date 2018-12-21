@@ -1,0 +1,5 @@
+debian/tmp/usr/lib/*/lib*.so
+debian/tmp/usr/lib/*/lib*.la
+debian/tmp/usr/bin/libprelude-config
+debian/tmp/usr/include/libprelude/*
+debian/tmp/usr/share/libprelude/swig/*

@@ -1,0 +1,182 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: libprelude
+Upstream-Contact: Thomas Andrejak <thomas.andrejak@gmail.com>
+Source: https://www.prelude-siem.org
+
+Files: *
+Copyright: 2011-2017 CS SI Prelude Team <support.prelude@c-s.fr>
+License: GPL-2
+
+Files: src/include/idmef-class.h
+Copyright: 2002, 2003, 2004 Krzysztof Zaraska <kzaraska@student.uci.agh.edu.pl>
+License: GPL-2+
+
+Files: src/libprelude-error/*
+Copyright: 2003, 2004 g10 Code GmbH
+License: LGPL-2.1+
+
+Files: src/libprelude-error/Makefile.in
+Copyright: 1994-2009  Free Software Foundation, Inc.
+License: LGPL-2.1+
+
+Files: src/libprelude-error/prelude-error.*
+Copyright: 2004-2017 CS SI Prelude Team <support.prelude@c-s.fr>
+License: GPL-2
+
+Files: m4/*
+Copyright: 1994-2014 Free Software Foundation, Inc.
+License: LGPL-2.1+
+
+Files: m4/ax_check_aligned_access_required.m4 
+Copyright: 2008 Guido U. Draheim <guidod@gmx.de>
+License: GPL-3+
+
+Files: m4/ax_check_link_flag.m4 m4/ax_check_compile_flag.m4
+Copyright: 2008 Guido U. Draheim <guidod@gmx.de>
+           2011 Maarten Bosmans <mkbosmans@gmail.com>
+License: GPL-3+
+
+Files: m4/pkg.m4
+Copyright: 2004 Scott James Remnant <scott@netsplit.com>.
+License: GPL-2+
+
+Files: libltdl/* libmissing/*
+Copyright: 1994-2017 Free Software Foundation, Inc.
+License: LGPL-2.1+
+
+Files: libmissing/inet_pton.c
+Copyright: 2006, 2008-2017 Free Software Foundation, Inc.
+           1996,1999 by Internet Software Consortium.
+License: LGPL-2.1+
+
+Files: libmissing/inet_ntop.c
+Copyright: 2005-2006, 2008-2017 Free Software Foundation, Inc.
+           1996,1999 by Internet Software Consortium.
+License: LGPL-2.1+
+
+Files: install-sh
+Copyright: 1994 X Consortium
+License: MIT
+
+Files: debian/*
+Copyright: 2002 Thomas Seyrat <tomasera@debian.org>
+      2016-2018 Thomas Andrejak <thomas.andrejak@gmail.com>
+License: GPL-1
+
+License: MIT
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to
+   deal in the Software without restriction, including without limitation the
+   rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+   sell copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+   .
+   The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+   .
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+   X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+   AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNEC-
+   TION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+   .
+   Except as contained in this notice, the name of the X Consortium shall not
+   be used in advertising or otherwise to promote the sale, use or other deal-
+   ings in this Software without prior written authorization from the X Consor-
+   tium.
+
+License: GPL-3+
+   This program is free software: you can redistribute it and/or modify it
+   under the terms of the GNU General Public License as published by the
+   Free Software Foundation, either version 3 of the License, or (at your
+   option) any later version.
+   .
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+   General Public License for more details.
+   .
+   You should have received a copy of the GNU General Public License
+   along with this package; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301
+   USA
+   .
+   On Debian systems, the full text of the GNU General Public License
+   version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
+
+
+License: LGPL-2.1+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public License
+   as published by the Free Software Foundation; either version 2.1 of
+   the License, or (at your option) any later version.
+   .
+   This library is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+   Lesser General Public License for more details.
+   .
+   You should have received a copy of the GNU Lesser General Public License
+   along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301
+   USA
+   .
+   On Debian systems, the full text of the GNU Lesser General Public License
+   version 2.1 can be found in the file
+   `/usr/share/common-licenses/LGPL-2.1'.
+
+License: GPL-2+
+   This program is free software; you can redistribute it and/or modify it
+   under the terms of the GNU General Public License as published by the Free
+   Software Foundation; either version 2 of the license, or (at your option)
+   any later version.
+   .
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+   General Public License for more details.
+   .
+   You should have received a copy of the GNU General Public License
+   along with this package; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301
+   USA
+   .
+   On Debian systems, the full text of the GNU General Public License
+   version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-2
+   This program is free software; you can redistribute it and/or modify it
+   under the terms of the GNU General Public License as published by the Free
+   Software Foundation; version 2 dated June, 1991.
+   .
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+   General Public License for more details.
+   .
+   You should have received a copy of the GNU General Public License
+   along with this package; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301
+   USA
+   .
+   On Debian systems, the full text of the GNU General Public License
+   version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-1
+   This program is free software; you can redistribute it and/or modify it
+   under the terms of the GNU General Public License as published by the Free
+   Software Foundation; version 1.
+   .
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+   General Public License for more details.
+   .
+   You should have received a copy of the GNU General Public License
+   along with this package; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301
+   USA
+   .
+   On Debian systems, the full text of the GNU General Public License
+   version 1 can be found in the file `/usr/share/common-licenses/GPL-1'.

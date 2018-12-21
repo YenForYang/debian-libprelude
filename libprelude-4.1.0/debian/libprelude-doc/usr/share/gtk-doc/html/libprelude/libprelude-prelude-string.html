@@ -1,0 +1,1405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>prelude-string: libprelude Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libprelude Reference Manual">
+<link rel="up" href="ch01.html" title="[Insert title here]">
+<link rel="prev" href="libprelude-prelude-connection.html" title="prelude-connection">
+<link rel="next" href="libprelude-idmef-message-print.html" title="idmef-message-print">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libprelude-prelude-string.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libprelude-prelude-connection.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libprelude-idmef-message-print.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libprelude-prelude-string"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libprelude-prelude-string.top_of_page"></a>prelude-string</span></h2>
+<p>prelude-string</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libprelude-prelude-string.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-new" title="prelude_string_new ()">prelude_string_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-new-nodup" title="prelude_string_new_nodup ()">prelude_string_new_nodup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-new-ref" title="prelude_string_new_ref ()">prelude_string_new_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-new-dup" title="prelude_string_new_dup ()">prelude_string_new_dup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-new-dup-fast" title="prelude_string_new_dup_fast ()">prelude_string_new_dup_fast</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-destroy" title="prelude_string_destroy ()">prelude_string_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-destroy-internal" title="prelude_string_destroy_internal ()">prelude_string_destroy_internal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-new-nodup-fast" title="prelude_string_new_nodup_fast ()">prelude_string_new_nodup_fast</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-new-ref-fast" title="prelude_string_new_ref_fast ()">prelude_string_new_ref_fast</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-set-dup-fast" title="prelude_string_set_dup_fast ()">prelude_string_set_dup_fast</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-set-dup" title="prelude_string_set_dup ()">prelude_string_set_dup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-set-nodup-fast" title="prelude_string_set_nodup_fast ()">prelude_string_set_nodup_fast</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-set-nodup" title="prelude_string_set_nodup ()">prelude_string_set_nodup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-set-ref-fast" title="prelude_string_set_ref_fast ()">prelude_string_set_ref_fast</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-set-ref" title="prelude_string_set_ref ()">prelude_string_set_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-copy-ref" title="prelude_string_copy_ref ()">prelude_string_copy_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-copy-dup" title="prelude_string_copy_dup ()">prelude_string_copy_dup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="returnvalue">prelude_string_t</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-ref" title="prelude_string_ref ()">prelude_string_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-clone" title="prelude_string_clone ()">prelude_string_clone</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">size_t</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-get-len" title="prelude_string_get_len ()">prelude_string_get_len</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-get-string-or-default" title="prelude_string_get_string_or_default ()">prelude_string_get_string_or_default</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-get-string" title="prelude_string_get_string ()">prelude_string_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-get-string-released" title="prelude_string_get_string_released ()">prelude_string_get_string_released</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-inttypes.html#prelude-bool-t" title="enum prelude_bool_t"><span class="returnvalue">prelude_bool_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-is-empty" title="prelude_string_is_empty ()">prelude_string_is_empty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-clear" title="prelude_string_clear ()">prelude_string_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-cat" title="prelude_string_cat ()">prelude_string_cat</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-ncat" title="prelude_string_ncat ()">prelude_string_ncat</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-sprintf" title="prelude_string_sprintf ()">prelude_string_sprintf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-vprintf" title="prelude_string_vprintf ()">prelude_string_vprintf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-set-constant" title="prelude_string_set_constant()">prelude_string_set_constant</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-new-constant" title="prelude_string_new_constant()">prelude_string_new_constant</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-string.html#prelude-string-compare" title="prelude_string_compare ()">prelude_string_compare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-string.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t">prelude_string_t</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-string.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-string.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="prelude-string-new"></a><h3>prelude_string_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_new (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> **string</code></em>);</pre>
+<p>Create a new <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object, and store in in <em class="parameter"><code>string</code></em>
+.</p>
+<div class="refsect3">
+<a name="prelude-string-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer where to store the created <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-new.returns"></a><h4>Returns</h4>
+<p> 0 on success, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-new-nodup"></a><h3>prelude_string_new_nodup ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_new_nodup (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> **string</code></em>,
+                          <em class="parameter"><code><span class="type">char</span> *str</code></em>);</pre>
+<p>Create a new <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object with a reference to <em class="parameter"><code>str</code></em>
+ as
+initial value.  <em class="parameter"><code>str</code></em>
+ is owned by <em class="parameter"><code>string</code></em>
+ and will be freed upon
+<a class="link" href="libprelude-prelude-string.html#prelude-string-destroy" title="prelude_string_destroy ()"><code class="function">prelude_string_destroy()</code></a>.</p>
+<div class="refsect3">
+<a name="prelude-string-new-nodup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer where to store the created <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>Initial string value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-new-nodup.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-new-ref"></a><h3>prelude_string_new_ref ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_new_ref (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> **string</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *str</code></em>);</pre>
+<p>Create a new <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object with a reference to <em class="parameter"><code>str</code></em>
+ as
+initial value. <em class="parameter"><code>str</code></em>
+ won't be freed upon <a class="link" href="libprelude-prelude-string.html#prelude-string-destroy" title="prelude_string_destroy ()"><code class="function">prelude_string_destroy()</code></a>.</p>
+<div class="refsect3">
+<a name="prelude-string-new-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer where to store the created <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>Initial string value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-new-ref.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-new-dup"></a><h3>prelude_string_new_dup ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_new_dup (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> **string</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *str</code></em>);</pre>
+<p>Create a new <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object with a copy of <em class="parameter"><code>str</code></em>
+ as it's
+initial value. The copy is owned by the <em class="parameter"><code>string</code></em>
+ and will be freed
+upon <a class="link" href="libprelude-prelude-string.html#prelude-string-destroy" title="prelude_string_destroy ()"><code class="function">prelude_string_destroy()</code></a>.</p>
+<div class="refsect3">
+<a name="prelude-string-new-dup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer where to store the created <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>Initial string value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-new-dup.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-new-dup-fast"></a><h3>prelude_string_new_dup_fast ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_new_dup_fast (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> **string</code></em>,
+                             <em class="parameter"><code>const <span class="type">char</span> *str</code></em>,
+                             <em class="parameter"><code><span class="type">size_t</span> len</code></em>);</pre>
+<p>Create a new <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object with a copy of <em class="parameter"><code>str</code></em>
+ as it's
+initial value.  The copy is owned by the <em class="parameter"><code>string</code></em>
+ and will be freed
+upon <a class="link" href="libprelude-prelude-string.html#prelude-string-destroy" title="prelude_string_destroy ()"><code class="function">prelude_string_destroy()</code></a>.</p>
+<div class="refsect3">
+<a name="prelude-string-new-dup-fast.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer where to store the created <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>Initial string value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>len</p></td>
+<td class="parameter_description"><p>Lenght of <em class="parameter"><code>str</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-new-dup-fast.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-destroy"></a><h3>prelude_string_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+prelude_string_destroy (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>);</pre>
+<p>Decrease refcount and destroy <em class="parameter"><code>string</code></em>
+.
+<em class="parameter"><code>string</code></em>
+ content content is destroyed if applicable (dup and nodup,
+or a referenced string that have been modified.</p>
+<div class="refsect3">
+<a name="prelude-string-destroy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-destroy-internal"></a><h3>prelude_string_destroy_internal ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+prelude_string_destroy_internal (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-new-nodup-fast"></a><h3>prelude_string_new_nodup_fast ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_new_nodup_fast (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> **string</code></em>,
+                               <em class="parameter"><code><span class="type">char</span> *str</code></em>,
+                               <em class="parameter"><code><span class="type">size_t</span> len</code></em>);</pre>
+<p>Create a new <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object with a reference to <em class="parameter"><code>str</code></em>
+ as
+initial value.  <em class="parameter"><code>str</code></em>
+ is owned by <em class="parameter"><code>string</code></em>
+ and will be freed upon
+<a class="link" href="libprelude-prelude-string.html#prelude-string-destroy" title="prelude_string_destroy ()"><code class="function">prelude_string_destroy()</code></a>.</p>
+<div class="refsect3">
+<a name="prelude-string-new-nodup-fast.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer where to store the created <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>Initial string value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>len</p></td>
+<td class="parameter_description"><p>Lenght of <em class="parameter"><code>str</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-new-nodup-fast.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-new-ref-fast"></a><h3>prelude_string_new_ref_fast ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_new_ref_fast (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> **string</code></em>,
+                             <em class="parameter"><code>const <span class="type">char</span> *str</code></em>,
+                             <em class="parameter"><code><span class="type">size_t</span> len</code></em>);</pre>
+<p>Create a new <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object with a reference to <em class="parameter"><code>str</code></em>
+ as
+initial value. <em class="parameter"><code>str</code></em>
+ won't be freed upon <a class="link" href="libprelude-prelude-string.html#prelude-string-destroy" title="prelude_string_destroy ()"><code class="function">prelude_string_destroy()</code></a>.</p>
+<div class="refsect3">
+<a name="prelude-string-new-ref-fast.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer where to store the created <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>Initial string value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>len</p></td>
+<td class="parameter_description"><p>Length of <em class="parameter"><code>str</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-new-ref-fast.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-set-dup-fast"></a><h3>prelude_string_set_dup_fast ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_set_dup_fast (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>,
+                             <em class="parameter"><code>const <span class="type">char</span> *buf</code></em>,
+                             <em class="parameter"><code><span class="type">size_t</span> len</code></em>);</pre>
+<p>Store a copy of the string pointed by <em class="parameter"><code>buf</code></em>
+ in <em class="parameter"><code>string</code></em>
+.
+The <em class="parameter"><code>buf</code></em>
+ copy will be freed upon <a class="link" href="libprelude-prelude-string.html#prelude-string-destroy" title="prelude_string_destroy ()"><code class="function">prelude_string_destroy()</code></a>.</p>
+<div class="refsect3">
+<a name="prelude-string-set-dup-fast.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>String to store in <em class="parameter"><code>string</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>len</p></td>
+<td class="parameter_description"><p>Lenght of <em class="parameter"><code>buf</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-set-dup-fast.returns"></a><h4>Returns</h4>
+<p> 0 on success, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-set-dup"></a><h3>prelude_string_set_dup ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_set_dup (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *buf</code></em>);</pre>
+<p>Store a copy of the string pointed by <em class="parameter"><code>buf</code></em>
+ in <em class="parameter"><code>string</code></em>
+.
+The <em class="parameter"><code>buf</code></em>
+ copy will be freed upon <a class="link" href="libprelude-prelude-string.html#prelude-string-destroy" title="prelude_string_destroy ()"><code class="function">prelude_string_destroy()</code></a>.</p>
+<div class="refsect3">
+<a name="prelude-string-set-dup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>String to store in <em class="parameter"><code>string</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-set-dup.returns"></a><h4>Returns</h4>
+<p> 0 on success, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-set-nodup-fast"></a><h3>prelude_string_set_nodup_fast ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_set_nodup_fast (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>,
+                               <em class="parameter"><code><span class="type">char</span> *buf</code></em>,
+                               <em class="parameter"><code><span class="type">size_t</span> len</code></em>);</pre>
+<p>Store a reference to the string pointed by <em class="parameter"><code>buf</code></em>
+ in <em class="parameter"><code>string</code></em>
+.
+The referenced <em class="parameter"><code>buf</code></em>
+ will be freed upon <a class="link" href="libprelude-prelude-string.html#prelude-string-destroy" title="prelude_string_destroy ()"><code class="function">prelude_string_destroy()</code></a>.</p>
+<div class="refsect3">
+<a name="prelude-string-set-nodup-fast.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>String to store in <em class="parameter"><code>string</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>len</p></td>
+<td class="parameter_description"><p>Lenght of <em class="parameter"><code>buf</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-set-nodup-fast.returns"></a><h4>Returns</h4>
+<p> 0 on success, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-set-nodup"></a><h3>prelude_string_set_nodup ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_set_nodup (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>,
+                          <em class="parameter"><code><span class="type">char</span> *buf</code></em>);</pre>
+<p>Store a reference to the string pointed by <em class="parameter"><code>buf</code></em>
+ in <em class="parameter"><code>string</code></em>
+.
+The referenced <em class="parameter"><code>buf</code></em>
+ will be freed upon <a class="link" href="libprelude-prelude-string.html#prelude-string-destroy" title="prelude_string_destroy ()"><code class="function">prelude_string_destroy()</code></a>.</p>
+<div class="refsect3">
+<a name="prelude-string-set-nodup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>String to store in <em class="parameter"><code>string</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-set-nodup.returns"></a><h4>Returns</h4>
+<p> 0 on success, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-set-ref-fast"></a><h3>prelude_string_set_ref_fast ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_set_ref_fast (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>,
+                             <em class="parameter"><code>const <span class="type">char</span> *buf</code></em>,
+                             <em class="parameter"><code><span class="type">size_t</span> len</code></em>);</pre>
+<p>Store a reference to the string pointed by <em class="parameter"><code>buf</code></em>
+ in <em class="parameter"><code>string</code></em>
+.
+The referenced <em class="parameter"><code>buf</code></em>
+ value won't be modified or freed.</p>
+<div class="refsect3">
+<a name="prelude-string-set-ref-fast.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>String to store in <em class="parameter"><code>string</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>len</p></td>
+<td class="parameter_description"><p>Lenght of <em class="parameter"><code>buf</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-set-ref-fast.returns"></a><h4>Returns</h4>
+<p> 0 on success, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-set-ref"></a><h3>prelude_string_set_ref ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_set_ref (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *buf</code></em>);</pre>
+<p>Store a reference to the string pointed by <em class="parameter"><code>buf</code></em>
+ in <em class="parameter"><code>string</code></em>
+.
+The referenced <em class="parameter"><code>buf</code></em>
+ value won't be modified or freed.</p>
+<div class="refsect3">
+<a name="prelude-string-set-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>String to store in <em class="parameter"><code>string</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-set-ref.returns"></a><h4>Returns</h4>
+<p> 0 on success, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-copy-ref"></a><h3>prelude_string_copy_ref ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_copy_ref (<em class="parameter"><code>const <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *src</code></em>,
+                         <em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *dst</code></em>);</pre>
+<p>Reference <em class="parameter"><code>src</code></em>
+ content within <em class="parameter"><code>dst</code></em>
+.
+The referenced content won't be modified or freed.</p>
+<div class="refsect3">
+<a name="prelude-string-copy-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object to copy data from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dst</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object to copy data to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-copy-ref.returns"></a><h4>Returns</h4>
+<p> 0 on success, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-copy-dup"></a><h3>prelude_string_copy_dup ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_copy_dup (<em class="parameter"><code>const <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *src</code></em>,
+                         <em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *dst</code></em>);</pre>
+<p>Copy <em class="parameter"><code>src</code></em>
+ content within <em class="parameter"><code>dst</code></em>
+.
+The content is owned by <em class="parameter"><code>src</code></em>
+ and independent of <em class="parameter"><code>dst</code></em>
+.</p>
+<div class="refsect3">
+<a name="prelude-string-copy-dup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object to copy data from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dst</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object to copy data to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-copy-dup.returns"></a><h4>Returns</h4>
+<p> 0 on success, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-ref"></a><h3>prelude_string_ref ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="returnvalue">prelude_string_t</span></a> *
+prelude_string_ref (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>);</pre>
+<p>Increase <em class="parameter"><code>string</code></em>
+ reference count.</p>
+<div class="refsect3">
+<a name="prelude-string-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object to reference.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-ref.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>string</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-clone"></a><h3>prelude_string_clone ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_clone (<em class="parameter"><code>const <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *src</code></em>,
+                      <em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> **dst</code></em>);</pre>
+<p>Clone <em class="parameter"><code>src</code></em>
+ within a new <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object stored into <em class="parameter"><code>dst</code></em>
+.
+Data carried by <em class="parameter"><code>dst</code></em>
+ and <em class="parameter"><code>src</code></em>
+ are independant.</p>
+<div class="refsect3">
+<a name="prelude-string-clone.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>Pointer to an existing <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dst</p></td>
+<td class="parameter_description"><p>Pointer to an address where to store the created <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-clone.returns"></a><h4>Returns</h4>
+<p> 0 on success, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-get-len"></a><h3>prelude_string_get_len ()</h3>
+<pre class="programlisting"><span class="returnvalue">size_t</span>
+prelude_string_get_len (<em class="parameter"><code>const <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>);</pre>
+<p>Return the length of the string carried by <em class="parameter"><code>string</code></em>
+ object.</p>
+<div class="refsect3">
+<a name="prelude-string-get-len.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-get-len.returns"></a><h4>Returns</h4>
+<p> The length of the string owned by <em class="parameter"><code>string</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-get-string-or-default"></a><h3>prelude_string_get_string_or_default ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+prelude_string_get_string_or_default (<em class="parameter"><code>const <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>,
+                                      <em class="parameter"><code>const <span class="type">char</span> *def</code></em>);</pre>
+<p>Return the string carried on by <em class="parameter"><code>string</code></em>
+ object, or <em class="parameter"><code>def</code></em>
+ if it is empty.
+There should be no operation done on the returned string since it is still
+owned by <em class="parameter"><code>string</code></em>
+.</p>
+<div class="refsect3">
+<a name="prelude-string-get-string-or-default.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>def</p></td>
+<td class="parameter_description"><p>Default value to a return in case <em class="parameter"><code>string</code></em>
+is empty.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-get-string-or-default.returns"></a><h4>Returns</h4>
+<p> The string owned by <em class="parameter"><code>string</code></em>
+or <em class="parameter"><code>def</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-get-string"></a><h3>prelude_string_get_string ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+prelude_string_get_string (<em class="parameter"><code>const <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>);</pre>
+<p>Return the string carried on by <em class="parameter"><code>string</code></em>
+ object.
+There should be no operation done on the returned string since
+it is still owned by <em class="parameter"><code>string</code></em>
+.</p>
+<div class="refsect3">
+<a name="prelude-string-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-get-string.returns"></a><h4>Returns</h4>
+<p> The string owned by <em class="parameter"><code>string</code></em>
+if any.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-get-string-released"></a><h3>prelude_string_get_string_released ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_get_string_released (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>,
+                                    <em class="parameter"><code><span class="type">char</span> **outptr</code></em>);</pre>
+<p>Get <em class="parameter"><code>string</code></em>
+ content, and release it so that further operation on
+<em class="parameter"><code>string</code></em>
+ won't modify the returned content.</p>
+<div class="refsect3">
+<a name="prelude-string-get-string-released.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>outptr</p></td>
+<td class="parameter_description"><p>Pointer to an address where to store the released string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-get-string-released.returns"></a><h4>Returns</h4>
+<p> 0 on success, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-is-empty"></a><h3>prelude_string_is_empty ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-inttypes.html#prelude-bool-t" title="enum prelude_bool_t"><span class="returnvalue">prelude_bool_t</span></a>
+prelude_string_is_empty (<em class="parameter"><code>const <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>);</pre>
+<p>Check whether <em class="parameter"><code>string</code></em>
+ is empty.</p>
+<div class="refsect3">
+<a name="prelude-string-is-empty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-is-empty.returns"></a><h4>Returns</h4>
+<p> TRUE if <em class="parameter"><code>string</code></em>
+is empty, FALSE otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-clear"></a><h3>prelude_string_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+prelude_string_clear (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>);</pre>
+<p>Reset <em class="parameter"><code>string</code></em>
+ content to zero.</p>
+<div class="refsect3">
+<a name="prelude-string-clear.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-cat"></a><h3>prelude_string_cat ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_cat (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *dst</code></em>,
+                    <em class="parameter"><code>const <span class="type">char</span> *str</code></em>);</pre>
+<p>The <a class="link" href="libprelude-prelude-string.html#prelude-string-cat" title="prelude_string_cat ()"><code class="function">prelude_string_cat()</code></a> function appends the <em class="parameter"><code>str</code></em>
+ string to the <em class="parameter"><code>dst</code></em>
+
+prelude_string_t object over-writing the <code class="literal">\0' character at the end of
+@dst, and then adds a termi-nating </code>\0' character.</p>
+<div class="refsect3">
+<a name="prelude-string-cat.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dst</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>Pointer to a string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-cat.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>len</code></em>
+, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-ncat"></a><h3>prelude_string_ncat ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_ncat (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *dst</code></em>,
+                     <em class="parameter"><code>const <span class="type">char</span> *str</code></em>,
+                     <em class="parameter"><code><span class="type">size_t</span> len</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-sprintf"></a><h3>prelude_string_sprintf ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_sprintf (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *fmt</code></em>);</pre>
+<p>Produce output according to <em class="parameter"><code>fmt</code></em>
+, and write output to the given
+<em class="parameter"><code>string</code></em>
+. See snprintf(3) to learn more about <em class="parameter"><code>fmt</code></em>
+ format.</p>
+<div class="refsect3">
+<a name="prelude-string-sprintf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fmt</p></td>
+<td class="parameter_description"><p>Format string to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Variable argument list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-sprintf.returns"></a><h4>Returns</h4>
+<p> The number of characters written, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-vprintf"></a><h3>prelude_string_vprintf ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_vprintf (<em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *string</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *fmt</code></em>);</pre>
+<p>Produce output according to <em class="parameter"><code>fmt</code></em>
+, storing argument provided in <em class="parameter"><code>ap</code></em>
+
+variable argument list, and write the output to the given <em class="parameter"><code>string</code></em>
+.
+See sprintf(3) for more information on <em class="parameter"><code>fmt</code></em>
+ format.</p>
+<div class="refsect3">
+<a name="prelude-string-vprintf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fmt</p></td>
+<td class="parameter_description"><p>Format string to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ap</p></td>
+<td class="parameter_description"><p>Variable argument list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-vprintf.returns"></a><h4>Returns</h4>
+<p> The number of characters written, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-set-constant"></a><h3>prelude_string_set_constant()</h3>
+<pre class="programlisting">#define             prelude_string_set_constant(string, str)</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-new-constant"></a><h3>prelude_string_new_constant()</h3>
+<pre class="programlisting">#define             prelude_string_new_constant(string, str)</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-string-compare"></a><h3>prelude_string_compare ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_string_compare (<em class="parameter"><code>const <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *str1</code></em>,
+                        <em class="parameter"><code>const <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *str2</code></em>);</pre>
+<p>Compare <em class="parameter"><code>str1</code></em>
+ and <em class="parameter"><code>str2</code></em>
+.</p>
+<div class="refsect3">
+<a name="prelude-string-compare.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str1</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object to compare with <em class="parameter"><code>str2</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str2</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> object to compare with <em class="parameter"><code>str1</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-string-compare.returns"></a><h4>Returns</h4>
+<p> 0 if <em class="parameter"><code>str1</code></em>
+and <em class="parameter"><code>str2</code></em>
+value are equal, a negative value otherwise.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-string.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="prelude-string-t"></a><h3>prelude_string_t</h3>
+<pre class="programlisting">typedef struct prelude_string prelude_string_t;
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

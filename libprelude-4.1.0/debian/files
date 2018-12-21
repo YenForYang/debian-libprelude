@@ -1,0 +1,18 @@
+libprelude-dev_4.1.0-4.2_amd64.deb libdevel optional
+libprelude-doc_4.1.0-4.2_all.deb doc optional
+libprelude-lua-dbgsym_4.1.0-4.2_amd64.deb debug optional automatic=yes
+libprelude-lua_4.1.0-4.2_amd64.deb interpreters optional
+libprelude-perl-dbgsym_4.1.0-4.2_amd64.deb debug optional automatic=yes
+libprelude-perl_4.1.0-4.2_amd64.deb perl optional
+libprelude23-dbgsym_4.1.0-4.2_amd64.deb debug optional automatic=yes
+libprelude23_4.1.0-4.2_amd64.deb libs optional
+libpreludecpp8-dbgsym_4.1.0-4.2_amd64.deb debug optional automatic=yes
+libpreludecpp8_4.1.0-4.2_amd64.deb libs optional
+prelude-utils-dbgsym_4.1.0-4.2_amd64.deb debug optional automatic=yes
+prelude-utils_4.1.0-4.2_amd64.deb utils optional
+python-prelude-dbgsym_4.1.0-4.2_amd64.deb debug optional automatic=yes
+python-prelude_4.1.0-4.2_amd64.deb python optional
+python3-prelude-dbgsym_4.1.0-4.2_amd64.deb debug optional automatic=yes
+python3-prelude_4.1.0-4.2_amd64.deb python optional
+ruby-libprelude-dbgsym_4.1.0-4.2_amd64.deb debug optional automatic=yes
+ruby-libprelude_4.1.0-4.2_amd64.deb ruby optional

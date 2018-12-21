@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>prelude-hash: libprelude Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libprelude Reference Manual">
+<link rel="up" href="ch01.html" title="[Insert title here]">
+<link rel="prev" href="libprelude-prelude-plugin.html" title="prelude-plugin">
+<link rel="next" href="libprelude-prelude-failover.html" title="prelude-failover">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libprelude-prelude-hash.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libprelude-prelude-plugin.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libprelude-prelude-failover.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libprelude-prelude-hash"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libprelude-prelude-hash.top_of_page"></a>prelude-hash</span></h2>
+<p>prelude-hash</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libprelude-prelude-hash.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-hash.html#prelude-hash-new" title="prelude_hash_new ()">prelude_hash_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-hash.html#prelude-hash-new2" title="prelude_hash_new2 ()">prelude_hash_new2</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-hash.html#prelude-hash-destroy" title="prelude_hash_destroy ()">prelude_hash_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-hash.html#prelude-hash-set" title="prelude_hash_set ()">prelude_hash_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-hash.html#prelude-hash-get" title="prelude_hash_get ()">prelude_hash_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-hash.html#prelude-hash-elem-destroy" title="prelude_hash_elem_destroy ()">prelude_hash_elem_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-hash.html#prelude-hash-iterate" title="prelude_hash_iterate ()">prelude_hash_iterate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-hash.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="libprelude-prelude-hash.html#prelude-hash-t" title="prelude_hash_t">prelude_hash_t</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-hash.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-hash.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="prelude-hash-new"></a><h3>prelude_hash_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_hash_new (<em class="parameter"><code><a class="link" href="libprelude-prelude-hash.html#prelude-hash-t" title="prelude_hash_t"><span class="type">prelude_hash_t</span></a> **hash</code></em>,
+                  <em class="parameter"><code>unsigned <span class="type">int</span> (*hash_func) (const void *)</code></em>,
+                  <em class="parameter"><code><span class="type">int</span> (*key_cmp_func) (const void *, const void *)</code></em>,
+                  <em class="parameter"><code><span class="type">void</span> (*key_destroy_func) (void *)</code></em>,
+                  <em class="parameter"><code><span class="type">void</span> (*value_destroy_func) (void *)</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-hash-new2"></a><h3>prelude_hash_new2 ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_hash_new2 (<em class="parameter"><code><a class="link" href="libprelude-prelude-hash.html#prelude-hash-t" title="prelude_hash_t"><span class="type">prelude_hash_t</span></a> **hash</code></em>,
+                   <em class="parameter"><code><span class="type">size_t</span> size</code></em>,
+                   <em class="parameter"><code>unsigned <span class="type">int</span> (*hash_func) (const void *)</code></em>,
+                   <em class="parameter"><code><span class="type">int</span> (*key_cmp_func) (const void *, const void *)</code></em>,
+                   <em class="parameter"><code><span class="type">void</span> (*key_destroy_func) (void *)</code></em>,
+                   <em class="parameter"><code><span class="type">void</span> (*value_destroy_func) (void *)</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-hash-destroy"></a><h3>prelude_hash_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+prelude_hash_destroy (<em class="parameter"><code><a class="link" href="libprelude-prelude-hash.html#prelude-hash-t" title="prelude_hash_t"><span class="type">prelude_hash_t</span></a> *hash</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-hash-set"></a><h3>prelude_hash_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_hash_set (<em class="parameter"><code><a class="link" href="libprelude-prelude-hash.html#prelude-hash-t" title="prelude_hash_t"><span class="type">prelude_hash_t</span></a> *hash</code></em>,
+                  <em class="parameter"><code><span class="type">void</span> *key</code></em>,
+                  <em class="parameter"><code><span class="type">void</span> *value</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-hash-get"></a><h3>prelude_hash_get ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span> *
+prelude_hash_get (<em class="parameter"><code><a class="link" href="libprelude-prelude-hash.html#prelude-hash-t" title="prelude_hash_t"><span class="type">prelude_hash_t</span></a> *hash</code></em>,
+                  <em class="parameter"><code>const <span class="type">void</span> *key</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-hash-elem-destroy"></a><h3>prelude_hash_elem_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_hash_elem_destroy (<em class="parameter"><code><a class="link" href="libprelude-prelude-hash.html#prelude-hash-t" title="prelude_hash_t"><span class="type">prelude_hash_t</span></a> *hash</code></em>,
+                           <em class="parameter"><code>const <span class="type">void</span> *key</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-hash-iterate"></a><h3>prelude_hash_iterate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+prelude_hash_iterate (<em class="parameter"><code><a class="link" href="libprelude-prelude-hash.html#prelude-hash-t" title="prelude_hash_t"><span class="type">prelude_hash_t</span></a> *hash</code></em>,
+                      <em class="parameter"><code><span class="type">void</span> (*cb) (void *data)</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-hash.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="prelude-hash-t"></a><h3>prelude_hash_t</h3>
+<pre class="programlisting">typedef struct prelude_hash prelude_hash_t;
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

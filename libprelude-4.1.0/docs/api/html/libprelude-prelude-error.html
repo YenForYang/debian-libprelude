@@ -1,0 +1,1652 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>prelude-error: libprelude Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libprelude Reference Manual">
+<link rel="up" href="ch01.html" title="[Insert title here]">
+<link rel="prev" href="ch01.html" title="[Insert title here]">
+<link rel="next" href="libprelude-prelude-linked-object.html" title="prelude-linked-object">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libprelude-prelude-error.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch01.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libprelude-prelude-linked-object.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libprelude-prelude-error"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libprelude-prelude-error.top_of_page"></a>prelude-error</span></h2>
+<p>prelude-error</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libprelude-prelude-error.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-code-t" title="enum prelude_error_code_t"><span class="returnvalue">prelude_error_code_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-get-code" title="prelude_error_get_code ()">prelude_error_get_code</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-source-t" title="enum prelude_error_source_t"><span class="returnvalue">prelude_error_source_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-get-source" title="prelude_error_get_source ()">prelude_error_get_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-error.html#prelude-perror" title="prelude_perror ()">prelude_perror</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-error.html#prelude-strerror" title="prelude_strerror ()">prelude_strerror</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-error.html#prelude-strsource" title="prelude_strsource ()">prelude_strsource</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-code-t" title="enum prelude_error_code_t"><span class="returnvalue">prelude_error_code_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-code-from-errno" title="prelude_error_code_from_errno ()">prelude_error_code_from_errno</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="returnvalue">prelude_error_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-make" title="prelude_error_make ()">prelude_error_make</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="returnvalue">prelude_error_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-make-from-errno" title="prelude_error_make_from_errno ()">prelude_error_make_from_errno</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="returnvalue">prelude_error_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-verbose-make" title="prelude_error_verbose_make ()">prelude_error_verbose_make</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="returnvalue">prelude_error_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-verbose-make-v" title="prelude_error_verbose_make_v ()">prelude_error_verbose_make_v</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-code-to-errno" title="prelude_error_code_to_errno ()">prelude_error_code_to_errno</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-inttypes.html#prelude-bool-t" title="enum prelude_bool_t"><span class="returnvalue">prelude_bool_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-error.html#prelude-error-is-verbose" title="prelude_error_is_verbose ()">prelude_error_is_verbose</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-error.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libprelude-prelude-error.html#PRELUDE-ERROR-SOURCE-DEFAULT:CAPS" title="PRELUDE_ERROR_SOURCE_DEFAULT">PRELUDE_ERROR_SOURCE_DEFAULT</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libprelude-prelude-error.html#PRELUDE-ERROR-SYSTEM-ERROR:CAPS" title="PRELUDE_ERROR_SYSTEM_ERROR">PRELUDE_ERROR_SYSTEM_ERROR</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libprelude-prelude-error.html#prelude-error-source-t" title="enum prelude_error_source_t">prelude_error_source_t</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libprelude-prelude-error.html#prelude-error-code-t" title="enum prelude_error_code_t">prelude_error_code_t</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t">prelude_error_t</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-error.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-error.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="prelude-error-get-code"></a><h3>prelude_error_get_code ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-error.html#prelude-error-code-t" title="enum prelude_error_code_t"><span class="returnvalue">prelude_error_code_t</span></a>
+prelude_error_get_code (<em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> error</code></em>);</pre>
+<div class="refsect3">
+<a name="prelude-error-get-code.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> return value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-error-get-code.returns"></a><h4>Returns</h4>
+<p> the <span class="type">prelude_code_t</span> code contained within the <em class="parameter"><code>prelude_error_t</code></em>
+integer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-error-get-source"></a><h3>prelude_error_get_source ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-error.html#prelude-error-source-t" title="enum prelude_error_source_t"><span class="returnvalue">prelude_error_source_t</span></a>
+prelude_error_get_source (<em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> error</code></em>);</pre>
+<div class="refsect3">
+<a name="prelude-error-get-source.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> return value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-error-get-source.returns"></a><h4>Returns</h4>
+<p> the <span class="type">prelude_source_t</span> source contained within the <em class="parameter"><code>prelude_error_t</code></em>
+integer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-perror"></a><h3>prelude_perror ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+prelude_perror (<em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> error</code></em>,
+                <em class="parameter"><code>const <span class="type">char</span> *fmt</code></em>);</pre>
+<p>Print the error to stderr, or to <code class="function">syslog()</code> in case stderr is unavailable.</p>
+<div class="refsect3">
+<a name="prelude-perror.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> return value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fmt</p></td>
+<td class="parameter_description"><p>Format string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Argument list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-strerror"></a><h3>prelude_strerror ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+prelude_strerror (<em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> err</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-strsource"></a><h3>prelude_strsource ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+prelude_strsource (<em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> err</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-error-code-from-errno"></a><h3>prelude_error_code_from_errno ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-error.html#prelude-error-code-t" title="enum prelude_error_code_t"><span class="returnvalue">prelude_error_code_t</span></a>
+prelude_error_code_from_errno (<em class="parameter"><code><span class="type">int</span> err</code></em>);</pre>
+<div class="refsect3">
+<a name="prelude-error-code-from-errno.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>errno value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-error-code-from-errno.returns"></a><h4>Returns</h4>
+<p> the <a class="link" href="libprelude-prelude-error.html#prelude-error-code-t" title="enum prelude_error_code_t"><span class="type">prelude_error_code_t</span></a> value corresponding to <em class="parameter"><code>err</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-error-make"></a><h3>prelude_error_make ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="returnvalue">prelude_error_t</span></a>
+prelude_error_make (<em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-source-t" title="enum prelude_error_source_t"><span class="type">prelude_error_source_t</span></a> source</code></em>,
+                    <em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-code-t" title="enum prelude_error_code_t"><span class="type">prelude_error_code_t</span></a> code</code></em>);</pre>
+<p>Create a new <a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> error using <em class="parameter"><code>source</code></em>
+ and <em class="parameter"><code>code</code></em>
+.</p>
+<div class="refsect3">
+<a name="prelude-error-make.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Error source.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>code</p></td>
+<td class="parameter_description"><p>Error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-error-make.returns"></a><h4>Returns</h4>
+<p> The created <a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> integer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-error-make-from-errno"></a><h3>prelude_error_make_from_errno ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="returnvalue">prelude_error_t</span></a>
+prelude_error_make_from_errno (<em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-source-t" title="enum prelude_error_source_t"><span class="type">prelude_error_source_t</span></a> source</code></em>,
+                               <em class="parameter"><code><span class="type">int</span> err</code></em>);</pre>
+<p>Create a new <a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> error using <em class="parameter"><code>source</code></em>
+ and <em class="parameter"><code>errno</code></em>
+.</p>
+<div class="refsect3">
+<a name="prelude-error-make-from-errno.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Error source.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>errno value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-error-make-from-errno.returns"></a><h4>Returns</h4>
+<p> The created <a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> integer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-error-verbose-make"></a><h3>prelude_error_verbose_make ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="returnvalue">prelude_error_t</span></a>
+prelude_error_verbose_make (<em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-source-t" title="enum prelude_error_source_t"><span class="type">prelude_error_source_t</span></a> source</code></em>,
+                            <em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-code-t" title="enum prelude_error_code_t"><span class="type">prelude_error_code_t</span></a> code</code></em>,
+                            <em class="parameter"><code>const <span class="type">char</span> *fmt</code></em>);</pre>
+<p>Create a new error using <em class="parameter"><code>source</code></em>
+ and <em class="parameter"><code>code</code></em>
+, using the detailed error message
+specified within <em class="parameter"><code>fmt</code></em>
+.</p>
+<div class="refsect3">
+<a name="prelude-error-verbose-make.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Error source.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>code</p></td>
+<td class="parameter_description"><p>Error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fmt</p></td>
+<td class="parameter_description"><p>Format string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Argument list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-error-verbose-make.returns"></a><h4>Returns</h4>
+<p> The created <a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> integer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-error-verbose-make-v"></a><h3>prelude_error_verbose_make_v ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="returnvalue">prelude_error_t</span></a>
+prelude_error_verbose_make_v (<em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-source-t" title="enum prelude_error_source_t"><span class="type">prelude_error_source_t</span></a> source</code></em>,
+                              <em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-code-t" title="enum prelude_error_code_t"><span class="type">prelude_error_code_t</span></a> code</code></em>,
+                              <em class="parameter"><code>const <span class="type">char</span> *fmt</code></em>);</pre>
+<p>Create a new error using <em class="parameter"><code>source</code></em>
+ and <em class="parameter"><code>code</code></em>
+, using the detailed error message
+specified within <em class="parameter"><code>fmt</code></em>
+.</p>
+<div class="refsect3">
+<a name="prelude-error-verbose-make-v.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Error source.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>code</p></td>
+<td class="parameter_description"><p>Error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fmt</p></td>
+<td class="parameter_description"><p>Format string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ap</p></td>
+<td class="parameter_description"><p>Argument list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-error-verbose-make-v.returns"></a><h4>Returns</h4>
+<p> The created <a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> integer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-error-code-to-errno"></a><h3>prelude_error_code_to_errno ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_error_code_to_errno (<em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-code-t" title="enum prelude_error_code_t"><span class="type">prelude_error_code_t</span></a> code</code></em>);</pre>
+<div class="refsect3">
+<a name="prelude-error-code-to-errno.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>code</p></td>
+<td class="parameter_description"><p>Error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-error-code-to-errno.returns"></a><h4>Returns</h4>
+<p> the errno value corresponding to <em class="parameter"><code>code</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-error-is-verbose"></a><h3>prelude_error_is_verbose ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-inttypes.html#prelude-bool-t" title="enum prelude_bool_t"><span class="returnvalue">prelude_bool_t</span></a>
+prelude_error_is_verbose (<em class="parameter"><code><a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> error</code></em>);</pre>
+<div class="refsect3">
+<a name="prelude-error-is-verbose.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libprelude-prelude-error.html#prelude-error-t" title="prelude_error_t"><span class="type">prelude_error_t</span></a> return value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-error-is-verbose.returns"></a><h4>Returns</h4>
+<p> <a class="link" href="libprelude-prelude-inttypes.html#PRELUDE-BOOL-TRUE:CAPS"><span class="type">PRELUDE_BOOL_TRUE</span></a> if there is a detailed message for this error, <a class="link" href="libprelude-prelude-inttypes.html#PRELUDE-BOOL-FALSE:CAPS"><span class="type">PRELUDE_BOOL_FALSE</span></a> otherwise.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-error.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="PRELUDE-ERROR-SOURCE-DEFAULT:CAPS"></a><h3>PRELUDE_ERROR_SOURCE_DEFAULT</h3>
+<pre class="programlisting"> #define PRELUDE_ERROR_SOURCE_DEFAULT  PRELUDE_ERROR_SOURCE_UNKNOWN
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PRELUDE-ERROR-SYSTEM-ERROR:CAPS"></a><h3>PRELUDE_ERROR_SYSTEM_ERROR</h3>
+<pre class="programlisting">#define PRELUDE_ERROR_SYSTEM_ERROR    (1 &lt;&lt; 15)
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-error-source-t"></a><h3>enum prelude_error_source_t</h3>
+<div class="refsect3">
+<a name="prelude-error-source-t.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-UNKNOWN:CAPS"></a>PRELUDE_ERROR_SOURCE_UNKNOWN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-IO:CAPS"></a>PRELUDE_ERROR_SOURCE_IO</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-MESSAGE:CAPS"></a>PRELUDE_ERROR_SOURCE_MESSAGE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-FAILOVER:CAPS"></a>PRELUDE_ERROR_SOURCE_FAILOVER</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-CLIENT:CAPS"></a>PRELUDE_ERROR_SOURCE_CLIENT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-CLIENT-PROFILE:CAPS"></a>PRELUDE_ERROR_SOURCE_CLIENT_PROFILE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-EXTRACT:CAPS"></a>PRELUDE_ERROR_SOURCE_EXTRACT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-CONNECTION:CAPS"></a>PRELUDE_ERROR_SOURCE_CONNECTION</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-CONNECTION-POOL:CAPS"></a>PRELUDE_ERROR_SOURCE_CONNECTION_POOL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-CONFIG-ENGINE:CAPS"></a>PRELUDE_ERROR_SOURCE_CONFIG_ENGINE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-STRING:CAPS"></a>PRELUDE_ERROR_SOURCE_STRING</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-IDMEF-TREE-WRAP:CAPS"></a>PRELUDE_ERROR_SOURCE_IDMEF_TREE_WRAP</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-IDMEF-PATH:CAPS"></a>PRELUDE_ERROR_SOURCE_IDMEF_PATH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-IDMEF-TYPE:CAPS"></a>PRELUDE_ERROR_SOURCE_IDMEF_TYPE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-IDMEF-MESSAGE-READ:CAPS"></a>PRELUDE_ERROR_SOURCE_IDMEF_MESSAGE_READ</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-IDMEF-CRITERIA:CAPS"></a>PRELUDE_ERROR_SOURCE_IDMEF_CRITERIA</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-IDMEF-VALUE-TYPE:CAPS"></a>PRELUDE_ERROR_SOURCE_IDMEF_VALUE_TYPE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-SOURCE-PRELUDEDB:CAPS"></a>PRELUDE_ERROR_SOURCE_PRELUDEDB</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-error-code-t"></a><h3>enum prelude_error_code_t</h3>
+<div class="refsect3">
+<a name="prelude-error-code-t.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-NO-ERROR:CAPS"></a>PRELUDE_ERROR_NO_ERROR</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-GENERIC:CAPS"></a>PRELUDE_ERROR_GENERIC</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-TLS:CAPS"></a>PRELUDE_ERROR_TLS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-INVAL-LENGTH:CAPS"></a>PRELUDE_ERROR_INVAL_LENGTH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-INVAL-MESSAGE:CAPS"></a>PRELUDE_ERROR_INVAL_MESSAGE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-PROTOCOL-VERSION:CAPS"></a>PRELUDE_ERROR_PROTOCOL_VERSION</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EOF:CAPS"></a>PRELUDE_ERROR_EOF</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-PROFILE:CAPS"></a>PRELUDE_ERROR_PROFILE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-TLS-AUTH-REJECTED:CAPS"></a>PRELUDE_ERROR_TLS_AUTH_REJECTED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-INVAL-INT8:CAPS"></a>PRELUDE_ERROR_INVAL_INT8</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-INVAL-INT16:CAPS"></a>PRELUDE_ERROR_INVAL_INT16</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-INVAL-INT32:CAPS"></a>PRELUDE_ERROR_INVAL_INT32</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-INVAL-INT64:CAPS"></a>PRELUDE_ERROR_INVAL_INT64</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-INVAL-FLOAT:CAPS"></a>PRELUDE_ERROR_INVAL_FLOAT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-INVAL-CHAR:CAPS"></a>PRELUDE_ERROR_INVAL_CHAR</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-INVAL-IDMEF-TIME:CAPS"></a>PRELUDE_ERROR_INVAL_IDMEF_TIME</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-CONNECTION-STRING:CAPS"></a>PRELUDE_ERROR_CONNECTION_STRING</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-VALUE-TYPE-UNKNOWN:CAPS"></a>PRELUDE_ERROR_IDMEF_VALUE_TYPE_UNKNOWN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-VALUE-TYPE-COPY-UNAVAILABLE:CAPS"></a>PRELUDE_ERROR_IDMEF_VALUE_TYPE_COPY_UNAVAILABLE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-VALUE-TYPE-CLONE-UNAVAILABLE:CAPS"></a>PRELUDE_ERROR_IDMEF_VALUE_TYPE_CLONE_UNAVAILABLE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-VALUE-TYPE-COMPARE-UNAVAILABLE:CAPS"></a>PRELUDE_ERROR_IDMEF_VALUE_TYPE_COMPARE_UNAVAILABLE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-VALUE-TYPE-READ-UNAVAILABLE:CAPS"></a>PRELUDE_ERROR_IDMEF_VALUE_TYPE_READ_UNAVAILABLE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-VALUE-TYPE-WRITE-UNAVAILABLE:CAPS"></a>PRELUDE_ERROR_IDMEF_VALUE_TYPE_WRITE_UNAVAILABLE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-VALUE-TYPE-COMPARE-MISMATCH:CAPS"></a>PRELUDE_ERROR_IDMEF_VALUE_TYPE_COMPARE_MISMATCH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-VALUE-TYPE-PARSE:CAPS"></a>PRELUDE_ERROR_IDMEF_VALUE_TYPE_PARSE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-CLASS-UNKNOWN:CAPS"></a>PRELUDE_ERROR_IDMEF_CLASS_UNKNOWN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-CLASS-UNKNOWN-CHILD:CAPS"></a>PRELUDE_ERROR_IDMEF_CLASS_UNKNOWN_CHILD</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-CLASS-UNKNOWN-NAME:CAPS"></a>PRELUDE_ERROR_IDMEF_CLASS_UNKNOWN_NAME</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-PATH-LENGTH:CAPS"></a>PRELUDE_ERROR_IDMEF_PATH_LENGTH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-PATH-DEPTH:CAPS"></a>PRELUDE_ERROR_IDMEF_PATH_DEPTH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-PATH-PARENT-ROOT:CAPS"></a>PRELUDE_ERROR_IDMEF_PATH_PARENT_ROOT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-PATH-NTH:CAPS"></a>PRELUDE_ERROR_IDMEF_PATH_NTH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-PATH-MISS-INDEX:CAPS"></a>PRELUDE_ERROR_IDMEF_PATH_MISS_INDEX</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-PATH-INTEGRITY:CAPS"></a>PRELUDE_ERROR_IDMEF_PATH_INTEGRITY</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-PATH-INDEX-RESERVED:CAPS"></a>PRELUDE_ERROR_IDMEF_PATH_INDEX_RESERVED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-PATH-INDEX-FORBIDDEN:CAPS"></a>PRELUDE_ERROR_IDMEF_PATH_INDEX_FORBIDDEN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-PATH-INDEX-UNDEFINED:CAPS"></a>PRELUDE_ERROR_IDMEF_PATH_INDEX_UNDEFINED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-TREE-INDEX-UNDEFINED:CAPS"></a>PRELUDE_ERROR_IDMEF_TREE_INDEX_UNDEFINED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-UNKNOWN-ENUM-STRING:CAPS"></a>PRELUDE_ERROR_IDMEF_UNKNOWN_ENUM_STRING</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-UNKNOWN-TAG:CAPS"></a>PRELUDE_ERROR_IDMEF_UNKNOWN_TAG</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-DAEMONIZE-LOCK-HELD:CAPS"></a>PRELUDE_ERROR_DAEMONIZE_LOCK_HELD</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-PLUGIN-LTDL-INIT:CAPS"></a>PRELUDE_ERROR_PLUGIN_LTDL_INIT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-STRING-NOT-NULL-TERMINATED:CAPS"></a>PRELUDE_ERROR_STRING_NOT_NULL_TERMINATED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-CANT-RESOLVE:CAPS"></a>PRELUDE_ERROR_CANT_RESOLVE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-UNKNOWN-PERMISSION-TYPE:CAPS"></a>PRELUDE_ERROR_UNKNOWN_PERMISSION_TYPE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-UNKNOWN-PERMISSION-BIT:CAPS"></a>PRELUDE_ERROR_UNKNOWN_PERMISSION_BIT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-CRITERIA-PARSE:CAPS"></a>PRELUDE_ERROR_IDMEF_CRITERIA_PARSE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-CRITERION-UNSUPPORTED-OPERATOR:CAPS"></a>PRELUDE_ERROR_IDMEF_CRITERION_UNSUPPORTED_OPERATOR</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-CRITERION-INVALID-REGEX:CAPS"></a>PRELUDE_ERROR_IDMEF_CRITERION_INVALID_REGEX</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-TLS-WARNING-ALERT:CAPS"></a>PRELUDE_ERROR_TLS_WARNING_ALERT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-TLS-FATAL-ALERT:CAPS"></a>PRELUDE_ERROR_TLS_FATAL_ALERT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-CLASS-CHILD-NOT-CLASS:CAPS"></a>PRELUDE_ERROR_IDMEF_CLASS_CHILD_NOT_CLASS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ASSERTION:CAPS"></a>PRELUDE_ERROR_ASSERTION</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-VALUE-TYPE-REF-UNAVAILABLE:CAPS"></a>PRELUDE_ERROR_IDMEF_VALUE_TYPE_REF_UNAVAILABLE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-IDMEF-CLASS-CHILD-NOT-UNION:CAPS"></a>PRELUDE_ERROR_IDMEF_CLASS_CHILD_NOT_UNION</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-UNKNOWN-ERRNO:CAPS"></a>PRELUDE_ERROR_UNKNOWN_ERRNO</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-E2BIG:CAPS"></a>PRELUDE_ERROR_E2BIG</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EACCES:CAPS"></a>PRELUDE_ERROR_EACCES</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EADDRINUSE:CAPS"></a>PRELUDE_ERROR_EADDRINUSE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EADDRNOTAVAIL:CAPS"></a>PRELUDE_ERROR_EADDRNOTAVAIL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EADV:CAPS"></a>PRELUDE_ERROR_EADV</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EAFNOSUPPORT:CAPS"></a>PRELUDE_ERROR_EAFNOSUPPORT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EAGAIN:CAPS"></a>PRELUDE_ERROR_EAGAIN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EALREADY:CAPS"></a>PRELUDE_ERROR_EALREADY</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EAUTH:CAPS"></a>PRELUDE_ERROR_EAUTH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EBACKGROUND:CAPS"></a>PRELUDE_ERROR_EBACKGROUND</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EBADE:CAPS"></a>PRELUDE_ERROR_EBADE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EBADF:CAPS"></a>PRELUDE_ERROR_EBADF</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EBADFD:CAPS"></a>PRELUDE_ERROR_EBADFD</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EBADMSG:CAPS"></a>PRELUDE_ERROR_EBADMSG</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EBADR:CAPS"></a>PRELUDE_ERROR_EBADR</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EBADRPC:CAPS"></a>PRELUDE_ERROR_EBADRPC</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EBADRQC:CAPS"></a>PRELUDE_ERROR_EBADRQC</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EBADSLT:CAPS"></a>PRELUDE_ERROR_EBADSLT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EBFONT:CAPS"></a>PRELUDE_ERROR_EBFONT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EBUSY:CAPS"></a>PRELUDE_ERROR_EBUSY</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ECANCELED:CAPS"></a>PRELUDE_ERROR_ECANCELED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ECHILD:CAPS"></a>PRELUDE_ERROR_ECHILD</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ECHRNG:CAPS"></a>PRELUDE_ERROR_ECHRNG</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ECOMM:CAPS"></a>PRELUDE_ERROR_ECOMM</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ECONNABORTED:CAPS"></a>PRELUDE_ERROR_ECONNABORTED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ECONNREFUSED:CAPS"></a>PRELUDE_ERROR_ECONNREFUSED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ECONNRESET:CAPS"></a>PRELUDE_ERROR_ECONNRESET</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ED:CAPS"></a>PRELUDE_ERROR_ED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EDEADLK:CAPS"></a>PRELUDE_ERROR_EDEADLK</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EDEADLOCK:CAPS"></a>PRELUDE_ERROR_EDEADLOCK</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EDESTADDRREQ:CAPS"></a>PRELUDE_ERROR_EDESTADDRREQ</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EDIED:CAPS"></a>PRELUDE_ERROR_EDIED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EDOM:CAPS"></a>PRELUDE_ERROR_EDOM</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EDOTDOT:CAPS"></a>PRELUDE_ERROR_EDOTDOT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EDQUOT:CAPS"></a>PRELUDE_ERROR_EDQUOT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EEXIST:CAPS"></a>PRELUDE_ERROR_EEXIST</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EFAULT:CAPS"></a>PRELUDE_ERROR_EFAULT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EFBIG:CAPS"></a>PRELUDE_ERROR_EFBIG</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EFTYPE:CAPS"></a>PRELUDE_ERROR_EFTYPE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EGRATUITOUS:CAPS"></a>PRELUDE_ERROR_EGRATUITOUS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EGREGIOUS:CAPS"></a>PRELUDE_ERROR_EGREGIOUS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EHOSTDOWN:CAPS"></a>PRELUDE_ERROR_EHOSTDOWN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EHOSTUNREACH:CAPS"></a>PRELUDE_ERROR_EHOSTUNREACH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EIDRM:CAPS"></a>PRELUDE_ERROR_EIDRM</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EIEIO:CAPS"></a>PRELUDE_ERROR_EIEIO</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EILSEQ:CAPS"></a>PRELUDE_ERROR_EILSEQ</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EINPROGRESS:CAPS"></a>PRELUDE_ERROR_EINPROGRESS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EINTR:CAPS"></a>PRELUDE_ERROR_EINTR</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EINVAL:CAPS"></a>PRELUDE_ERROR_EINVAL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EIO:CAPS"></a>PRELUDE_ERROR_EIO</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EISCONN:CAPS"></a>PRELUDE_ERROR_EISCONN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EISDIR:CAPS"></a>PRELUDE_ERROR_EISDIR</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EISNAM:CAPS"></a>PRELUDE_ERROR_EISNAM</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EL2HLT:CAPS"></a>PRELUDE_ERROR_EL2HLT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EL2NSYNC:CAPS"></a>PRELUDE_ERROR_EL2NSYNC</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EL3HLT:CAPS"></a>PRELUDE_ERROR_EL3HLT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EL3RST:CAPS"></a>PRELUDE_ERROR_EL3RST</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ELIBACC:CAPS"></a>PRELUDE_ERROR_ELIBACC</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ELIBBAD:CAPS"></a>PRELUDE_ERROR_ELIBBAD</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ELIBEXEC:CAPS"></a>PRELUDE_ERROR_ELIBEXEC</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ELIBMAX:CAPS"></a>PRELUDE_ERROR_ELIBMAX</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ELIBSCN:CAPS"></a>PRELUDE_ERROR_ELIBSCN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ELNRNG:CAPS"></a>PRELUDE_ERROR_ELNRNG</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ELOOP:CAPS"></a>PRELUDE_ERROR_ELOOP</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EMEDIUMTYPE:CAPS"></a>PRELUDE_ERROR_EMEDIUMTYPE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EMFILE:CAPS"></a>PRELUDE_ERROR_EMFILE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EMLINK:CAPS"></a>PRELUDE_ERROR_EMLINK</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EMSGSIZE:CAPS"></a>PRELUDE_ERROR_EMSGSIZE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EMULTIHOP:CAPS"></a>PRELUDE_ERROR_EMULTIHOP</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENAMETOOLONG:CAPS"></a>PRELUDE_ERROR_ENAMETOOLONG</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENAVAIL:CAPS"></a>PRELUDE_ERROR_ENAVAIL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENEEDAUTH:CAPS"></a>PRELUDE_ERROR_ENEEDAUTH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENETDOWN:CAPS"></a>PRELUDE_ERROR_ENETDOWN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENETRESET:CAPS"></a>PRELUDE_ERROR_ENETRESET</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENETUNREACH:CAPS"></a>PRELUDE_ERROR_ENETUNREACH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENFILE:CAPS"></a>PRELUDE_ERROR_ENFILE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOANO:CAPS"></a>PRELUDE_ERROR_ENOANO</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOBUFS:CAPS"></a>PRELUDE_ERROR_ENOBUFS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOCSI:CAPS"></a>PRELUDE_ERROR_ENOCSI</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENODATA:CAPS"></a>PRELUDE_ERROR_ENODATA</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENODEV:CAPS"></a>PRELUDE_ERROR_ENODEV</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOENT:CAPS"></a>PRELUDE_ERROR_ENOENT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOEXEC:CAPS"></a>PRELUDE_ERROR_ENOEXEC</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOLCK:CAPS"></a>PRELUDE_ERROR_ENOLCK</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOLINK:CAPS"></a>PRELUDE_ERROR_ENOLINK</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOMEDIUM:CAPS"></a>PRELUDE_ERROR_ENOMEDIUM</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOMEM:CAPS"></a>PRELUDE_ERROR_ENOMEM</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOMSG:CAPS"></a>PRELUDE_ERROR_ENOMSG</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENONET:CAPS"></a>PRELUDE_ERROR_ENONET</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOPKG:CAPS"></a>PRELUDE_ERROR_ENOPKG</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOPROTOOPT:CAPS"></a>PRELUDE_ERROR_ENOPROTOOPT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOSPC:CAPS"></a>PRELUDE_ERROR_ENOSPC</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOSR:CAPS"></a>PRELUDE_ERROR_ENOSR</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOSTR:CAPS"></a>PRELUDE_ERROR_ENOSTR</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOSYS:CAPS"></a>PRELUDE_ERROR_ENOSYS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOTBLK:CAPS"></a>PRELUDE_ERROR_ENOTBLK</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOTCONN:CAPS"></a>PRELUDE_ERROR_ENOTCONN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOTDIR:CAPS"></a>PRELUDE_ERROR_ENOTDIR</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOTEMPTY:CAPS"></a>PRELUDE_ERROR_ENOTEMPTY</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOTNAM:CAPS"></a>PRELUDE_ERROR_ENOTNAM</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOTSOCK:CAPS"></a>PRELUDE_ERROR_ENOTSOCK</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOTSUP:CAPS"></a>PRELUDE_ERROR_ENOTSUP</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOTTY:CAPS"></a>PRELUDE_ERROR_ENOTTY</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENOTUNIQ:CAPS"></a>PRELUDE_ERROR_ENOTUNIQ</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ENXIO:CAPS"></a>PRELUDE_ERROR_ENXIO</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EOPNOTSUPP:CAPS"></a>PRELUDE_ERROR_EOPNOTSUPP</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EOVERFLOW:CAPS"></a>PRELUDE_ERROR_EOVERFLOW</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EPERM:CAPS"></a>PRELUDE_ERROR_EPERM</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EPFNOSUPPORT:CAPS"></a>PRELUDE_ERROR_EPFNOSUPPORT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EPIPE:CAPS"></a>PRELUDE_ERROR_EPIPE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EPROCLIM:CAPS"></a>PRELUDE_ERROR_EPROCLIM</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EPROCUNAVAIL:CAPS"></a>PRELUDE_ERROR_EPROCUNAVAIL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EPROGMISMATCH:CAPS"></a>PRELUDE_ERROR_EPROGMISMATCH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EPROGUNAVAIL:CAPS"></a>PRELUDE_ERROR_EPROGUNAVAIL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EPROTO:CAPS"></a>PRELUDE_ERROR_EPROTO</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EPROTONOSUPPORT:CAPS"></a>PRELUDE_ERROR_EPROTONOSUPPORT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EPROTOTYPE:CAPS"></a>PRELUDE_ERROR_EPROTOTYPE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ERANGE:CAPS"></a>PRELUDE_ERROR_ERANGE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EREMCHG:CAPS"></a>PRELUDE_ERROR_EREMCHG</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EREMOTE:CAPS"></a>PRELUDE_ERROR_EREMOTE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EREMOTEIO:CAPS"></a>PRELUDE_ERROR_EREMOTEIO</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ERESTART:CAPS"></a>PRELUDE_ERROR_ERESTART</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EROFS:CAPS"></a>PRELUDE_ERROR_EROFS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ERPCMISMATCH:CAPS"></a>PRELUDE_ERROR_ERPCMISMATCH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ESHUTDOWN:CAPS"></a>PRELUDE_ERROR_ESHUTDOWN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ESOCKTNOSUPPORT:CAPS"></a>PRELUDE_ERROR_ESOCKTNOSUPPORT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ESPIPE:CAPS"></a>PRELUDE_ERROR_ESPIPE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ESRCH:CAPS"></a>PRELUDE_ERROR_ESRCH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ESRMNT:CAPS"></a>PRELUDE_ERROR_ESRMNT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ESTALE:CAPS"></a>PRELUDE_ERROR_ESTALE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ESTRPIPE:CAPS"></a>PRELUDE_ERROR_ESTRPIPE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ETIME:CAPS"></a>PRELUDE_ERROR_ETIME</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ETIMEDOUT:CAPS"></a>PRELUDE_ERROR_ETIMEDOUT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ETOOMANYREFS:CAPS"></a>PRELUDE_ERROR_ETOOMANYREFS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-ETXTBSY:CAPS"></a>PRELUDE_ERROR_ETXTBSY</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EUCLEAN:CAPS"></a>PRELUDE_ERROR_EUCLEAN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EUNATCH:CAPS"></a>PRELUDE_ERROR_EUNATCH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EUSERS:CAPS"></a>PRELUDE_ERROR_EUSERS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EWOULDBLOCK:CAPS"></a>PRELUDE_ERROR_EWOULDBLOCK</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EXDEV:CAPS"></a>PRELUDE_ERROR_EXDEV</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRELUDE-ERROR-EXFULL:CAPS"></a>PRELUDE_ERROR_EXFULL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-error-t"></a><h3>prelude_error_t</h3>
+<pre class="programlisting">typedef signed int prelude_error_t;
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

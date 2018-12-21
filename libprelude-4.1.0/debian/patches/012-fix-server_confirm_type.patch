@@ -1,0 +1,15 @@
+Description: Fix server_confirm type
+Author: Thomas Andrejak <thomas.andrejak@gmail.com>
+Last-Update: 2018-02-27
+
+--- libprelude-3.1.0/prelude-admin/tls-register.c	2018-02-12 23:28:53.677475685 -0500
++++ libprelude-3.1.0/prelude-admin/tls-register.c	2018-02-27 23:06:00.024525374 -0500
+@@ -48,7 +48,7 @@
+ # define fchown(x, y, z) (0)
+ #endif
+ 
+-extern int server_confirm;
++extern prelude_bool_t server_confirm;
+ extern int generated_key_size;
+ extern int authority_certificate_lifetime;
+ extern int generated_certificate_lifetime;

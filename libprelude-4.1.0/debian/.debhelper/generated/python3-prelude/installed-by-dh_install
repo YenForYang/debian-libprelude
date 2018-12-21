@@ -1,0 +1,4 @@
+./debian/tmp/usr/lib/python3.7/site-packages/__pycache__
+./debian/tmp/usr/lib/python3.7/site-packages/_prelude.cpython-37m-x86_64-linux-gnu.so
+./debian/tmp/usr/lib/python3.7/site-packages/prelude-4.1.0-py3.7.egg-info
+./debian/tmp/usr/lib/python3.7/site-packages/prelude.py

@@ -1,0 +1,2 @@
+# This exception is just for the crc32 function inside src/common.c file.
+libprelude source: license-problem-non-free-RFC src/common.c

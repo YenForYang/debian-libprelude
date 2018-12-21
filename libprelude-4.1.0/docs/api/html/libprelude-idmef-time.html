@@ -1,0 +1,1052 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>idmef-time: libprelude Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libprelude Reference Manual">
+<link rel="up" href="ch01.html" title="[Insert title here]">
+<link rel="prev" href="libprelude-idmef-additional-data.html" title="idmef-additional-data">
+<link rel="next" href="libprelude-prelude-timer.html" title="prelude-timer">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libprelude-idmef-time.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libprelude-idmef-additional-data.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libprelude-prelude-timer.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libprelude-idmef-time"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libprelude-idmef-time.top_of_page"></a>idmef-time</span></h2>
+<p>idmef-time</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libprelude-idmef-time.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="returnvalue">idmef_time_t</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-ref" title="idmef_time_ref ()">idmef_time_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-new" title="idmef_time_new ()">idmef_time_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-new-from-time" title="idmef_time_new_from_time ()">idmef_time_new_from_time</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-new-from-gettimeofday" title="idmef_time_new_from_gettimeofday ()">idmef_time_new_from_gettimeofday</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-new-from-string" title="idmef_time_new_from_string ()">idmef_time_new_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-new-from-ntpstamp" title="idmef_time_new_from_ntpstamp ()">idmef_time_new_from_ntpstamp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-new-from-timeval" title="idmef_time_new_from_timeval ()">idmef_time_new_from_timeval</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-set-from-time" title="idmef_time_set_from_time ()">idmef_time_set_from_time</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-set-from-gettimeofday" title="idmef_time_set_from_gettimeofday ()">idmef_time_set_from_gettimeofday</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-set-from-string" title="idmef_time_set_from_string ()">idmef_time_set_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-set-from-ntpstamp" title="idmef_time_set_from_ntpstamp ()">idmef_time_set_from_ntpstamp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-set-from-timeval" title="idmef_time_set_from_timeval ()">idmef_time_set_from_timeval</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-destroy-internal" title="idmef_time_destroy_internal ()">idmef_time_destroy_internal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-destroy" title="idmef_time_destroy ()">idmef_time_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-clone" title="idmef_time_clone ()">idmef_time_clone</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-copy" title="idmef_time_copy ()">idmef_time_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-set-sec" title="idmef_time_set_sec ()">idmef_time_set_sec</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-set-usec" title="idmef_time_set_usec ()">idmef_time_set_usec</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-set-gmt-offset" title="idmef_time_set_gmt_offset ()">idmef_time_set_gmt_offset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-inttypes.html#uint32-t" title="uint32_t"><span class="returnvalue">uint32_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-get-sec" title="idmef_time_get_sec ()">idmef_time_get_sec</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-inttypes.html#uint32-t" title="uint32_t"><span class="returnvalue">uint32_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-get-usec" title="idmef_time_get_usec ()">idmef_time_get_usec</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-inttypes.html#int32-t" title="int32_t"><span class="returnvalue">int32_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-get-gmt-offset" title="idmef_time_get_gmt_offset ()">idmef_time_get_gmt_offset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-to-string" title="idmef_time_to_string ()">idmef_time_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-idmef-time.html#idmef-time-to-ntpstamp" title="idmef_time_to_ntpstamp ()">idmef_time_to_ntpstamp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libprelude-idmef-time.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t">idmef_time_t</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libprelude-idmef-time.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libprelude-idmef-time.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="idmef-time-ref"></a><h3>idmef_time_ref ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="returnvalue">idmef_time_t</span></a> *
+idmef_time_ref (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>);</pre>
+<p>Increases <em class="parameter"><code>time</code></em>
+ reference count.
+<a class="link" href="libprelude-idmef-time.html#idmef-time-destroy" title="idmef_time_destroy ()"><code class="function">idmef_time_destroy()</code></a> won't destroy <em class="parameter"><code>time</code></em>
+ until the refcount
+reach 0.</p>
+<div class="refsect3">
+<a name="idmef-time-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to an <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-ref.returns"></a><h4>Returns</h4>
+<p> The <em class="parameter"><code>time</code></em>
+provided argument.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-new"></a><h3>idmef_time_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_new (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> **time</code></em>);</pre>
+<p>Creates an empty <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object and store it in <em class="parameter"><code>time</code></em>
+.</p>
+<div class="refsect3">
+<a name="idmef-time-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Address where to store the created <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-new.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-new-from-time"></a><h3>idmef_time_new_from_time ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_new_from_time (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> **time</code></em>,
+                          <em class="parameter"><code>const <span class="type">time_t</span> *t</code></em>);</pre>
+<p>Creates a new <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object and store it in <em class="parameter"><code>time</code></em>
+.
+This object will be filled with information available in <em class="parameter"><code>t</code></em>
+. The created
+<em class="parameter"><code>time</code></em>
+ won't contain micro seconds information, since theses are not
+available within <em class="parameter"><code>t</code></em>
+.</p>
+<div class="refsect3">
+<a name="idmef-time-new-from-time.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Address where to store the created <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>t</p></td>
+<td class="parameter_description"><p>Pointer to a time_t.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-new-from-time.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-new-from-gettimeofday"></a><h3>idmef_time_new_from_gettimeofday ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_new_from_gettimeofday (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> **time</code></em>);</pre>
+<p>Creates an <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object filled with information retrieved
+using <code class="function">gettimeofday()</code>, and stores it in <em class="parameter"><code>time</code></em>
+.</p>
+<div class="refsect3">
+<a name="idmef-time-new-from-gettimeofday.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Address where to store the created <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-new-from-gettimeofday.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-new-from-string"></a><h3>idmef_time_new_from_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_new_from_string (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> **time</code></em>,
+                            <em class="parameter"><code>const <span class="type">char</span> *buf</code></em>);</pre>
+<p>Creates an <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object filled with information retrieved
+from the user provided <em class="parameter"><code>buf</code></em>
+, containing a string describing a time in a format
+conforming to the IDMEF definition  (v. 0.10, section 3.2.6).</p>
+<p>Additionally, the provided time might be separated with white spaces, instead
+of the IDMEF define 'T' character. The format might not specify a timezone
+(will assume UTC in this case).</p>
+<p>The resulting <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object is stored in <em class="parameter"><code>time</code></em>
+.</p>
+<div class="refsect3">
+<a name="idmef-time-new-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Address where to store the created <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>Pointer to a string describing a time in an IDMEF conforming format.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-new-from-string.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-new-from-ntpstamp"></a><h3>idmef_time_new_from_ntpstamp ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_new_from_ntpstamp (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> **time</code></em>,
+                              <em class="parameter"><code>const <span class="type">char</span> *buf</code></em>);</pre>
+<p>Creates an <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object filled with information provided
+from the <em class="parameter"><code>buf</code></em>
+ NTP timestamp, and stores it in <em class="parameter"><code>time</code></em>
+.</p>
+<div class="refsect3">
+<a name="idmef-time-new-from-ntpstamp.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Address where to store the created <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>Pointer to a string containing an NTP timestamp.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-new-from-ntpstamp.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-new-from-timeval"></a><h3>idmef_time_new_from_timeval ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_new_from_timeval (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> **time</code></em>,
+                             <em class="parameter"><code>const <span class="type">struct timeval</span> *tv</code></em>);</pre>
+<p>Creates an <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object filled with information provided
+within the <em class="parameter"><code>tv</code></em>
+ structure.</p>
+<div class="refsect3">
+<a name="idmef-time-new-from-timeval.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Address where to store the created <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tv</p></td>
+<td class="parameter_description"><p>Pointer to a struct timeval (see <code class="function">gettimeofday()</code>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-new-from-timeval.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-set-from-time"></a><h3>idmef_time_set_from_time ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+idmef_time_set_from_time (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>,
+                          <em class="parameter"><code>const <span class="type">time_t</span> *t</code></em>);</pre>
+<p>Fills <em class="parameter"><code>time</code></em>
+ from the information described by <em class="parameter"><code>t</code></em>
+.
+<em class="parameter"><code>time</code></em>
+ won't contain micro seconds information, since theses are not
+available within <em class="parameter"><code>t</code></em>
+.</p>
+<div class="refsect3">
+<a name="idmef-time-set-from-time.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to an <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>t</p></td>
+<td class="parameter_description"><p>Pointer to a time_t.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-set-from-gettimeofday"></a><h3>idmef_time_set_from_gettimeofday ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_set_from_gettimeofday (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>);</pre>
+<p>Fills <em class="parameter"><code>time</code></em>
+ with information retrieved using <code class="function">gettimeofday()</code>.</p>
+<div class="refsect3">
+<a name="idmef-time-set-from-gettimeofday.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to an <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-set-from-gettimeofday.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-set-from-string"></a><h3>idmef_time_set_from_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_set_from_string (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>,
+                            <em class="parameter"><code>const <span class="type">char</span> *buf</code></em>);</pre>
+<p>Fills <em class="parameter"><code>time</code></em>
+ object with information retrieved from the user provided
+<em class="parameter"><code>buf</code></em>
+, containing a string describing a time in a format conforming
+to the IDMEF definition (v. 0.10, section 3.2.6).</p>
+<p>Additionally, the provided time might be separated with white spaces,
+instead of the IDMEF defined 'T' character.</p>
+<p>If there is no UTC offset specified, we assume that the provided
+time is local, and compute the GMT offset by ourselve.</p>
+<div class="refsect3">
+<a name="idmef-time-set-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to an <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>Pointer to a string describing a time in an IDMEF conforming format.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-set-from-string.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-set-from-ntpstamp"></a><h3>idmef_time_set_from_ntpstamp ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_set_from_ntpstamp (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>,
+                              <em class="parameter"><code>const <span class="type">char</span> *buf</code></em>);</pre>
+<p>Fills the <em class="parameter"><code>time</code></em>
+ object with information provided within the <em class="parameter"><code>buf</code></em>
+ NTP timestamp.</p>
+<div class="refsect3">
+<a name="idmef-time-set-from-ntpstamp.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>Pointer to a string containing an NTP timestamp.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-set-from-ntpstamp.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-set-from-timeval"></a><h3>idmef_time_set_from_timeval ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_set_from_timeval (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>,
+                             <em class="parameter"><code>const <span class="type">struct timeval</span> *tv</code></em>);</pre>
+<p>Fills <em class="parameter"><code>time</code></em>
+ object filled with information provided within the <em class="parameter"><code>tv</code></em>
+ structure.</p>
+<div class="refsect3">
+<a name="idmef-time-set-from-timeval.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to an <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tv</p></td>
+<td class="parameter_description"><p>Pointer to a struct timeval (see <code class="function">gettimeofday()</code>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-set-from-timeval.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-destroy-internal"></a><h3>idmef_time_destroy_internal ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+idmef_time_destroy_internal (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-destroy"></a><h3>idmef_time_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+idmef_time_destroy (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>);</pre>
+<p>Destroys <em class="parameter"><code>time</code></em>
+ if refcount reach 0.</p>
+<div class="refsect3">
+<a name="idmef-time-destroy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to an <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-clone"></a><h3>idmef_time_clone ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_clone (<em class="parameter"><code>const <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *src</code></em>,
+                  <em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> **dst</code></em>);</pre>
+<p>Clones <em class="parameter"><code>src</code></em>
+ and stores the result in the <em class="parameter"><code>dst</code></em>
+ address.</p>
+<div class="refsect3">
+<a name="idmef-time-clone.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> to clone.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dst</p></td>
+<td class="parameter_description"><p>Address where to store the cloned <em class="parameter"><code>src</code></em>
+object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-clone.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-copy"></a><h3>idmef_time_copy ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_copy (<em class="parameter"><code>const <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *src</code></em>,
+                 <em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *dst</code></em>);</pre>
+<p>Copies <em class="parameter"><code>src</code></em>
+ internal to <em class="parameter"><code>dst</code></em>
+.</p>
+<div class="refsect3">
+<a name="idmef-time-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> to copy data from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dst</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> to copy data to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-copy.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-set-sec"></a><h3>idmef_time_set_sec ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+idmef_time_set_sec (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>,
+                    <em class="parameter"><code><a class="link" href="libprelude-prelude-inttypes.html#uint32-t" title="uint32_t"><span class="type">uint32_t</span></a> sec</code></em>);</pre>
+<p>Sets the number of second from the Epoch to <em class="parameter"><code>sec</code></em>
+ within <em class="parameter"><code>time</code></em>
+.</p>
+<p>WARNING: this is just an accessor function, and using it to
+set <em class="parameter"><code>time</code></em>
+ current time also requires the use of <a class="link" href="libprelude-idmef-time.html#idmef-time-set-usec" title="idmef_time_set_usec ()"><code class="function">idmef_time_set_usec()</code></a>
+and <a class="link" href="libprelude-idmef-time.html#idmef-time-set-gmt-offset" title="idmef_time_set_gmt_offset ()"><code class="function">idmef_time_set_gmt_offset()</code></a>.</p>
+<div class="refsect3">
+<a name="idmef-time-set-sec.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sec</p></td>
+<td class="parameter_description"><p>Number of seconds since the Epoch.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-set-usec"></a><h3>idmef_time_set_usec ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+idmef_time_set_usec (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>,
+                     <em class="parameter"><code><a class="link" href="libprelude-prelude-inttypes.html#uint32-t" title="uint32_t"><span class="type">uint32_t</span></a> usec</code></em>);</pre>
+<p>Sets the number of micro second to <em class="parameter"><code>usec</code></em>
+ within <em class="parameter"><code>time</code></em>
+.</p>
+<p>WARNING: this is just an accessor function, and using it to
+set <em class="parameter"><code>time</code></em>
+ current time also requires the use of <a class="link" href="libprelude-idmef-time.html#idmef-time-set-sec" title="idmef_time_set_sec ()"><code class="function">idmef_time_set_sec()</code></a>
+and <a class="link" href="libprelude-idmef-time.html#idmef-time-set-gmt-offset" title="idmef_time_set_gmt_offset ()"><code class="function">idmef_time_set_gmt_offset()</code></a>.</p>
+<div class="refsect3">
+<a name="idmef-time-set-usec.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>usec</p></td>
+<td class="parameter_description"><p>Number of micro seconds to set within <em class="parameter"><code>time</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-set-gmt-offset"></a><h3>idmef_time_set_gmt_offset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+idmef_time_set_gmt_offset (<em class="parameter"><code><a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>,
+                           <em class="parameter"><code><a class="link" href="libprelude-prelude-inttypes.html#int32-t" title="int32_t"><span class="type">int32_t</span></a> gmtoff</code></em>);</pre>
+<p>Sets the GMT offset <em class="parameter"><code>gmtoff</code></em>
+, in seconds, within <em class="parameter"><code>time</code></em>
+.</p>
+<p>WARNING: this is just an accessor function, and using it to
+set <em class="parameter"><code>time</code></em>
+ current time also requires the use of <a class="link" href="libprelude-idmef-time.html#idmef-time-set-sec" title="idmef_time_set_sec ()"><code class="function">idmef_time_set_sec()</code></a>
+and <a class="link" href="libprelude-idmef-time.html#idmef-time-set-usec" title="idmef_time_set_usec ()"><code class="function">idmef_time_set_usec()</code></a>.</p>
+<div class="refsect3">
+<a name="idmef-time-set-gmt-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gmtoff</p></td>
+<td class="parameter_description"><p>GMT offset for <em class="parameter"><code>time</code></em>
+, in seconds.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-get-sec"></a><h3>idmef_time_get_sec ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-inttypes.html#uint32-t" title="uint32_t"><span class="returnvalue">uint32_t</span></a>
+idmef_time_get_sec (<em class="parameter"><code>const <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>);</pre>
+<p>Returns the number of second since the Epoch (00:00:00 UTC, January 1, 1970),
+previously set within <em class="parameter"><code>time</code></em>
+.</p>
+<div class="refsect3">
+<a name="idmef-time-get-sec.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-get-sec.returns"></a><h4>Returns</h4>
+<p> The number of seconds.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-get-usec"></a><h3>idmef_time_get_usec ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-inttypes.html#uint32-t" title="uint32_t"><span class="returnvalue">uint32_t</span></a>
+idmef_time_get_usec (<em class="parameter"><code>const <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>);</pre>
+<p>Returns the u-second member of <em class="parameter"><code>time</code></em>
+.</p>
+<div class="refsect3">
+<a name="idmef-time-get-usec.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-get-usec.returns"></a><h4>Returns</h4>
+<p> The number of u-seconds.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-get-gmt-offset"></a><h3>idmef_time_get_gmt_offset ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-inttypes.html#int32-t" title="int32_t"><span class="returnvalue">int32_t</span></a>
+idmef_time_get_gmt_offset (<em class="parameter"><code>const <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>);</pre>
+<p>Returns the GMT offset that applies to <em class="parameter"><code>time</code></em>
+.</p>
+<div class="refsect3">
+<a name="idmef-time-get-gmt-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-get-gmt-offset.returns"></a><h4>Returns</h4>
+<p> The GMT offset, in seconds.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-to-string"></a><h3>idmef_time_to_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_to_string (<em class="parameter"><code>const <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>,
+                      <em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *out</code></em>);</pre>
+<p>Translates <em class="parameter"><code>time</code></em>
+ to an user readable string conforming to the IDMEF
+defined time format.</p>
+<div class="refsect3">
+<a name="idmef-time-to-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to an IDMEF time structure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> output buffer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-to-string.returns"></a><h4>Returns</h4>
+<p> number of bytes written on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="idmef-time-to-ntpstamp"></a><h3>idmef_time_to_ntpstamp ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+idmef_time_to_ntpstamp (<em class="parameter"><code>const <a class="link" href="libprelude-idmef-time.html#idmef-time-t" title="idmef_time_t"><span class="type">idmef_time_t</span></a> *time</code></em>,
+                        <em class="parameter"><code><a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> *out</code></em>);</pre>
+<p>Translates <em class="parameter"><code>time</code></em>
+ to an user readable NTP timestamp string,
+conforming to the IDMEF defined time format.</p>
+<div class="refsect3">
+<a name="idmef-time-to-ntpstamp.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>time</p></td>
+<td class="parameter_description"><p>Pointer to an IDMEF time structure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>Pointer to a <a class="link" href="libprelude-prelude-string.html#prelude-string-t" title="prelude_string_t"><span class="type">prelude_string_t</span></a> output buffer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="idmef-time-to-ntpstamp.returns"></a><h4>Returns</h4>
+<p> number of bytes written on success, a negative value if an error occured.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libprelude-idmef-time.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="idmef-time-t"></a><h3>idmef_time_t</h3>
+<pre class="programlisting">typedef struct idmef_time idmef_time_t;
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

@@ -1,0 +1,1052 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-prelude-error">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-prelude-error.top_of_page">prelude-error</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>prelude-error</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-prelude-error.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="prelude-error-code-t"><returnvalue>prelude_error_code_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-error-get-code">prelude_error_get_code</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-error-source-t"><returnvalue>prelude_error_source_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-error-get-source">prelude_error_get_source</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-perror">prelude_perror</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-strerror">prelude_strerror</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-strsource">prelude_strsource</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-error-code-t"><returnvalue>prelude_error_code_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-error-code-from-errno">prelude_error_code_from_errno</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-error-t"><returnvalue>prelude_error_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-error-make">prelude_error_make</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-error-t"><returnvalue>prelude_error_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-error-make-from-errno">prelude_error_make_from_errno</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-error-t"><returnvalue>prelude_error_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-error-verbose-make">prelude_error_verbose_make</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-error-t"><returnvalue>prelude_error_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-error-verbose-make-v">prelude_error_verbose_make_v</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-error-code-to-errno">prelude_error_code_to_errno</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-error-is-verbose">prelude_error_is_verbose</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-prelude-error.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="PRELUDE-ERROR-SOURCE-DEFAULT:CAPS">PRELUDE_ERROR_SOURCE_DEFAULT</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="PRELUDE-ERROR-SYSTEM-ERROR:CAPS">PRELUDE_ERROR_SYSTEM_ERROR</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-error-source-t">prelude_error_source_t</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-error-code-t">prelude_error_code_t</link></entry></row>
+<row><entry role="typedef_keyword">typedef</entry><entry role="function_name"><link linkend="prelude-error-t">prelude_error_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-prelude-error.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-error.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="prelude-error-get-code" role="function">
+<title>prelude_error_get_code&#160;()</title>
+<indexterm zone="prelude-error-get-code"><primary>prelude_error_get_code</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-error-code-t"><returnvalue>prelude_error_code_t</returnvalue></link>
+prelude_error_get_code (<parameter><link linkend="prelude-error-t"><type>prelude_error_t</type></link> error</parameter>);</programlisting>
+<refsect3 id="prelude-error-get-code.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>error</para></entry>
+<entry role="parameter_description"><para>A <link linkend="prelude-error-t"><type>prelude_error_t</type></link> return value.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-error-get-code.returns" role="returns">
+<title>Returns</title>
+<para> the <link linkend="prelude-code-t"><type>prelude_code_t</type></link> code contained within the <parameter>prelude_error_t</parameter>
+integer.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-error-get-source" role="function">
+<title>prelude_error_get_source&#160;()</title>
+<indexterm zone="prelude-error-get-source"><primary>prelude_error_get_source</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-error-source-t"><returnvalue>prelude_error_source_t</returnvalue></link>
+prelude_error_get_source (<parameter><link linkend="prelude-error-t"><type>prelude_error_t</type></link> error</parameter>);</programlisting>
+<refsect3 id="prelude-error-get-source.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>error</para></entry>
+<entry role="parameter_description"><para>A <link linkend="prelude-error-t"><type>prelude_error_t</type></link> return value.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-error-get-source.returns" role="returns">
+<title>Returns</title>
+<para> the <link linkend="prelude-source-t"><type>prelude_source_t</type></link> source contained within the <parameter>prelude_error_t</parameter>
+integer.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-perror" role="function">
+<title>prelude_perror&#160;()</title>
+<indexterm zone="prelude-perror"><primary>prelude_perror</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_perror (<parameter><link linkend="prelude-error-t"><type>prelude_error_t</type></link> error</parameter>,
+                <parameter>const <link linkend="char"><type>char</type></link> *fmt</parameter>);</programlisting>
+<para>Print the error to stderr, or to <link linkend="syslog"><function>syslog()</function></link> in case stderr is unavailable.</para>
+<refsect3 id="prelude-perror.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>error</para></entry>
+<entry role="parameter_description"><para>A <link linkend="prelude-error-t"><type>prelude_error_t</type></link> return value.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fmt</para></entry>
+<entry role="parameter_description"><para>Format string.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>...</para></entry>
+<entry role="parameter_description"><para>Argument list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-strerror" role="function">
+<title>prelude_strerror&#160;()</title>
+<indexterm zone="prelude-strerror"><primary>prelude_strerror</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_strerror (<parameter><link linkend="prelude-error-t"><type>prelude_error_t</type></link> err</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-strsource" role="function">
+<title>prelude_strsource&#160;()</title>
+<indexterm zone="prelude-strsource"><primary>prelude_strsource</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_strsource (<parameter><link linkend="prelude-error-t"><type>prelude_error_t</type></link> err</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-error-code-from-errno" role="function">
+<title>prelude_error_code_from_errno&#160;()</title>
+<indexterm zone="prelude-error-code-from-errno"><primary>prelude_error_code_from_errno</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-error-code-t"><returnvalue>prelude_error_code_t</returnvalue></link>
+prelude_error_code_from_errno (<parameter><link linkend="int"><type>int</type></link> err</parameter>);</programlisting>
+<refsect3 id="prelude-error-code-from-errno.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>err</para></entry>
+<entry role="parameter_description"><para>errno value.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-error-code-from-errno.returns" role="returns">
+<title>Returns</title>
+<para> the <link linkend="prelude-error-code-t"><type>prelude_error_code_t</type></link> value corresponding to <parameter>err</parameter>
+.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-error-make" role="function">
+<title>prelude_error_make&#160;()</title>
+<indexterm zone="prelude-error-make"><primary>prelude_error_make</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-error-t"><returnvalue>prelude_error_t</returnvalue></link>
+prelude_error_make (<parameter><link linkend="prelude-error-source-t"><type>prelude_error_source_t</type></link> source</parameter>,
+                    <parameter><link linkend="prelude-error-code-t"><type>prelude_error_code_t</type></link> code</parameter>);</programlisting>
+<para>Create a new <link linkend="prelude-error-t"><type>prelude_error_t</type></link> error using <parameter>source</parameter>
+ and <parameter>code</parameter>
+.</para>
+<refsect3 id="prelude-error-make.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>source</para></entry>
+<entry role="parameter_description"><para>Error source.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>code</para></entry>
+<entry role="parameter_description"><para>Error code.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-error-make.returns" role="returns">
+<title>Returns</title>
+<para> The created <link linkend="prelude-error-t"><type>prelude_error_t</type></link> integer.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-error-make-from-errno" role="function">
+<title>prelude_error_make_from_errno&#160;()</title>
+<indexterm zone="prelude-error-make-from-errno"><primary>prelude_error_make_from_errno</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-error-t"><returnvalue>prelude_error_t</returnvalue></link>
+prelude_error_make_from_errno (<parameter><link linkend="prelude-error-source-t"><type>prelude_error_source_t</type></link> source</parameter>,
+                               <parameter><link linkend="int"><type>int</type></link> err</parameter>);</programlisting>
+<para>Create a new <link linkend="prelude-error-t"><type>prelude_error_t</type></link> error using <parameter>source</parameter>
+ and <parameter>errno</parameter>
+.</para>
+<refsect3 id="prelude-error-make-from-errno.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>source</para></entry>
+<entry role="parameter_description"><para>Error source.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>err</para></entry>
+<entry role="parameter_description"><para>errno value.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-error-make-from-errno.returns" role="returns">
+<title>Returns</title>
+<para> The created <link linkend="prelude-error-t"><type>prelude_error_t</type></link> integer.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-error-verbose-make" role="function">
+<title>prelude_error_verbose_make&#160;()</title>
+<indexterm zone="prelude-error-verbose-make"><primary>prelude_error_verbose_make</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-error-t"><returnvalue>prelude_error_t</returnvalue></link>
+prelude_error_verbose_make (<parameter><link linkend="prelude-error-source-t"><type>prelude_error_source_t</type></link> source</parameter>,
+                            <parameter><link linkend="prelude-error-code-t"><type>prelude_error_code_t</type></link> code</parameter>,
+                            <parameter>const <link linkend="char"><type>char</type></link> *fmt</parameter>);</programlisting>
+<para>Create a new error using <parameter>source</parameter>
+ and <parameter>code</parameter>
+, using the detailed error message
+specified within <parameter>fmt</parameter>
+.</para>
+<refsect3 id="prelude-error-verbose-make.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>source</para></entry>
+<entry role="parameter_description"><para>Error source.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>code</para></entry>
+<entry role="parameter_description"><para>Error code.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fmt</para></entry>
+<entry role="parameter_description"><para>Format string.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>...</para></entry>
+<entry role="parameter_description"><para>Argument list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-error-verbose-make.returns" role="returns">
+<title>Returns</title>
+<para> The created <link linkend="prelude-error-t"><type>prelude_error_t</type></link> integer.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-error-verbose-make-v" role="function">
+<title>prelude_error_verbose_make_v&#160;()</title>
+<indexterm zone="prelude-error-verbose-make-v"><primary>prelude_error_verbose_make_v</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-error-t"><returnvalue>prelude_error_t</returnvalue></link>
+prelude_error_verbose_make_v (<parameter><link linkend="prelude-error-source-t"><type>prelude_error_source_t</type></link> source</parameter>,
+                              <parameter><link linkend="prelude-error-code-t"><type>prelude_error_code_t</type></link> code</parameter>,
+                              <parameter>const <link linkend="char"><type>char</type></link> *fmt</parameter>);</programlisting>
+<para>Create a new error using <parameter>source</parameter>
+ and <parameter>code</parameter>
+, using the detailed error message
+specified within <parameter>fmt</parameter>
+.</para>
+<refsect3 id="prelude-error-verbose-make-v.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>source</para></entry>
+<entry role="parameter_description"><para>Error source.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>code</para></entry>
+<entry role="parameter_description"><para>Error code.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fmt</para></entry>
+<entry role="parameter_description"><para>Format string.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>ap</para></entry>
+<entry role="parameter_description"><para>Argument list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-error-verbose-make-v.returns" role="returns">
+<title>Returns</title>
+<para> The created <link linkend="prelude-error-t"><type>prelude_error_t</type></link> integer.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-error-code-to-errno" role="function">
+<title>prelude_error_code_to_errno&#160;()</title>
+<indexterm zone="prelude-error-code-to-errno"><primary>prelude_error_code_to_errno</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_error_code_to_errno (<parameter><link linkend="prelude-error-code-t"><type>prelude_error_code_t</type></link> code</parameter>);</programlisting>
+<refsect3 id="prelude-error-code-to-errno.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>code</para></entry>
+<entry role="parameter_description"><para>Error code.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-error-code-to-errno.returns" role="returns">
+<title>Returns</title>
+<para> the errno value corresponding to <parameter>code</parameter>
+.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-error-is-verbose" role="function">
+<title>prelude_error_is_verbose&#160;()</title>
+<indexterm zone="prelude-error-is-verbose"><primary>prelude_error_is_verbose</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+prelude_error_is_verbose (<parameter><link linkend="prelude-error-t"><type>prelude_error_t</type></link> error</parameter>);</programlisting>
+<refsect3 id="prelude-error-is-verbose.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>error</para></entry>
+<entry role="parameter_description"><para>A <link linkend="prelude-error-t"><type>prelude_error_t</type></link> return value.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-error-is-verbose.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="PRELUDE-BOOL-TRUE:CAPS"><type>PRELUDE_BOOL_TRUE</type></link> if there is a detailed message for this error, <link linkend="PRELUDE-BOOL-FALSE:CAPS"><type>PRELUDE_BOOL_FALSE</type></link> otherwise.</para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-error.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="PRELUDE-ERROR-SOURCE-DEFAULT:CAPS" role="macro">
+<title>PRELUDE_ERROR_SOURCE_DEFAULT</title>
+<indexterm zone="PRELUDE-ERROR-SOURCE-DEFAULT:CAPS"><primary>PRELUDE_ERROR_SOURCE_DEFAULT</primary></indexterm>
+<programlisting language="C"> #define PRELUDE_ERROR_SOURCE_DEFAULT  PRELUDE_ERROR_SOURCE_UNKNOWN
+</programlisting>
+</refsect2>
+<refsect2 id="PRELUDE-ERROR-SYSTEM-ERROR:CAPS" role="macro">
+<title>PRELUDE_ERROR_SYSTEM_ERROR</title>
+<indexterm zone="PRELUDE-ERROR-SYSTEM-ERROR:CAPS"><primary>PRELUDE_ERROR_SYSTEM_ERROR</primary></indexterm>
+<programlisting language="C">#define PRELUDE_ERROR_SYSTEM_ERROR    (1 &lt;&lt; 15)
+</programlisting>
+</refsect2>
+<refsect2 id="prelude-error-source-t" role="enum">
+<title>enum prelude_error_source_t</title>
+<indexterm zone="prelude-error-source-t"><primary>prelude_error_source_t</primary></indexterm>
+<refsect3 id="prelude-error-source-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-UNKNOWN:CAPS">PRELUDE_ERROR_SOURCE_UNKNOWN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-IO:CAPS">PRELUDE_ERROR_SOURCE_IO</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-MESSAGE:CAPS">PRELUDE_ERROR_SOURCE_MESSAGE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-FAILOVER:CAPS">PRELUDE_ERROR_SOURCE_FAILOVER</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-CLIENT:CAPS">PRELUDE_ERROR_SOURCE_CLIENT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-CLIENT-PROFILE:CAPS">PRELUDE_ERROR_SOURCE_CLIENT_PROFILE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-EXTRACT:CAPS">PRELUDE_ERROR_SOURCE_EXTRACT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-CONNECTION:CAPS">PRELUDE_ERROR_SOURCE_CONNECTION</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-CONNECTION-POOL:CAPS">PRELUDE_ERROR_SOURCE_CONNECTION_POOL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-CONFIG-ENGINE:CAPS">PRELUDE_ERROR_SOURCE_CONFIG_ENGINE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-STRING:CAPS">PRELUDE_ERROR_SOURCE_STRING</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-IDMEF-TREE-WRAP:CAPS">PRELUDE_ERROR_SOURCE_IDMEF_TREE_WRAP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-IDMEF-PATH:CAPS">PRELUDE_ERROR_SOURCE_IDMEF_PATH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-IDMEF-TYPE:CAPS">PRELUDE_ERROR_SOURCE_IDMEF_TYPE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-IDMEF-MESSAGE-READ:CAPS">PRELUDE_ERROR_SOURCE_IDMEF_MESSAGE_READ</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-IDMEF-CRITERIA:CAPS">PRELUDE_ERROR_SOURCE_IDMEF_CRITERIA</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-IDMEF-VALUE-TYPE:CAPS">PRELUDE_ERROR_SOURCE_IDMEF_VALUE_TYPE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-SOURCE-PRELUDEDB:CAPS">PRELUDE_ERROR_SOURCE_PRELUDEDB</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-error-code-t" role="enum">
+<title>enum prelude_error_code_t</title>
+<indexterm zone="prelude-error-code-t"><primary>prelude_error_code_t</primary></indexterm>
+<refsect3 id="prelude-error-code-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-NO-ERROR:CAPS">PRELUDE_ERROR_NO_ERROR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-GENERIC:CAPS">PRELUDE_ERROR_GENERIC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-TLS:CAPS">PRELUDE_ERROR_TLS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-INVAL-LENGTH:CAPS">PRELUDE_ERROR_INVAL_LENGTH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-INVAL-MESSAGE:CAPS">PRELUDE_ERROR_INVAL_MESSAGE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-PROTOCOL-VERSION:CAPS">PRELUDE_ERROR_PROTOCOL_VERSION</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EOF:CAPS">PRELUDE_ERROR_EOF</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-PROFILE:CAPS">PRELUDE_ERROR_PROFILE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-TLS-AUTH-REJECTED:CAPS">PRELUDE_ERROR_TLS_AUTH_REJECTED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-INVAL-INT8:CAPS">PRELUDE_ERROR_INVAL_INT8</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-INVAL-INT16:CAPS">PRELUDE_ERROR_INVAL_INT16</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-INVAL-INT32:CAPS">PRELUDE_ERROR_INVAL_INT32</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-INVAL-INT64:CAPS">PRELUDE_ERROR_INVAL_INT64</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-INVAL-FLOAT:CAPS">PRELUDE_ERROR_INVAL_FLOAT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-INVAL-CHAR:CAPS">PRELUDE_ERROR_INVAL_CHAR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-INVAL-IDMEF-TIME:CAPS">PRELUDE_ERROR_INVAL_IDMEF_TIME</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-CONNECTION-STRING:CAPS">PRELUDE_ERROR_CONNECTION_STRING</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-VALUE-TYPE-UNKNOWN:CAPS">PRELUDE_ERROR_IDMEF_VALUE_TYPE_UNKNOWN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-VALUE-TYPE-COPY-UNAVAILABLE:CAPS">PRELUDE_ERROR_IDMEF_VALUE_TYPE_COPY_UNAVAILABLE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-VALUE-TYPE-CLONE-UNAVAILABLE:CAPS">PRELUDE_ERROR_IDMEF_VALUE_TYPE_CLONE_UNAVAILABLE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-VALUE-TYPE-COMPARE-UNAVAILABLE:CAPS">PRELUDE_ERROR_IDMEF_VALUE_TYPE_COMPARE_UNAVAILABLE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-VALUE-TYPE-READ-UNAVAILABLE:CAPS">PRELUDE_ERROR_IDMEF_VALUE_TYPE_READ_UNAVAILABLE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-VALUE-TYPE-WRITE-UNAVAILABLE:CAPS">PRELUDE_ERROR_IDMEF_VALUE_TYPE_WRITE_UNAVAILABLE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-VALUE-TYPE-COMPARE-MISMATCH:CAPS">PRELUDE_ERROR_IDMEF_VALUE_TYPE_COMPARE_MISMATCH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-VALUE-TYPE-PARSE:CAPS">PRELUDE_ERROR_IDMEF_VALUE_TYPE_PARSE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-CLASS-UNKNOWN:CAPS">PRELUDE_ERROR_IDMEF_CLASS_UNKNOWN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-CLASS-UNKNOWN-CHILD:CAPS">PRELUDE_ERROR_IDMEF_CLASS_UNKNOWN_CHILD</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-CLASS-UNKNOWN-NAME:CAPS">PRELUDE_ERROR_IDMEF_CLASS_UNKNOWN_NAME</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-PATH-LENGTH:CAPS">PRELUDE_ERROR_IDMEF_PATH_LENGTH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-PATH-DEPTH:CAPS">PRELUDE_ERROR_IDMEF_PATH_DEPTH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-PATH-PARENT-ROOT:CAPS">PRELUDE_ERROR_IDMEF_PATH_PARENT_ROOT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-PATH-NTH:CAPS">PRELUDE_ERROR_IDMEF_PATH_NTH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-PATH-MISS-INDEX:CAPS">PRELUDE_ERROR_IDMEF_PATH_MISS_INDEX</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-PATH-INTEGRITY:CAPS">PRELUDE_ERROR_IDMEF_PATH_INTEGRITY</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-PATH-INDEX-RESERVED:CAPS">PRELUDE_ERROR_IDMEF_PATH_INDEX_RESERVED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-PATH-INDEX-FORBIDDEN:CAPS">PRELUDE_ERROR_IDMEF_PATH_INDEX_FORBIDDEN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-PATH-INDEX-UNDEFINED:CAPS">PRELUDE_ERROR_IDMEF_PATH_INDEX_UNDEFINED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-TREE-INDEX-UNDEFINED:CAPS">PRELUDE_ERROR_IDMEF_TREE_INDEX_UNDEFINED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-UNKNOWN-ENUM-STRING:CAPS">PRELUDE_ERROR_IDMEF_UNKNOWN_ENUM_STRING</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-UNKNOWN-TAG:CAPS">PRELUDE_ERROR_IDMEF_UNKNOWN_TAG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-DAEMONIZE-LOCK-HELD:CAPS">PRELUDE_ERROR_DAEMONIZE_LOCK_HELD</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-PLUGIN-LTDL-INIT:CAPS">PRELUDE_ERROR_PLUGIN_LTDL_INIT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-STRING-NOT-NULL-TERMINATED:CAPS">PRELUDE_ERROR_STRING_NOT_NULL_TERMINATED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-CANT-RESOLVE:CAPS">PRELUDE_ERROR_CANT_RESOLVE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-UNKNOWN-PERMISSION-TYPE:CAPS">PRELUDE_ERROR_UNKNOWN_PERMISSION_TYPE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-UNKNOWN-PERMISSION-BIT:CAPS">PRELUDE_ERROR_UNKNOWN_PERMISSION_BIT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-CRITERIA-PARSE:CAPS">PRELUDE_ERROR_IDMEF_CRITERIA_PARSE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-CRITERION-UNSUPPORTED-OPERATOR:CAPS">PRELUDE_ERROR_IDMEF_CRITERION_UNSUPPORTED_OPERATOR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-CRITERION-INVALID-REGEX:CAPS">PRELUDE_ERROR_IDMEF_CRITERION_INVALID_REGEX</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-TLS-WARNING-ALERT:CAPS">PRELUDE_ERROR_TLS_WARNING_ALERT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-TLS-FATAL-ALERT:CAPS">PRELUDE_ERROR_TLS_FATAL_ALERT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-CLASS-CHILD-NOT-CLASS:CAPS">PRELUDE_ERROR_IDMEF_CLASS_CHILD_NOT_CLASS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ASSERTION:CAPS">PRELUDE_ERROR_ASSERTION</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-VALUE-TYPE-REF-UNAVAILABLE:CAPS">PRELUDE_ERROR_IDMEF_VALUE_TYPE_REF_UNAVAILABLE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-IDMEF-CLASS-CHILD-NOT-UNION:CAPS">PRELUDE_ERROR_IDMEF_CLASS_CHILD_NOT_UNION</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-UNKNOWN-ERRNO:CAPS">PRELUDE_ERROR_UNKNOWN_ERRNO</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-E2BIG:CAPS">PRELUDE_ERROR_E2BIG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EACCES:CAPS">PRELUDE_ERROR_EACCES</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EADDRINUSE:CAPS">PRELUDE_ERROR_EADDRINUSE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EADDRNOTAVAIL:CAPS">PRELUDE_ERROR_EADDRNOTAVAIL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EADV:CAPS">PRELUDE_ERROR_EADV</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EAFNOSUPPORT:CAPS">PRELUDE_ERROR_EAFNOSUPPORT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EAGAIN:CAPS">PRELUDE_ERROR_EAGAIN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EALREADY:CAPS">PRELUDE_ERROR_EALREADY</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EAUTH:CAPS">PRELUDE_ERROR_EAUTH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EBACKGROUND:CAPS">PRELUDE_ERROR_EBACKGROUND</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EBADE:CAPS">PRELUDE_ERROR_EBADE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EBADF:CAPS">PRELUDE_ERROR_EBADF</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EBADFD:CAPS">PRELUDE_ERROR_EBADFD</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EBADMSG:CAPS">PRELUDE_ERROR_EBADMSG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EBADR:CAPS">PRELUDE_ERROR_EBADR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EBADRPC:CAPS">PRELUDE_ERROR_EBADRPC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EBADRQC:CAPS">PRELUDE_ERROR_EBADRQC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EBADSLT:CAPS">PRELUDE_ERROR_EBADSLT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EBFONT:CAPS">PRELUDE_ERROR_EBFONT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EBUSY:CAPS">PRELUDE_ERROR_EBUSY</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ECANCELED:CAPS">PRELUDE_ERROR_ECANCELED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ECHILD:CAPS">PRELUDE_ERROR_ECHILD</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ECHRNG:CAPS">PRELUDE_ERROR_ECHRNG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ECOMM:CAPS">PRELUDE_ERROR_ECOMM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ECONNABORTED:CAPS">PRELUDE_ERROR_ECONNABORTED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ECONNREFUSED:CAPS">PRELUDE_ERROR_ECONNREFUSED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ECONNRESET:CAPS">PRELUDE_ERROR_ECONNRESET</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ED:CAPS">PRELUDE_ERROR_ED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EDEADLK:CAPS">PRELUDE_ERROR_EDEADLK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EDEADLOCK:CAPS">PRELUDE_ERROR_EDEADLOCK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EDESTADDRREQ:CAPS">PRELUDE_ERROR_EDESTADDRREQ</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EDIED:CAPS">PRELUDE_ERROR_EDIED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EDOM:CAPS">PRELUDE_ERROR_EDOM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EDOTDOT:CAPS">PRELUDE_ERROR_EDOTDOT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EDQUOT:CAPS">PRELUDE_ERROR_EDQUOT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EEXIST:CAPS">PRELUDE_ERROR_EEXIST</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EFAULT:CAPS">PRELUDE_ERROR_EFAULT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EFBIG:CAPS">PRELUDE_ERROR_EFBIG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EFTYPE:CAPS">PRELUDE_ERROR_EFTYPE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EGRATUITOUS:CAPS">PRELUDE_ERROR_EGRATUITOUS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EGREGIOUS:CAPS">PRELUDE_ERROR_EGREGIOUS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EHOSTDOWN:CAPS">PRELUDE_ERROR_EHOSTDOWN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EHOSTUNREACH:CAPS">PRELUDE_ERROR_EHOSTUNREACH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EIDRM:CAPS">PRELUDE_ERROR_EIDRM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EIEIO:CAPS">PRELUDE_ERROR_EIEIO</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EILSEQ:CAPS">PRELUDE_ERROR_EILSEQ</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EINPROGRESS:CAPS">PRELUDE_ERROR_EINPROGRESS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EINTR:CAPS">PRELUDE_ERROR_EINTR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EINVAL:CAPS">PRELUDE_ERROR_EINVAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EIO:CAPS">PRELUDE_ERROR_EIO</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EISCONN:CAPS">PRELUDE_ERROR_EISCONN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EISDIR:CAPS">PRELUDE_ERROR_EISDIR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EISNAM:CAPS">PRELUDE_ERROR_EISNAM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EL2HLT:CAPS">PRELUDE_ERROR_EL2HLT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EL2NSYNC:CAPS">PRELUDE_ERROR_EL2NSYNC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EL3HLT:CAPS">PRELUDE_ERROR_EL3HLT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EL3RST:CAPS">PRELUDE_ERROR_EL3RST</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ELIBACC:CAPS">PRELUDE_ERROR_ELIBACC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ELIBBAD:CAPS">PRELUDE_ERROR_ELIBBAD</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ELIBEXEC:CAPS">PRELUDE_ERROR_ELIBEXEC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ELIBMAX:CAPS">PRELUDE_ERROR_ELIBMAX</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ELIBSCN:CAPS">PRELUDE_ERROR_ELIBSCN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ELNRNG:CAPS">PRELUDE_ERROR_ELNRNG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ELOOP:CAPS">PRELUDE_ERROR_ELOOP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EMEDIUMTYPE:CAPS">PRELUDE_ERROR_EMEDIUMTYPE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EMFILE:CAPS">PRELUDE_ERROR_EMFILE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EMLINK:CAPS">PRELUDE_ERROR_EMLINK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EMSGSIZE:CAPS">PRELUDE_ERROR_EMSGSIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EMULTIHOP:CAPS">PRELUDE_ERROR_EMULTIHOP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENAMETOOLONG:CAPS">PRELUDE_ERROR_ENAMETOOLONG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENAVAIL:CAPS">PRELUDE_ERROR_ENAVAIL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENEEDAUTH:CAPS">PRELUDE_ERROR_ENEEDAUTH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENETDOWN:CAPS">PRELUDE_ERROR_ENETDOWN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENETRESET:CAPS">PRELUDE_ERROR_ENETRESET</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENETUNREACH:CAPS">PRELUDE_ERROR_ENETUNREACH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENFILE:CAPS">PRELUDE_ERROR_ENFILE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOANO:CAPS">PRELUDE_ERROR_ENOANO</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOBUFS:CAPS">PRELUDE_ERROR_ENOBUFS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOCSI:CAPS">PRELUDE_ERROR_ENOCSI</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENODATA:CAPS">PRELUDE_ERROR_ENODATA</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENODEV:CAPS">PRELUDE_ERROR_ENODEV</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOENT:CAPS">PRELUDE_ERROR_ENOENT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOEXEC:CAPS">PRELUDE_ERROR_ENOEXEC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOLCK:CAPS">PRELUDE_ERROR_ENOLCK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOLINK:CAPS">PRELUDE_ERROR_ENOLINK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOMEDIUM:CAPS">PRELUDE_ERROR_ENOMEDIUM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOMEM:CAPS">PRELUDE_ERROR_ENOMEM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOMSG:CAPS">PRELUDE_ERROR_ENOMSG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENONET:CAPS">PRELUDE_ERROR_ENONET</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOPKG:CAPS">PRELUDE_ERROR_ENOPKG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOPROTOOPT:CAPS">PRELUDE_ERROR_ENOPROTOOPT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOSPC:CAPS">PRELUDE_ERROR_ENOSPC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOSR:CAPS">PRELUDE_ERROR_ENOSR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOSTR:CAPS">PRELUDE_ERROR_ENOSTR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOSYS:CAPS">PRELUDE_ERROR_ENOSYS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOTBLK:CAPS">PRELUDE_ERROR_ENOTBLK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOTCONN:CAPS">PRELUDE_ERROR_ENOTCONN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOTDIR:CAPS">PRELUDE_ERROR_ENOTDIR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOTEMPTY:CAPS">PRELUDE_ERROR_ENOTEMPTY</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOTNAM:CAPS">PRELUDE_ERROR_ENOTNAM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOTSOCK:CAPS">PRELUDE_ERROR_ENOTSOCK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOTSUP:CAPS">PRELUDE_ERROR_ENOTSUP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOTTY:CAPS">PRELUDE_ERROR_ENOTTY</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENOTUNIQ:CAPS">PRELUDE_ERROR_ENOTUNIQ</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ENXIO:CAPS">PRELUDE_ERROR_ENXIO</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EOPNOTSUPP:CAPS">PRELUDE_ERROR_EOPNOTSUPP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EOVERFLOW:CAPS">PRELUDE_ERROR_EOVERFLOW</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EPERM:CAPS">PRELUDE_ERROR_EPERM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EPFNOSUPPORT:CAPS">PRELUDE_ERROR_EPFNOSUPPORT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EPIPE:CAPS">PRELUDE_ERROR_EPIPE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EPROCLIM:CAPS">PRELUDE_ERROR_EPROCLIM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EPROCUNAVAIL:CAPS">PRELUDE_ERROR_EPROCUNAVAIL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EPROGMISMATCH:CAPS">PRELUDE_ERROR_EPROGMISMATCH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EPROGUNAVAIL:CAPS">PRELUDE_ERROR_EPROGUNAVAIL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EPROTO:CAPS">PRELUDE_ERROR_EPROTO</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EPROTONOSUPPORT:CAPS">PRELUDE_ERROR_EPROTONOSUPPORT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EPROTOTYPE:CAPS">PRELUDE_ERROR_EPROTOTYPE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ERANGE:CAPS">PRELUDE_ERROR_ERANGE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EREMCHG:CAPS">PRELUDE_ERROR_EREMCHG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EREMOTE:CAPS">PRELUDE_ERROR_EREMOTE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EREMOTEIO:CAPS">PRELUDE_ERROR_EREMOTEIO</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ERESTART:CAPS">PRELUDE_ERROR_ERESTART</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EROFS:CAPS">PRELUDE_ERROR_EROFS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ERPCMISMATCH:CAPS">PRELUDE_ERROR_ERPCMISMATCH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ESHUTDOWN:CAPS">PRELUDE_ERROR_ESHUTDOWN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ESOCKTNOSUPPORT:CAPS">PRELUDE_ERROR_ESOCKTNOSUPPORT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ESPIPE:CAPS">PRELUDE_ERROR_ESPIPE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ESRCH:CAPS">PRELUDE_ERROR_ESRCH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ESRMNT:CAPS">PRELUDE_ERROR_ESRMNT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ESTALE:CAPS">PRELUDE_ERROR_ESTALE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ESTRPIPE:CAPS">PRELUDE_ERROR_ESTRPIPE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ETIME:CAPS">PRELUDE_ERROR_ETIME</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ETIMEDOUT:CAPS">PRELUDE_ERROR_ETIMEDOUT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ETOOMANYREFS:CAPS">PRELUDE_ERROR_ETOOMANYREFS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-ETXTBSY:CAPS">PRELUDE_ERROR_ETXTBSY</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EUCLEAN:CAPS">PRELUDE_ERROR_EUCLEAN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EUNATCH:CAPS">PRELUDE_ERROR_EUNATCH</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EUSERS:CAPS">PRELUDE_ERROR_EUSERS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EWOULDBLOCK:CAPS">PRELUDE_ERROR_EWOULDBLOCK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EXDEV:CAPS">PRELUDE_ERROR_EXDEV</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ERROR-EXFULL:CAPS">PRELUDE_ERROR_EXFULL</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-error-t" role="typedef">
+<title>prelude_error_t</title>
+<indexterm zone="prelude-error-t"><primary>prelude_error_t</primary></indexterm>
+<programlisting language="C">typedef signed int prelude_error_t;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,64 @@
+#! /usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+CONFIGURE_FLAGS = --enable-easy-bindings
+
+ifeq ($(filter nopython,$(DEB_BUILD_PROFILES)),)
+	PY2VERS=$(shell pyversions -vr)
+	PY3VERS=$(shell py3versions -vr)
+	DH_ADDONS += --with python2 --with python3
+else
+	CONFIGURE_FLAGS += --with-python2=no --with-python3=no
+endif
+
+ifeq ($(filter noperl,$(DEB_BUILD_PROFILES)),)
+	CONFIGURE_FLAGS += --with-perl-installdirs=vendor
+else
+	CONFIGURE_FLAGS += --with-perl=no
+endif
+
+ifeq ($(filter noruby,$(DEB_BUILD_PROFILES)),)
+	DH_ADDONS += --with ruby
+else
+	CONFIGURE_FLAGS += --with-ruby=no
+endif
+
+ifneq ($(filter nolua,$(DEB_BUILD_PROFILES)),)
+	CONFIGURE_FLAGS += --with-lua=no
+endif
+
+ifneq ($(filter libprelude-doc,$(shell dh_listpackages)),)
+	CONFIGURE_FLAGS += --enable-gtk-doc
+endif
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(CONFIGURE_FLAGS)
+
+override_dh_auto_build: build-core $(PY2VERS:%=build-python%) $(PY3VERS:%=build-python%)
+
+build-core:
+	dh_auto_build
+
+build-python%:
+	cd bindings/python && python$* setup.py build
+
+override_dh_auto_install: install-core $(PY2VERS:%=install-python%) $(PY3VERS:%=install-python%)
+install-core:
+	dh_auto_install
+	find . -name "*.la" -exec sed -i -e 's/^dependency_libs=.*$$/dependency_libs=/g' {} +
+install-python%:
+	cd bindings/python && python$* setup.py install --root $(CURDIR)/debian/tmp
+
+override_dh_python2:
+	dh_python2 -ppython-prelude
+
+override_dh_python3:
+	dh_python3 -ppython3-prelude
+
+override_dh_makeshlibs:
+	# For new symbols when compiled with GCC 7
+	dh_makeshlibs -plibpreludecpp8 -V'libpreludecpp8 (>= 3.1.0-0.5~)'
+	dh_makeshlibs --remaining-packages
+
+%:
+	dh $@ $(DH_ADDONS)

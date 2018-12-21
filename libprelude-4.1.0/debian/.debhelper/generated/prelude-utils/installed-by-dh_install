@@ -1,0 +1,4 @@
+./debian/tmp/usr/bin/prelude-admin
+./debian/tmp/usr/share/man/man1/prelude-admin.1
+./debian/tmp/etc/prelude/default
+./debian/tmp/etc/prelude/profile

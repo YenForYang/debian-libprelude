@@ -1,0 +1,13 @@
+Package: libprelude-perl-dbgsym
+Source: libprelude
+Version: 4.1.0-4.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Installed-Size: 58
+Depends: libprelude-perl (= 4.1.0-4.2)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libprelude-perl
+Build-Ids: ba84c43b187c8b4ba6be827908037ec8b6daa723

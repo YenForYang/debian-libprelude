@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-prelude-log">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-prelude-log.top_of_page">prelude-log</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>prelude-log</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-prelude-log.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-log">prelude_log</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-log-debug">prelude_log_debug</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-log-v">prelude_log_v</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-log-debug-v">prelude_log_debug_v</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-log-set-level">prelude_log_set_level</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-log-set-debug-level">prelude_log_set_debug_level</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-log-flags-t"><returnvalue>prelude_log_flags_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-log-get-flags">prelude_log_get_flags</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-log-set-flags">prelude_log_set_flags</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-log-get-prefix">prelude_log_get_prefix</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-log-set-prefix">prelude_log_set_prefix</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-log-set-callback">prelude_log_set_callback</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-log-set-logfile">prelude_log_set_logfile</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-prelude-log.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-log-t">prelude_log_t</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-log-flags-t">prelude_log_flags_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-prelude-log.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-log.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="prelude-log" role="macro">
+<title>prelude_log()</title>
+<indexterm zone="prelude-log"><primary>prelude_log</primary></indexterm>
+<programlisting language="C">#define             prelude_log(level, ...)</programlisting>
+</refsect2>
+<refsect2 id="prelude-log-debug" role="macro">
+<title>prelude_log_debug()</title>
+<indexterm zone="prelude-log-debug"><primary>prelude_log_debug</primary></indexterm>
+<programlisting language="C">#define             prelude_log_debug(level, ...)</programlisting>
+</refsect2>
+<refsect2 id="prelude-log-v" role="macro">
+<title>prelude_log_v()</title>
+<indexterm zone="prelude-log-v"><primary>prelude_log_v</primary></indexterm>
+<programlisting language="C">#define             prelude_log_v(level, fmt, ap)</programlisting>
+</refsect2>
+<refsect2 id="prelude-log-debug-v" role="macro">
+<title>prelude_log_debug_v()</title>
+<indexterm zone="prelude-log-debug-v"><primary>prelude_log_debug_v</primary></indexterm>
+<programlisting language="C">#define             prelude_log_debug_v(level, fmt, ap)</programlisting>
+</refsect2>
+<refsect2 id="prelude-log-set-level" role="function">
+<title>prelude_log_set_level&#160;()</title>
+<indexterm zone="prelude-log-set-level"><primary>prelude_log_set_level</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_log_set_level (<parameter><link linkend="prelude-log-t"><type>prelude_log_t</type></link> level</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-log-set-debug-level" role="function">
+<title>prelude_log_set_debug_level&#160;()</title>
+<indexterm zone="prelude-log-set-debug-level"><primary>prelude_log_set_debug_level</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_log_set_debug_level (<parameter><link linkend="int"><type>int</type></link> level</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-log-get-flags" role="function">
+<title>prelude_log_get_flags&#160;()</title>
+<indexterm zone="prelude-log-get-flags"><primary>prelude_log_get_flags</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-log-flags-t"><returnvalue>prelude_log_flags_t</returnvalue></link>
+prelude_log_get_flags (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-log-set-flags" role="function">
+<title>prelude_log_set_flags&#160;()</title>
+<indexterm zone="prelude-log-set-flags"><primary>prelude_log_set_flags</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_log_set_flags (<parameter><link linkend="prelude-log-flags-t"><type>prelude_log_flags_t</type></link> flags</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-log-get-prefix" role="function">
+<title>prelude_log_get_prefix&#160;()</title>
+<indexterm zone="prelude-log-get-prefix"><primary>prelude_log_get_prefix</primary></indexterm>
+<programlisting language="C"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_log_get_prefix (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-log-set-prefix" role="function">
+<title>prelude_log_set_prefix&#160;()</title>
+<indexterm zone="prelude-log-set-prefix"><primary>prelude_log_set_prefix</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_log_set_prefix (<parameter><link linkend="char"><type>char</type></link> *prefix</parameter>);</programlisting>
+<para>Tell the Prelude standard logger to add <parameter>prefix</parameter>
+ before logging
+a line.</para>
+<refsect3 id="prelude-log-set-prefix.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>prefix</para></entry>
+<entry role="parameter_description"><para>Pointer to the prefix to use.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-log-set-callback" role="function">
+<title>prelude_log_set_callback&#160;()</title>
+<indexterm zone="prelude-log-set-callback"><primary>prelude_log_set_callback</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_log_set_callback ();</programlisting>
+<para><parameter><link linkend="log-cb"><function>log_cb()</function></link></parameter>
+ will be called in place of the prelude function usally
+used for loging.</para>
+<refsect3 id="prelude-log-set-callback.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>log_cb</para></entry>
+<entry role="parameter_description"><para>Callback function.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-log-set-logfile" role="function">
+<title>prelude_log_set_logfile&#160;()</title>
+<indexterm zone="prelude-log-set-logfile"><primary>prelude_log_set_logfile</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_log_set_logfile (<parameter>const <link linkend="char"><type>char</type></link> *filename</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-log.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="prelude-log-t" role="enum">
+<title>enum prelude_log_t</title>
+<indexterm zone="prelude-log-t"><primary>prelude_log_t</primary></indexterm>
+<refsect3 id="prelude-log-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-LOG-CRIT:CAPS">PRELUDE_LOG_CRIT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-LOG-ERR:CAPS">PRELUDE_LOG_ERR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-LOG-WARN:CAPS">PRELUDE_LOG_WARN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-LOG-INFO:CAPS">PRELUDE_LOG_INFO</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-LOG-DEBUG:CAPS">PRELUDE_LOG_DEBUG</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-log-flags-t" role="enum">
+<title>enum prelude_log_flags_t</title>
+<indexterm zone="prelude-log-flags-t"><primary>prelude_log_flags_t</primary></indexterm>
+<refsect3 id="prelude-log-flags-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-LOG-FLAGS-QUIET:CAPS">PRELUDE_LOG_FLAGS_QUIET</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-LOG-FLAGS-SYSLOG:CAPS">PRELUDE_LOG_FLAGS_SYSLOG</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-prelude-async">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-prelude-async.top_of_page">prelude-async</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>prelude-async</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-prelude-async.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><phrase role="c_punctuation">(</phrase><link linkend="prelude-async-callback-t">*prelude_async_callback_t</link><phrase role="c_punctuation">)</phrase>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-async-init">prelude_async_init</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-async-flags-t"><returnvalue>prelude_async_flags_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-async-get-flags">prelude_async_get_flags</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-async-set-flags">prelude_async_set_flags</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-async-add">prelude_async_add</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-async-del">prelude_async_del</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-async-exit">prelude_async_exit</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-prelude-async.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-async-flags-t">prelude_async_flags_t</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="PRELUDE-ASYNC-OBJECT:CAPS">PRELUDE_ASYNC_OBJECT</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="prelude-async-object-t">prelude_async_object_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-prelude-async.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-async.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="prelude-async-callback-t" role="function">
+<title>prelude_async_callback_t&#160;()</title>
+<indexterm zone="prelude-async-callback-t"><primary>prelude_async_callback_t</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+<phrase role="c_punctuation">(</phrase>*prelude_async_callback_t<phrase role="c_punctuation">)</phrase> (<parameter><link linkend="void"><type>void</type></link> *object</parameter>,
+                             <parameter><link linkend="void"><type>void</type></link> *data</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-async-init" role="function">
+<title>prelude_async_init&#160;()</title>
+<indexterm zone="prelude-async-init"><primary>prelude_async_init</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_async_init (<parameter><type>void</type></parameter>);</programlisting>
+<para>Initialize the asynchronous subsystem.</para>
+<refsect3 id="prelude-async-init.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, -1 if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-async-get-flags" role="function">
+<title>prelude_async_get_flags&#160;()</title>
+<indexterm zone="prelude-async-get-flags"><primary>prelude_async_get_flags</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-async-flags-t"><returnvalue>prelude_async_flags_t</returnvalue></link>
+prelude_async_get_flags (<parameter><type>void</type></parameter>);</programlisting>
+<para>Retrieves flags from the asynchronous subsystem</para>
+<refsect3 id="prelude-async-get-flags.returns" role="returns">
+<title>Returns</title>
+<para> asynchronous flags</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-async-set-flags" role="function">
+<title>prelude_async_set_flags&#160;()</title>
+<indexterm zone="prelude-async-set-flags"><primary>prelude_async_set_flags</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_async_set_flags (<parameter><link linkend="prelude-async-flags-t"><type>prelude_async_flags_t</type></link> flags</parameter>);</programlisting>
+<para>Sets flags to the asynchronous subsystem.</para>
+<refsect3 id="prelude-async-set-flags.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>flags</para></entry>
+<entry role="parameter_description"><para>flags you want to set</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-async-add" role="function">
+<title>prelude_async_add&#160;()</title>
+<indexterm zone="prelude-async-add"><primary>prelude_async_add</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_async_add (<parameter><link linkend="prelude-async-object-t"><type>prelude_async_object_t</type></link> *obj</parameter>);</programlisting>
+<para>Adds <parameter>obj</parameter>
+ to the asynchronous processing list.</para>
+<refsect3 id="prelude-async-add.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>obj</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-async-t"><type>prelude_async_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-async-del" role="function">
+<title>prelude_async_del&#160;()</title>
+<indexterm zone="prelude-async-del"><primary>prelude_async_del</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_async_del (<parameter><link linkend="prelude-async-object-t"><type>prelude_async_object_t</type></link> *obj</parameter>);</programlisting>
+<para>Deletes <parameter>obj</parameter>
+ from the asynchronous processing list.</para>
+<refsect3 id="prelude-async-del.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>obj</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-async-t"><type>prelude_async_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-async-exit" role="function">
+<title>prelude_async_exit&#160;()</title>
+<indexterm zone="prelude-async-exit"><primary>prelude_async_exit</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_async_exit (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-async.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="prelude-async-flags-t" role="enum">
+<title>enum prelude_async_flags_t</title>
+<indexterm zone="prelude-async-flags-t"><primary>prelude_async_flags_t</primary></indexterm>
+<para>This provides asynchronous timer. When enabled, the heartbeat
+function (and user specified callback, if any) will be called
+automatically, from an asynchronous thread.</para>
+<para>If you use this flags, you won't need to call <link linkend="prelude-wake-up-timer"><function>prelude_wake_up_timer()</function></link>
+anymore.</para>
+<refsect3 id="prelude-async-flags-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-ASYNC-FLAGS-TIMER:CAPS">PRELUDE_ASYNC_FLAGS_TIMER</para></entry>
+<entry role="enum_member_description"><para>Enable asynchronous timer.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="PRELUDE-ASYNC-OBJECT:CAPS" role="macro">
+<title>PRELUDE_ASYNC_OBJECT</title>
+<indexterm zone="PRELUDE-ASYNC-OBJECT:CAPS"><primary>PRELUDE_ASYNC_OBJECT</primary></indexterm>
+<programlisting language="C">#define             PRELUDE_ASYNC_OBJECT</programlisting>
+</refsect2>
+<refsect2 id="prelude-async-object-t" role="struct">
+<title>prelude_async_object_t</title>
+<indexterm zone="prelude-async-object-t"><primary>prelude_async_object_t</primary></indexterm>
+<programlisting language="C">typedef struct {
+        PRELUDE_ASYNC_OBJECT;
+} prelude_async_object_t;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-prelude-list">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-prelude-list.top_of_page">prelude-list</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>prelude-list</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-prelude-list.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="PRELUDE-LIST:CAPS">PRELUDE_LIST</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-list-entry">prelude_list_entry</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-list-for-each">prelude_list_for_each</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-list-for-each-safe">prelude_list_for_each_safe</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-list-for-each-reversed">prelude_list_for_each_reversed</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-list-for-each-reversed-safe">prelude_list_for_each_reversed_safe</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-list-for-each-continue">prelude_list_for_each_continue</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-list-for-each-continue-safe">prelude_list_for_each_continue_safe</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-list-get-next">prelude_list_get_next</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-list-get-next-safe">prelude_list_get_next_safe</link><phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-prelude-list.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="prelude-list-t">prelude_list_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-prelude-list.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-list.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="PRELUDE-LIST:CAPS" role="macro">
+<title>PRELUDE_LIST()</title>
+<indexterm zone="PRELUDE-LIST:CAPS"><primary>PRELUDE_LIST</primary></indexterm>
+<programlisting language="C">#define PRELUDE_LIST(item) prelude_list_t (item) = { &amp;(item), &amp;(item) }
+</programlisting>
+</refsect2>
+<refsect2 id="prelude-list-entry" role="macro">
+<title>prelude_list_entry()</title>
+<indexterm zone="prelude-list-entry"><primary>prelude_list_entry</primary></indexterm>
+<programlisting language="C">#define             prelude_list_entry(item, type, member)</programlisting>
+<para>Retrieve the entry of type <parameter>type</parameter>
+ from the <link linkend="prelude-list-t"><type>prelude_list_t</type></link> object <parameter>tmp</parameter>
+,
+using the item list member <parameter>member</parameter>
+. Returns the entry associated with <parameter>item</parameter>
+.</para>
+<refsect3 id="prelude-list-entry.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>item</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> object to retrieve the entry from.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>type</para></entry>
+<entry role="parameter_description"><para>Type of the entry to retrieve.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>member</para></entry>
+<entry role="parameter_description"><para>List member in <parameter>type</parameter>
+used to link it to a list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-list-for-each" role="macro">
+<title>prelude_list_for_each()</title>
+<indexterm zone="prelude-list-for-each"><primary>prelude_list_for_each</primary></indexterm>
+<programlisting language="C">#define             prelude_list_for_each(list, pos)</programlisting>
+<para>Iterate through all <parameter>list</parameter>
+ entry. <link linkend="prelude-list-entry"><function>prelude_list_entry()</function></link> can be used to retrieve
+and entry from the <parameter>pos</parameter>
+ pointer. It is not safe to call <link linkend="prelude-list-del"><function>prelude_list_del()</function></link> while
+iterating using this function, see <link linkend="prelude-list-for-each-safe"><function>prelude_list_for_each_safe()</function></link>.</para>
+<refsect3 id="prelude-list-for-each.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>list</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pos</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> object pointing to the current list member.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-list-for-each-safe" role="macro">
+<title>prelude_list_for_each_safe()</title>
+<indexterm zone="prelude-list-for-each-safe"><primary>prelude_list_for_each_safe</primary></indexterm>
+<programlisting language="C">#define             prelude_list_for_each_safe(list, pos, bkp)</programlisting>
+<para>Iterate through all <parameter>list</parameter>
+ entry. <link linkend="prelude-list-entry"><function>prelude_list_entry()</function></link> can be used to retrieve
+and entry from the <parameter>pos</parameter>
+ pointer. Calling <link linkend="prelude-list-del"><function>prelude_list_del()</function></link> while iterating the
+list is safe.</para>
+<refsect3 id="prelude-list-for-each-safe.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>list</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pos</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> object pointing to the current list member.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>bkp</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> object pointing to the next list member.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-list-for-each-reversed" role="macro">
+<title>prelude_list_for_each_reversed()</title>
+<indexterm zone="prelude-list-for-each-reversed"><primary>prelude_list_for_each_reversed</primary></indexterm>
+<programlisting language="C">#define             prelude_list_for_each_reversed(list, pos)</programlisting>
+<para>Iterate through all <parameter>list</parameter>
+ entry in reverse order. <link linkend="prelude-list-entry"><function>prelude_list_entry()</function></link> can be
+used to retrieve and entry from the <parameter>pos</parameter>
+ pointer. It is not safe to call
+<link linkend="prelude-list-del"><function>prelude_list_del()</function></link> while iterating using this function, see
+<link linkend="prelude-list-for-each-reversed-safe"><function>prelude_list_for_each_reversed_safe()</function></link>.</para>
+<refsect3 id="prelude-list-for-each-reversed.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>list</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pos</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> object pointing to the current list member.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-list-for-each-reversed-safe" role="macro">
+<title>prelude_list_for_each_reversed_safe()</title>
+<indexterm zone="prelude-list-for-each-reversed-safe"><primary>prelude_list_for_each_reversed_safe</primary></indexterm>
+<programlisting language="C">#define             prelude_list_for_each_reversed_safe(list, pos, bkp)</programlisting>
+<para>Iterate through all <parameter>list</parameter>
+ entry in reverse order. <link linkend="prelude-list-entry"><function>prelude_list_entry()</function></link> can be used to retrieve
+and entry from the <parameter>pos</parameter>
+ pointer. Calling <link linkend="prelude-list-del"><function>prelude_list_del()</function></link> while iterating the
+list is safe.</para>
+<refsect3 id="prelude-list-for-each-reversed-safe.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>list</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pos</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> object pointing to the current list member.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>bkp</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> object pointing to the next list member.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-list-for-each-continue" role="macro">
+<title>prelude_list_for_each_continue()</title>
+<indexterm zone="prelude-list-for-each-continue"><primary>prelude_list_for_each_continue</primary></indexterm>
+<programlisting language="C">#define             prelude_list_for_each_continue(list, pos)</programlisting>
+<para>Iterate through all <parameter>list</parameter>
+ entry starting from <parameter>pos</parameter>
+ if it is not NULL, or from
+the start of <parameter>list</parameter>
+ if it is. <link linkend="prelude-list-entry"><function>prelude_list_entry()</function></link> can be used to retrieve
+and entry from the <parameter>pos</parameter>
+ pointer. Calling <link linkend="prelude-list-del"><function>prelude_list_del()</function></link> while iterating the
+list is not safe.</para>
+<refsect3 id="prelude-list-for-each-continue.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>list</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pos</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> object pointing to the current list member.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-list-for-each-continue-safe" role="macro">
+<title>prelude_list_for_each_continue_safe()</title>
+<indexterm zone="prelude-list-for-each-continue-safe"><primary>prelude_list_for_each_continue_safe</primary></indexterm>
+<programlisting language="C">#define             prelude_list_for_each_continue_safe(list, pos, bkp)</programlisting>
+<para>Iterate through all <parameter>list</parameter>
+ entry starting from <parameter>pos</parameter>
+ if it is not NULL, or from
+the start of <parameter>list</parameter>
+ if it is. <link linkend="prelude-list-entry"><function>prelude_list_entry()</function></link> can be used to retrieve
+and entry from the <parameter>pos</parameter>
+ pointer. Calling <link linkend="prelude-list-del"><function>prelude_list_del()</function></link> while iterating the
+list is safe.</para>
+<refsect3 id="prelude-list-for-each-continue-safe.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>list</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pos</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> object pointing to the current list member.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>bkp</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-list-t"><type>prelude_list_t</type></link> object pointing to the next list member.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-list-get-next" role="macro">
+<title>prelude_list_get_next()</title>
+<indexterm zone="prelude-list-get-next"><primary>prelude_list_get_next</primary></indexterm>
+<programlisting language="C">#define             prelude_list_get_next(list, pos, class, member)</programlisting>
+</refsect2>
+<refsect2 id="prelude-list-get-next-safe" role="macro">
+<title>prelude_list_get_next_safe()</title>
+<indexterm zone="prelude-list-get-next-safe"><primary>prelude_list_get_next_safe</primary></indexterm>
+<programlisting language="C">#define             prelude_list_get_next_safe(list, pos, bkp, class, member)</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-list.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="prelude-list-t" role="struct">
+<title>prelude_list_t</title>
+<indexterm zone="prelude-list-t"><primary>prelude_list_t</primary></indexterm>
+<programlisting language="C">typedef struct {
+        struct prelude_list *next;
+        struct prelude_list *prev;
+} prelude_list_t;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

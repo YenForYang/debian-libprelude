@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>prelude-msgbuf: libprelude Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libprelude Reference Manual">
+<link rel="up" href="ch01.html" title="[Insert title here]">
+<link rel="prev" href="libprelude-idmef-message-print.html" title="idmef-message-print">
+<link rel="next" href="libprelude-idmef-message-write.html" title="idmef-message-write">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libprelude-prelude-msgbuf.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libprelude-idmef-message-print.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libprelude-idmef-message-write.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libprelude-prelude-msgbuf"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libprelude-prelude-msgbuf.top_of_page"></a>prelude-msgbuf</span></h2>
+<p>prelude-msgbuf</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libprelude-prelude-msgbuf.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-new" title="prelude_msgbuf_new ()">prelude_msgbuf_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-destroy" title="prelude_msgbuf_destroy ()">prelude_msgbuf_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-mark-end" title="prelude_msgbuf_mark_end ()">prelude_msgbuf_mark_end</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-set" title="prelude_msgbuf_set ()">prelude_msgbuf_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-msg.html#prelude-msg-t" title="prelude_msg_t"><span class="returnvalue">prelude_msg_t</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-get-msg" title="prelude_msgbuf_get_msg ()">prelude_msgbuf_get_msg</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-set-callback" title="prelude_msgbuf_set_callback ()">prelude_msgbuf_set_callback</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-set-data" title="prelude_msgbuf_set_data ()">prelude_msgbuf_set_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-get-data" title="prelude_msgbuf_get_data ()">prelude_msgbuf_get_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-set-flags" title="prelude_msgbuf_set_flags ()">prelude_msgbuf_set_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-flags-t" title="enum prelude_msgbuf_flags_t"><span class="returnvalue">prelude_msgbuf_flags_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-get-flags" title="prelude_msgbuf_get_flags ()">prelude_msgbuf_get_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-msgbuf.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t">prelude_msgbuf_t</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-flags-t" title="enum prelude_msgbuf_flags_t">prelude_msgbuf_flags_t</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-msgbuf.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-msgbuf.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="prelude-msgbuf-new"></a><h3>prelude_msgbuf_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_msgbuf_new (<em class="parameter"><code><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> **msgbuf</code></em>);</pre>
+<p>Create a new <a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> object and store it into <em class="parameter"><code>msgbuf</code></em>
+.
+You can then write data to <em class="parameter"><code>msgbuf</code></em>
+ using the <a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-set" title="prelude_msgbuf_set ()"><code class="function">prelude_msgbuf_set()</code></a> function.</p>
+<p>When the message buffer is full, the message will be flushed using the
+user provided callback.</p>
+<div class="refsect3">
+<a name="prelude-msgbuf-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>msgbuf</p></td>
+<td class="parameter_description"><p>Pointer where to store the created <a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-msgbuf-new.returns"></a><h4>Returns</h4>
+<p> 0 on success, or a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-msgbuf-destroy"></a><h3>prelude_msgbuf_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+prelude_msgbuf_destroy (<em class="parameter"><code><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> *msgbuf</code></em>);</pre>
+<p>Destroy <em class="parameter"><code>msgbuf</code></em>
+, all data remaining will be flushed.</p>
+<div class="refsect3">
+<a name="prelude-msgbuf-destroy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>msgbuf</p></td>
+<td class="parameter_description"><p>Pointer on a <a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-msgbuf-mark-end"></a><h3>prelude_msgbuf_mark_end ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+prelude_msgbuf_mark_end (<em class="parameter"><code><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> *msgbuf</code></em>);</pre>
+<p>This function should be called to tell the msgbuf subsystem
+that you finished writing your message.</p>
+<div class="refsect3">
+<a name="prelude-msgbuf-mark-end.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>msgbuf</p></td>
+<td class="parameter_description"><p>Pointer on <a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-msgbuf-set"></a><h3>prelude_msgbuf_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+prelude_msgbuf_set (<em class="parameter"><code><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> *msgbuf</code></em>,
+                    <em class="parameter"><code><a class="link" href="libprelude-prelude-inttypes.html#uint8-t" title="uint8_t"><span class="type">uint8_t</span></a> tag</code></em>,
+                    <em class="parameter"><code><a class="link" href="libprelude-prelude-inttypes.html#uint32-t" title="uint32_t"><span class="type">uint32_t</span></a> len</code></em>,
+                    <em class="parameter"><code>const <span class="type">void</span> *data</code></em>);</pre>
+<p>prelude_msgbuf_set() append <em class="parameter"><code>len</code></em>
+ bytes of data from the <em class="parameter"><code>data</code></em>
+ buffer
+to the <em class="parameter"><code>msgbuf</code></em>
+ object representing a message. The data is tagged with <em class="parameter"><code>tag</code></em>
+.</p>
+<div class="refsect3">
+<a name="prelude-msgbuf-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>msgbuf</p></td>
+<td class="parameter_description"><p>Pointer on a <a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> object to store the data to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tag</p></td>
+<td class="parameter_description"><p>8 bits unsigned integer describing the kind of data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>len</p></td>
+<td class="parameter_description"><p>len of the data chunk.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Pointer to the data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-msgbuf-set.returns"></a><h4>Returns</h4>
+<p> 0 on success, a negative value if an error occured.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-msgbuf-get-msg"></a><h3>prelude_msgbuf_get_msg ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-msg.html#prelude-msg-t" title="prelude_msg_t"><span class="returnvalue">prelude_msg_t</span></a> *
+prelude_msgbuf_get_msg (<em class="parameter"><code><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> *msgbuf</code></em>);</pre>
+<div class="refsect3">
+<a name="prelude-msgbuf-get-msg.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>msgbuf</p></td>
+<td class="parameter_description"><p>Pointer on a <a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="prelude-msgbuf-get-msg.returns"></a><h4>Returns</h4>
+<p> This function return the current message associated with
+the message buffer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-msgbuf-set-callback"></a><h3>prelude_msgbuf_set_callback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+prelude_msgbuf_set_callback (<em class="parameter"><code><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> *msgbuf</code></em>,
+                             <em class="parameter"><code><span class="type">int</span> (*send_msg) (prelude_msgbuf_t *msgbuf, prelude_msg_t *msg)</code></em>);</pre>
+<p>Associate an application specific callback to this <em class="parameter"><code>msgbuf</code></em>
+.</p>
+<div class="refsect3">
+<a name="prelude-msgbuf-set-callback.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>msgbuf</p></td>
+<td class="parameter_description"><p>Pointer on a <a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>send_msg</p></td>
+<td class="parameter_description"><p>Pointer to a function for sending a message.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-msgbuf-set-data"></a><h3>prelude_msgbuf_set_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+prelude_msgbuf_set_data (<em class="parameter"><code><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> *msgbuf</code></em>,
+                         <em class="parameter"><code><span class="type">void</span> *data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-msgbuf-get-data"></a><h3>prelude_msgbuf_get_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span> *
+prelude_msgbuf_get_data (<em class="parameter"><code><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> *msgbuf</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-msgbuf-set-flags"></a><h3>prelude_msgbuf_set_flags ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+prelude_msgbuf_set_flags (<em class="parameter"><code><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> *msgbuf</code></em>,
+                          <em class="parameter"><code><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-flags-t" title="enum prelude_msgbuf_flags_t"><span class="type">prelude_msgbuf_flags_t</span></a> flags</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-msgbuf-get-flags"></a><h3>prelude_msgbuf_get_flags ()</h3>
+<pre class="programlisting"><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-flags-t" title="enum prelude_msgbuf_flags_t"><span class="returnvalue">prelude_msgbuf_flags_t</span></a>
+prelude_msgbuf_get_flags (<em class="parameter"><code><a class="link" href="libprelude-prelude-msgbuf.html#prelude-msgbuf-t" title="prelude_msgbuf_t"><span class="type">prelude_msgbuf_t</span></a> *msgbuf</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="libprelude-prelude-msgbuf.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="prelude-msgbuf-t"></a><h3>prelude_msgbuf_t</h3>
+<pre class="programlisting">typedef struct prelude_msgbuf prelude_msgbuf_t;
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="prelude-msgbuf-flags-t"></a><h3>enum prelude_msgbuf_flags_t</h3>
+<div class="refsect3">
+<a name="prelude-msgbuf-flags-t.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="enum_member_name"><p><a name="PRELUDE-MSGBUF-FLAGS-ASYNC:CAPS"></a>PRELUDE_MSGBUF_FLAGS_ASYNC</p></td>
+<td> </td>
+<td> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

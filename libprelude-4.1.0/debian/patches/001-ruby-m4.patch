@@ -1,0 +1,16 @@
+Description: Fix ruby detection in configure
+Author: Thomas Andrejak <thomas.andrejak@gmail.com>
+Last-Update: 2017-02-28
+Forwarded: https://www.prelude-siem.org/issues/879
+
+--- libprelude-3.1.0/m4/am_path_ruby.m4	2017-02-28 18:00:21.227299410 -0500
++++ libprelude-3.1.0/m4/am_path_ruby.m4	2017-02-28 18:01:06.702306372 -0500
+@@ -95,7 +95,7 @@
+   dnl   (shared libraries)
+   AC_CACHE_CHECK([for $am_display_RUBY extension module directory],
+     [am_cv_ruby_rbexecdir],
+-    [am_cv_ruby_rbexecdir=`$RUBY -rrbconfig -e "drive = File::PATH_SEPARATOR == ';' ? /\A\w:/ : /\A/; prefix = Regexp.new('\\A' + Regexp.quote(RbConfig::CONFIG[['prefix']])); \\$prefix = RbConfig::CONFIG[['prefix']].sub(drive, ''); \\$sitearchdir = RbConfig::CONFIG[['sitearchdir']].sub(prefix, '\\$(prefix)').sub(drive, ''); print \\$sitearchdir;" 2>/dev/null || echo "${RUBY_EXEC_PREFIX}/local/lib/site_ruby/${RUBY_VERSION}/${RUBY_PLATFORM}"`])
++    [am_cv_ruby_rbexecdir=`$RUBY -r rbconfig -e "print RbConfig::CONFIG[['vendorarchdir']]"`])
+   AC_SUBST([rbexecdir], [$am_cv_ruby_rbexecdir])
+ 
+   dnl if PKG-CONFIG is available, we use it. Else, we try to dectect RUBY_INCLUDES manually

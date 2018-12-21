@@ -1,0 +1,12 @@
+Package: python3-prelude-dbgsym
+Source: libprelude
+Version: 4.1.0-4.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Installed-Size: 464
+Depends: python3-prelude (= 4.1.0-4.2)
+Section: debug
+Priority: optional
+Description: debug symbols for python3-prelude
+Build-Ids: 38ac810316a1ada3876013e3bafdc20457e1234c

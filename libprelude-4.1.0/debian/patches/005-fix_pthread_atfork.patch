@@ -1,0 +1,38 @@
+Description: Fix PThread and ATFork linking
+Author: Thomas Andrejak <thomas.andrejak@gmail.com>
+Last-Update: 2017-02-28
+Forwarded: https://www.prelude-siem.org/issues/885
+
+--- libprelude-3.1.0/prelude-admin/Makefile.am	2016-09-15 08:49:10.785000884 +0200
++++ libprelude-3.1.0/prelude-admin/Makefile.am	2017-04-25 23:55:55.141482528 +0200
+@@ -7,7 +7,7 @@
+ 			$(top_builddir)/src/variable.lo \
+ 		        $(top_builddir)/src/libprelude.la \
+ 			@PRELUDE_ADMIN_LIBS@ \
+-			../libmissing/libmissing.la $(GETADDRINFO_LIB) $(GETHOSTNAME_LIB) $(HOSTENT_LIB) $(INET_NTOP_LIB) $(INET_PTON_LIB) $(LIBSOCKET) $(LIB_POLL) $(LIB_SELECT) $(LTLIBINTL) $(LTLIBTHREAD) $(SERVENT_LIB)
++			../libmissing/libmissing.la $(GETADDRINFO_LIB) $(GETHOSTNAME_LIB) $(HOSTENT_LIB) $(INET_NTOP_LIB) $(INET_PTON_LIB) $(LIBSOCKET) $(LIB_POLL) $(LIB_SELECT) $(LTLIBINTL) $(LTLIBMULTITHREAD) $(SERVENT_LIB)
+ 
+ 
+ prelude_admin_SOURCES = 		\
+--- libprelude-3.1.0/src/Makefile.am	2016-09-15 08:49:10.786000884 +0200
++++ libprelude-3.1.0/src/Makefile.am	2017-04-25 23:56:31.085664831 +0200
+@@ -9,7 +9,7 @@
+ 
+ libpreludeincludedir = $(includedir)/
+ libprelude_la_LIBADD = @LIBPRELUDE_LIBS@ $(LIBLTDL) $(top_builddir)/libmissing/libmissing.la libprelude-error/libprelude-error.la
+-libprelude_la_LDFLAGS = $(GETADDRINFO_LIB) $(GETHOSTNAME_LIB) $(HOSTENT_LIB) $(INET_NTOP_LIB) $(INET_PTON_LIB) $(LIBSOCKET) $(LIB_POLL) $(LIB_SELECT) $(LTLIBINTL) $(LTLIBTHREAD) $(SERVENT_LIB) -no-undefined -version-info @LIBPRELUDE_SONAME@ -export-symbols-regex "^(idmef|_?prelude)_"
++libprelude_la_LDFLAGS = $(GETADDRINFO_LIB) $(GETHOSTNAME_LIB) $(HOSTENT_LIB) $(INET_NTOP_LIB) $(INET_PTON_LIB) $(LIBSOCKET) $(LIB_POLL) $(LIB_SELECT) $(LTLIBINTL) $(LTLIBMULTITHREAD) $(SERVENT_LIB) -no-undefined -version-info @LIBPRELUDE_SONAME@ -export-symbols-regex "^(idmef|_?prelude)_" -Wl,-u,pthread_atfork
+ lib_LTLIBRARIES = libprelude.la
+ BUILT_SOURCES = $(LTDLDEPS) 
+ 
+--- libprelude-3.1.0/src/libprelude-error/Makefile.am	2016-09-15 08:49:10.805000884 +0200
++++ libprelude-3.1.0/src/libprelude-error/Makefile.am	2017-04-25 23:57:02.636949645 +0200
+@@ -14,7 +14,7 @@
+ nodist_include_HEADERS = prelude-error.h
+ 
+ noinst_LTLIBRARIES = libprelude-error.la
+-libprelude_error_la_LIBADD  = @LTLIBTHREAD@
++libprelude_error_la_LIBADD  = $(LTLIBMULTITHREAD)
+ libprelude_error_la_LDFLAGS = -no-undefined
+ libprelude_error_la_SOURCES = prelude-error.h prelude-error.c strsource.c strerror.c
+ 

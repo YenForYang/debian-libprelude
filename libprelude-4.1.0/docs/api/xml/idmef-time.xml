@@ -1,0 +1,750 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-idmef-time">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-idmef-time.top_of_page">idmef-time</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>idmef-time</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-idmef-time.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="idmef-time-t"><returnvalue>idmef_time_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="idmef-time-ref">idmef_time_ref</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-new">idmef_time_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-new-from-time">idmef_time_new_from_time</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-new-from-gettimeofday">idmef_time_new_from_gettimeofday</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-new-from-string">idmef_time_new_from_string</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-new-from-ntpstamp">idmef_time_new_from_ntpstamp</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-new-from-timeval">idmef_time_new_from_timeval</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-set-from-time">idmef_time_set_from_time</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-set-from-gettimeofday">idmef_time_set_from_gettimeofday</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-set-from-string">idmef_time_set_from_string</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-set-from-ntpstamp">idmef_time_set_from_ntpstamp</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-set-from-timeval">idmef_time_set_from_timeval</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-destroy-internal">idmef_time_destroy_internal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-destroy">idmef_time_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-clone">idmef_time_clone</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-copy">idmef_time_copy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-set-sec">idmef_time_set_sec</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-set-usec">idmef_time_set_usec</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-set-gmt-offset">idmef_time_set_gmt_offset</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="uint32-t"><returnvalue>uint32_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-get-sec">idmef_time_get_sec</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="uint32-t"><returnvalue>uint32_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-get-usec">idmef_time_get_usec</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int32-t"><returnvalue>int32_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-get-gmt-offset">idmef_time_get_gmt_offset</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-to-string">idmef_time_to_string</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-time-to-ntpstamp">idmef_time_to_ntpstamp</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-idmef-time.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="typedef_keyword">typedef</entry><entry role="function_name"><link linkend="idmef-time-t">idmef_time_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-idmef-time.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-idmef-time.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="idmef-time-ref" role="function">
+<title>idmef_time_ref&#160;()</title>
+<indexterm zone="idmef-time-ref"><primary>idmef_time_ref</primary></indexterm>
+<programlisting language="C"><link linkend="idmef-time-t"><returnvalue>idmef_time_t</returnvalue></link>&#160;*
+idmef_time_ref (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>);</programlisting>
+<para>Increases <parameter>time</parameter>
+ reference count.
+<link linkend="idmef-time-destroy"><function>idmef_time_destroy()</function></link> won't destroy <parameter>time</parameter>
+ until the refcount
+reach 0.</para>
+<refsect3 id="idmef-time-ref.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-ref.returns" role="returns">
+<title>Returns</title>
+<para> The <parameter>time</parameter>
+provided argument.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-new" role="function">
+<title>idmef_time_new&#160;()</title>
+<indexterm zone="idmef-time-new"><primary>idmef_time_new</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_new (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> **time</parameter>);</programlisting>
+<para>Creates an empty <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object and store it in <parameter>time</parameter>
+.</para>
+<refsect3 id="idmef-time-new.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Address where to store the created <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-new.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-new-from-time" role="function">
+<title>idmef_time_new_from_time&#160;()</title>
+<indexterm zone="idmef-time-new-from-time"><primary>idmef_time_new_from_time</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_new_from_time (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> **time</parameter>,
+                          <parameter>const <link linkend="time-t"><type>time_t</type></link> *t</parameter>);</programlisting>
+<para>Creates a new <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object and store it in <parameter>time</parameter>
+.
+This object will be filled with information available in <parameter>t</parameter>
+. The created
+<parameter>time</parameter>
+ won't contain micro seconds information, since theses are not
+available within <parameter>t</parameter>
+.</para>
+<refsect3 id="idmef-time-new-from-time.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Address where to store the created <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>t</para></entry>
+<entry role="parameter_description"><para>Pointer to a time_t.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-new-from-time.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-new-from-gettimeofday" role="function">
+<title>idmef_time_new_from_gettimeofday&#160;()</title>
+<indexterm zone="idmef-time-new-from-gettimeofday"><primary>idmef_time_new_from_gettimeofday</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_new_from_gettimeofday (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> **time</parameter>);</programlisting>
+<para>Creates an <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object filled with information retrieved
+using <link linkend="gettimeofday"><function>gettimeofday()</function></link>, and stores it in <parameter>time</parameter>
+.</para>
+<refsect3 id="idmef-time-new-from-gettimeofday.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Address where to store the created <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-new-from-gettimeofday.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-new-from-string" role="function">
+<title>idmef_time_new_from_string&#160;()</title>
+<indexterm zone="idmef-time-new-from-string"><primary>idmef_time_new_from_string</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_new_from_string (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> **time</parameter>,
+                            <parameter>const <link linkend="char"><type>char</type></link> *buf</parameter>);</programlisting>
+<para>Creates an <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object filled with information retrieved
+from the user provided <parameter>buf</parameter>
+, containing a string describing a time in a format
+conforming to the IDMEF definition  (v. 0.10, section 3.2.6).</para>
+<para>Additionally, the provided time might be separated with white spaces, instead
+of the IDMEF define 'T' character. The format might not specify a timezone
+(will assume UTC in this case).</para>
+<para>The resulting <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object is stored in <parameter>time</parameter>
+.</para>
+<refsect3 id="idmef-time-new-from-string.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Address where to store the created <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>buf</para></entry>
+<entry role="parameter_description"><para>Pointer to a string describing a time in an IDMEF conforming format.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-new-from-string.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-new-from-ntpstamp" role="function">
+<title>idmef_time_new_from_ntpstamp&#160;()</title>
+<indexterm zone="idmef-time-new-from-ntpstamp"><primary>idmef_time_new_from_ntpstamp</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_new_from_ntpstamp (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> **time</parameter>,
+                              <parameter>const <link linkend="char"><type>char</type></link> *buf</parameter>);</programlisting>
+<para>Creates an <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object filled with information provided
+from the <parameter>buf</parameter>
+ NTP timestamp, and stores it in <parameter>time</parameter>
+.</para>
+<refsect3 id="idmef-time-new-from-ntpstamp.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Address where to store the created <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>buf</para></entry>
+<entry role="parameter_description"><para>Pointer to a string containing an NTP timestamp.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-new-from-ntpstamp.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-new-from-timeval" role="function">
+<title>idmef_time_new_from_timeval&#160;()</title>
+<indexterm zone="idmef-time-new-from-timeval"><primary>idmef_time_new_from_timeval</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_new_from_timeval (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> **time</parameter>,
+                             <parameter>const <type>struct timeval</type> *tv</parameter>);</programlisting>
+<para>Creates an <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object filled with information provided
+within the <parameter>tv</parameter>
+ structure.</para>
+<refsect3 id="idmef-time-new-from-timeval.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Address where to store the created <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>tv</para></entry>
+<entry role="parameter_description"><para>Pointer to a struct timeval (see <link linkend="gettimeofday"><function>gettimeofday()</function></link>).</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-new-from-timeval.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-set-from-time" role="function">
+<title>idmef_time_set_from_time&#160;()</title>
+<indexterm zone="idmef-time-set-from-time"><primary>idmef_time_set_from_time</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_time_set_from_time (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>,
+                          <parameter>const <link linkend="time-t"><type>time_t</type></link> *t</parameter>);</programlisting>
+<para>Fills <parameter>time</parameter>
+ from the information described by <parameter>t</parameter>
+.
+<parameter>time</parameter>
+ won't contain micro seconds information, since theses are not
+available within <parameter>t</parameter>
+.</para>
+<refsect3 id="idmef-time-set-from-time.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>t</para></entry>
+<entry role="parameter_description"><para>Pointer to a time_t.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-set-from-gettimeofday" role="function">
+<title>idmef_time_set_from_gettimeofday&#160;()</title>
+<indexterm zone="idmef-time-set-from-gettimeofday"><primary>idmef_time_set_from_gettimeofday</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_set_from_gettimeofday (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>);</programlisting>
+<para>Fills <parameter>time</parameter>
+ with information retrieved using <link linkend="gettimeofday"><function>gettimeofday()</function></link>.</para>
+<refsect3 id="idmef-time-set-from-gettimeofday.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-set-from-gettimeofday.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-set-from-string" role="function">
+<title>idmef_time_set_from_string&#160;()</title>
+<indexterm zone="idmef-time-set-from-string"><primary>idmef_time_set_from_string</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_set_from_string (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>,
+                            <parameter>const <link linkend="char"><type>char</type></link> *buf</parameter>);</programlisting>
+<para>Fills <parameter>time</parameter>
+ object with information retrieved from the user provided
+<parameter>buf</parameter>
+, containing a string describing a time in a format conforming
+to the IDMEF definition (v. 0.10, section 3.2.6).</para>
+<para>Additionally, the provided time might be separated with white spaces,
+instead of the IDMEF defined 'T' character.</para>
+<para>If there is no UTC offset specified, we assume that the provided
+time is local, and compute the GMT offset by ourselve.</para>
+<refsect3 id="idmef-time-set-from-string.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>buf</para></entry>
+<entry role="parameter_description"><para>Pointer to a string describing a time in an IDMEF conforming format.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-set-from-string.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-set-from-ntpstamp" role="function">
+<title>idmef_time_set_from_ntpstamp&#160;()</title>
+<indexterm zone="idmef-time-set-from-ntpstamp"><primary>idmef_time_set_from_ntpstamp</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_set_from_ntpstamp (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>,
+                              <parameter>const <link linkend="char"><type>char</type></link> *buf</parameter>);</programlisting>
+<para>Fills the <parameter>time</parameter>
+ object with information provided within the <parameter>buf</parameter>
+ NTP timestamp.</para>
+<refsect3 id="idmef-time-set-from-ntpstamp.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>buf</para></entry>
+<entry role="parameter_description"><para>Pointer to a string containing an NTP timestamp.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-set-from-ntpstamp.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-set-from-timeval" role="function">
+<title>idmef_time_set_from_timeval&#160;()</title>
+<indexterm zone="idmef-time-set-from-timeval"><primary>idmef_time_set_from_timeval</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_set_from_timeval (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>,
+                             <parameter>const <type>struct timeval</type> *tv</parameter>);</programlisting>
+<para>Fills <parameter>time</parameter>
+ object filled with information provided within the <parameter>tv</parameter>
+ structure.</para>
+<refsect3 id="idmef-time-set-from-timeval.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>tv</para></entry>
+<entry role="parameter_description"><para>Pointer to a struct timeval (see <link linkend="gettimeofday"><function>gettimeofday()</function></link>).</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-set-from-timeval.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-destroy-internal" role="function">
+<title>idmef_time_destroy_internal&#160;()</title>
+<indexterm zone="idmef-time-destroy-internal"><primary>idmef_time_destroy_internal</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_time_destroy_internal (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="idmef-time-destroy" role="function">
+<title>idmef_time_destroy&#160;()</title>
+<indexterm zone="idmef-time-destroy"><primary>idmef_time_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_time_destroy (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>);</programlisting>
+<para>Destroys <parameter>time</parameter>
+ if refcount reach 0.</para>
+<refsect3 id="idmef-time-destroy.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to an <link linkend="idmef-time-t"><type>idmef_time_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-clone" role="function">
+<title>idmef_time_clone&#160;()</title>
+<indexterm zone="idmef-time-clone"><primary>idmef_time_clone</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_clone (<parameter>const <link linkend="idmef-time-t"><type>idmef_time_t</type></link> *src</parameter>,
+                  <parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> **dst</parameter>);</programlisting>
+<para>Clones <parameter>src</parameter>
+ and stores the result in the <parameter>dst</parameter>
+ address.</para>
+<refsect3 id="idmef-time-clone.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>src</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-time-t"><type>idmef_time_t</type></link> to clone.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>dst</para></entry>
+<entry role="parameter_description"><para>Address where to store the cloned <parameter>src</parameter>
+object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-clone.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-copy" role="function">
+<title>idmef_time_copy&#160;()</title>
+<indexterm zone="idmef-time-copy"><primary>idmef_time_copy</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_copy (<parameter>const <link linkend="idmef-time-t"><type>idmef_time_t</type></link> *src</parameter>,
+                 <parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> *dst</parameter>);</programlisting>
+<para>Copies <parameter>src</parameter>
+ internal to <parameter>dst</parameter>
+.</para>
+<refsect3 id="idmef-time-copy.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>src</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-time-t"><type>idmef_time_t</type></link> to copy data from.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>dst</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-time-t"><type>idmef_time_t</type></link> to copy data to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-copy.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-set-sec" role="function">
+<title>idmef_time_set_sec&#160;()</title>
+<indexterm zone="idmef-time-set-sec"><primary>idmef_time_set_sec</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_time_set_sec (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>,
+                    <parameter><link linkend="uint32-t"><type>uint32_t</type></link> sec</parameter>);</programlisting>
+<para>Sets the number of second from the Epoch to <parameter>sec</parameter>
+ within <parameter>time</parameter>
+.</para>
+<para>WARNING: this is just an accessor function, and using it to
+set <parameter>time</parameter>
+ current time also requires the use of <link linkend="idmef-time-set-usec"><function>idmef_time_set_usec()</function></link>
+and <link linkend="idmef-time-set-gmt-offset"><function>idmef_time_set_gmt_offset()</function></link>.</para>
+<refsect3 id="idmef-time-set-sec.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-time-t"><type>idmef_time_t</type></link>.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>sec</para></entry>
+<entry role="parameter_description"><para>Number of seconds since the Epoch.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-set-usec" role="function">
+<title>idmef_time_set_usec&#160;()</title>
+<indexterm zone="idmef-time-set-usec"><primary>idmef_time_set_usec</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_time_set_usec (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>,
+                     <parameter><link linkend="uint32-t"><type>uint32_t</type></link> usec</parameter>);</programlisting>
+<para>Sets the number of micro second to <parameter>usec</parameter>
+ within <parameter>time</parameter>
+.</para>
+<para>WARNING: this is just an accessor function, and using it to
+set <parameter>time</parameter>
+ current time also requires the use of <link linkend="idmef-time-set-sec"><function>idmef_time_set_sec()</function></link>
+and <link linkend="idmef-time-set-gmt-offset"><function>idmef_time_set_gmt_offset()</function></link>.</para>
+<refsect3 id="idmef-time-set-usec.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-time-t"><type>idmef_time_t</type></link>.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>usec</para></entry>
+<entry role="parameter_description"><para>Number of micro seconds to set within <parameter>time</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-set-gmt-offset" role="function">
+<title>idmef_time_set_gmt_offset&#160;()</title>
+<indexterm zone="idmef-time-set-gmt-offset"><primary>idmef_time_set_gmt_offset</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+idmef_time_set_gmt_offset (<parameter><link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>,
+                           <parameter><link linkend="int32-t"><type>int32_t</type></link> gmtoff</parameter>);</programlisting>
+<para>Sets the GMT offset <parameter>gmtoff</parameter>
+, in seconds, within <parameter>time</parameter>
+.</para>
+<para>WARNING: this is just an accessor function, and using it to
+set <parameter>time</parameter>
+ current time also requires the use of <link linkend="idmef-time-set-sec"><function>idmef_time_set_sec()</function></link>
+and <link linkend="idmef-time-set-usec"><function>idmef_time_set_usec()</function></link>.</para>
+<refsect3 id="idmef-time-set-gmt-offset.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-time-t"><type>idmef_time_t</type></link>.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>gmtoff</para></entry>
+<entry role="parameter_description"><para>GMT offset for <parameter>time</parameter>
+, in seconds.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-get-sec" role="function">
+<title>idmef_time_get_sec&#160;()</title>
+<indexterm zone="idmef-time-get-sec"><primary>idmef_time_get_sec</primary></indexterm>
+<programlisting language="C"><link linkend="uint32-t"><returnvalue>uint32_t</returnvalue></link>
+idmef_time_get_sec (<parameter>const <link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>);</programlisting>
+<para>Returns the number of second since the Epoch (00:00:00 UTC, January 1, 1970),
+previously set within <parameter>time</parameter>
+.</para>
+<refsect3 id="idmef-time-get-sec.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-time-t"><type>idmef_time_t</type></link>.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-get-sec.returns" role="returns">
+<title>Returns</title>
+<para> The number of seconds.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-get-usec" role="function">
+<title>idmef_time_get_usec&#160;()</title>
+<indexterm zone="idmef-time-get-usec"><primary>idmef_time_get_usec</primary></indexterm>
+<programlisting language="C"><link linkend="uint32-t"><returnvalue>uint32_t</returnvalue></link>
+idmef_time_get_usec (<parameter>const <link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>);</programlisting>
+<para>Returns the u-second member of <parameter>time</parameter>
+.</para>
+<refsect3 id="idmef-time-get-usec.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-time-t"><type>idmef_time_t</type></link>.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-get-usec.returns" role="returns">
+<title>Returns</title>
+<para> The number of u-seconds.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-get-gmt-offset" role="function">
+<title>idmef_time_get_gmt_offset&#160;()</title>
+<indexterm zone="idmef-time-get-gmt-offset"><primary>idmef_time_get_gmt_offset</primary></indexterm>
+<programlisting language="C"><link linkend="int32-t"><returnvalue>int32_t</returnvalue></link>
+idmef_time_get_gmt_offset (<parameter>const <link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>);</programlisting>
+<para>Returns the GMT offset that applies to <parameter>time</parameter>
+.</para>
+<refsect3 id="idmef-time-get-gmt-offset.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-time-t"><type>idmef_time_t</type></link>.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-get-gmt-offset.returns" role="returns">
+<title>Returns</title>
+<para> The GMT offset, in seconds.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-to-string" role="function">
+<title>idmef_time_to_string&#160;()</title>
+<indexterm zone="idmef-time-to-string"><primary>idmef_time_to_string</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_to_string (<parameter>const <link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>,
+                      <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *out</parameter>);</programlisting>
+<para>Translates <parameter>time</parameter>
+ to an user readable string conforming to the IDMEF
+defined time format.</para>
+<refsect3 id="idmef-time-to-string.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to an IDMEF time structure.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>out</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> output buffer.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-to-string.returns" role="returns">
+<title>Returns</title>
+<para> number of bytes written on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-time-to-ntpstamp" role="function">
+<title>idmef_time_to_ntpstamp&#160;()</title>
+<indexterm zone="idmef-time-to-ntpstamp"><primary>idmef_time_to_ntpstamp</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_time_to_ntpstamp (<parameter>const <link linkend="idmef-time-t"><type>idmef_time_t</type></link> *time</parameter>,
+                        <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *out</parameter>);</programlisting>
+<para>Translates <parameter>time</parameter>
+ to an user readable NTP timestamp string,
+conforming to the IDMEF defined time format.</para>
+<refsect3 id="idmef-time-to-ntpstamp.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>time</para></entry>
+<entry role="parameter_description"><para>Pointer to an IDMEF time structure.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>out</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> output buffer.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-time-to-ntpstamp.returns" role="returns">
+<title>Returns</title>
+<para> number of bytes written on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-idmef-time.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="idmef-time-t" role="typedef">
+<title>idmef_time_t</title>
+<indexterm zone="idmef-time-t"><primary>idmef_time_t</primary></indexterm>
+<programlisting language="C">typedef struct idmef_time idmef_time_t;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

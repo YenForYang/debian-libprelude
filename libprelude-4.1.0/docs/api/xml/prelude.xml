@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-prelude">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-prelude.top_of_page">prelude</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>prelude</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-prelude.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-init">prelude_init</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-deinit">prelude_deinit</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-check-version">prelude_check_version</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-thread-init">prelude_thread_init</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-fork-child">prelude_fork_child</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-fork-parent">prelude_fork_parent</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-fork-prepare">prelude_fork_prepare</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-prelude.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="LIBPRELUDE-VERSION:CAPS">LIBPRELUDE_VERSION</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-prelude.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-prelude.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="prelude-init" role="function">
+<title>prelude_init&#160;()</title>
+<indexterm zone="prelude-init"><primary>prelude_init</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_init (<parameter><link linkend="int"><type>int</type></link> *argc</parameter>,
+              <parameter><link linkend="char"><type>char</type></link> **argv</parameter>);</programlisting>
+<para>Call this function before using any other Prelude functions in your applications.
+It will initialize everything needed to operate the library and parses some standard
+command line options. <parameter>argc</parameter>
+ and <parameter>argv</parameter>
+ are adjusted accordingly so your own code will
+never see those standard arguments.</para>
+<refsect3 id="prelude-init.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>argc</para></entry>
+<entry role="parameter_description"><para>Address of the argc parameter of your <link linkend="main"><function>main()</function></link> function.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>argv</para></entry>
+<entry role="parameter_description"><para>Address of the argv parameter of your <link linkend="main"><function>main()</function></link> function.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-init.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-deinit" role="function">
+<title>prelude_deinit&#160;()</title>
+<indexterm zone="prelude-deinit"><primary>prelude_deinit</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_deinit (<parameter><type>void</type></parameter>);</programlisting>
+<para>Call this function if you're done using the library and want to free global
+shared ressource allocated by libprelude.</para>
+</refsect2>
+<refsect2 id="prelude-check-version" role="function">
+<title>prelude_check_version&#160;()</title>
+<indexterm zone="prelude-check-version"><primary>prelude_check_version</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_check_version (<parameter>const <link linkend="char"><type>char</type></link> *req_version</parameter>);</programlisting>
+<para>If <parameter>req_version</parameter>
+ is NULL this function will return the version of the library.
+Otherwise, <parameter>req_version</parameter>
+ will be compared to the current library version. If
+the library version is higher or equal, this function will return the current
+library version. Otherwise, NULL is returned.</para>
+<refsect3 id="prelude-check-version.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>req_version</para></entry>
+<entry role="parameter_description"><para>The minimum acceptable version number.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-check-version.returns" role="returns">
+<title>Returns</title>
+<para> The current library version, or NULL if <parameter>req_version</parameter>
+doesn't match.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-thread-init" role="function">
+<title>prelude_thread_init&#160;()</title>
+<indexterm zone="prelude-thread-init"><primary>prelude_thread_init</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_thread_init (<parameter><link linkend="void"><type>void</type></link> *nil</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-fork-child" role="function">
+<title>prelude_fork_child&#160;()</title>
+<indexterm zone="prelude-fork-child"><primary>prelude_fork_child</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_fork_child (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-fork-parent" role="function">
+<title>prelude_fork_parent&#160;()</title>
+<indexterm zone="prelude-fork-parent"><primary>prelude_fork_parent</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_fork_parent (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-fork-prepare" role="function">
+<title>prelude_fork_prepare&#160;()</title>
+<indexterm zone="prelude-fork-prepare"><primary>prelude_fork_prepare</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_fork_prepare (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-prelude.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="LIBPRELUDE-VERSION:CAPS" role="macro">
+<title>LIBPRELUDE_VERSION</title>
+<indexterm zone="LIBPRELUDE-VERSION:CAPS"><primary>LIBPRELUDE_VERSION</primary></indexterm>
+<programlisting language="C">#define LIBPRELUDE_VERSION "4.1.0"
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

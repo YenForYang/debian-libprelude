@@ -1,0 +1,26 @@
+Description: Fix spelling error
+Author: Thomas Andrejak <thomas.andrejak@gmail.com>
+Last-Update: 2018-02-12
+
+--- libprelude-4.1.0/bindings/perl/libpreludecpp-perl.i	2018-02-12 23:28:53.425481351 -0500
++++ libprelude-4.1.0/bindings/perl/libpreludecpp-perl.i	2018-02-12 23:45:54.128788947 -0500
+@@ -216,7 +216,7 @@
+                 argc += ret + 1;
+ 
+         if ( argc + 1 < 0 )
+-                throw PreludeError("Invalide argc length");
++                throw PreludeError("Invalid argc length");
+ 
+         argv = (char **) malloc((argc + 1) * sizeof(char *));
+         if ( ! argv )
+--- libprelude-4.1.0/bindings/perl/Prelude.cxx	2018-02-12 23:28:53.425481351 -0500
++++ libprelude-4.1.0/bindings/perl/Prelude.cxx	2018-02-12 23:45:36.449186453 -0500
+@@ -17982,7 +17982,7 @@
+   argc += ret + 1;
+   
+   if ( argc + 1 < 0 )
+-  throw PreludeError("Invalide argc length");
++  throw PreludeError("Invalid argc length");
+   
+   argv = (char **) malloc((argc + 1) * sizeof(char *));
+   if ( ! argv )

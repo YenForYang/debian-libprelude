@@ -1,0 +1,4 @@
+data
+idmef_snmp_service_get_community
+idmef_snmp_service_new_community
+idmef_snmp_service_set_community

@@ -1,0 +1,206 @@
+Source: libprelude
+Priority: optional
+Section: libs
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Uploaders: Thomas Andrejak <thomas.andrejak@gmail.com>
+Build-Depends: debhelper (>= 11),
+    dh-python <!nopython>,
+    g++ (>= 4:7),
+    gawk,
+    gem2deb <!noruby>,
+    libgcrypt20-dev,
+    libgnutls28-dev,
+    libltdl-dev,
+    pkg-config,
+    liblua5.1-dev <!nolua>,
+    lua5.1 <!nolua>,
+    libperl-dev <!noperl>,
+    python3-all-dev <!nopython>,
+    python-all-dev <!nopython>,
+    ruby-all-dev <!noruby>,
+    swig <!nopython> <!noperl> <!noruby> <!nolua>,
+Build-Depends-Indep: gtk-doc-tools, libglib2.0-dev
+Standards-Version: 4.1.3
+Homepage: https://www.prelude-siem.org/
+Vcs-Browser: https://salsa.debian.org/totol-guest/libprelude
+Vcs-Git: https://salsa.debian.org/totol-guest/libprelude.git
+
+Package: libprelude-dev
+Section: libdevel
+Architecture: any
+Suggests: libprelude-doc
+Depends: libprelude23 (= ${binary:Version}), libpreludecpp8 (= ${binary:Version}), libgnutls28-dev,
+ libgcrypt20-dev, libltdl3-dev, ${misc:Depends}
+Description: Security Information and Events Management system [ Development files ]
+ The Prelude Library is a collection of generic functions providing
+ communication between the Prelude SIEM suite components. It provides a
+ convenient interface for sending alerts to Prelude Manager with transparent
+ SSL, failover and replication support, asynchronous events and timer
+ interfaces, an abstracted configuration API (hooking at the commandline, the
+ configuration line, or wide configuration, available from the Manager), and a
+ generic plugin API. It allows you to easily turn your favorite security
+ program into a Prelude sensor.
+ .
+ This package contains the development files for Prelude components.
+
+Package: libprelude-doc
+Section: doc
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: Security Information and Events Management system [ Documentation ]
+ The Prelude Library is a collection of generic functions providing
+ communication between the Prelude SIEM suite components. It provides a
+ convenient interface for sending alerts to Prelude Manager with transparent
+ SSL, failover and replication support, asynchronous events and timer
+ interfaces, an abstracted configuration API (hooking at the commandline, the
+ configuration line, or wide configuration, available from the Manager), and a
+ generic plugin API. It allows you to easily turn your favorite security
+ program into a Prelude sensor.
+ .
+ This package contains the documentation for developers for
+ Prelude components.
+
+Package: libprelude23
+Architecture: any
+Multi-Arch: same
+Recommends: prelude-utils
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Security Information and Events Management system [ Base library ]
+ The Prelude Library is a collection of generic functions providing
+ communication between the Prelude SIEM suite components. It provides a
+ convenient interface for sending alerts to Prelude Manager with transparent
+ SSL, failover and replication support, asynchronous events and timer
+ interfaces, an abstracted configuration API (hooking at the commandline, the
+ configuration line, or wide configuration, available from the Manager), and a
+ generic plugin API. It allows you to easily turn your favorite security
+ program into a Prelude sensor.
+ .
+ This package contains the Prelude shared library.
+
+Package: libpreludecpp8
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Security Information and Events Management system [ C++ library ]
+ The Prelude Library is a collection of generic functions providing
+ communication between the Prelude SIEM suite components. It provides a
+ convenient interface for sending alerts to Prelude Manager with transparent
+ SSL, failover and replication support, asynchronous events and timer
+ interfaces, an abstracted configuration API (hooking at the commandline, the
+ configuration line, or wide configuration, available from the Manager), and a
+ generic plugin API. It allows you to easily turn your favorite security
+ program into a Prelude sensor.
+ .
+ This package contains the Prelude C++ shared library.
+
+Package: prelude-utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libprelude2, libprelude23 (<<4.1.0-1)
+Replaces: libprelude2, libprelude23 (<<4.1.0-1)
+Section: utils
+Description: Security Information and Events Management system [ Utils ]
+ The Prelude Library is a collection of generic functions providing
+ communication between the Prelude SIEM suite components. It provides a
+ convenient interface for sending alerts to Prelude Manager with transparent
+ SSL, failover and replication support, asynchronous events and timer
+ interfaces, an abstracted configuration API (hooking at the commandline, the
+ configuration line, or wide configuration, available from the Manager), and a
+ generic plugin API. It allows you to easily turn your favorite security
+ program into a Prelude sensor.
+ .
+ This package contains the Prelude shared library utils.
+
+Package: libprelude-perl
+Section: perl
+Architecture: any
+Multi-Arch: same
+Depends: ${perl:Depends}, libprelude23 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Build-Profiles: <!noperl>
+Description: Security Information and Events Management system [ Perl bindings ]
+ The Prelude Library is a collection of generic functions providing
+ communication between the Prelude SIEM suite components. It provides a
+ convenient interface for sending alerts to Prelude Manager with transparent
+ SSL, failover and replication support, asynchronous events and timer
+ interfaces, an abstracted configuration API (hooking at the commandline, the
+ configuration line, or wide configuration, available from the Manager), and a
+ generic plugin API. It allows you to easily turn your favorite security
+ program into a Prelude sensor.
+ .
+ This package contains the perl bindings for Prelude.
+
+Package: python-prelude
+Section: python
+Architecture: any
+Depends: ${python:Depends}, libprelude23 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Build-Profiles: <!nopython>
+Provides: ${python:Provides}
+Description: Security Information and Events Management system [ Python2 bindings ]
+ The Prelude Library is a collection of generic functions providing
+ communication between the Prelude SIEM suite components. It provides a
+ convenient interface for sending alerts to Prelude Manager with transparent
+ SSL, failover and replication support, asynchronous events and timer
+ interfaces, an abstracted configuration API (hooking at the commandline, the
+ configuration line, or wide configuration, available from the Manager), and a
+ generic plugin API. It allows you to easily turn your favorite security
+ program into a Prelude sensor.
+ .
+ This package contains the Python 2 bindings for Prelude.
+
+Package: python3-prelude
+Section: python
+Architecture: any
+Depends: ${python3:Depends}, libprelude23 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Build-Profiles: <!nopython>
+Provides: ${python3:Provides}
+Description: Security Information and Events Management system [ Python3 bindings ]
+ The Prelude Library is a collection of generic functions providing
+ communication between the Prelude SIEM suite components. It provides a
+ convenient interface for sending alerts to Prelude Manager with transparent
+ SSL, failover and replication support, asynchronous events and timer
+ interfaces, an abstracted configuration API (hooking at the commandline, the
+ configuration line, or wide configuration, available from the Manager), and a
+ generic plugin API. It allows you to easily turn your favorite security
+ program into a Prelude sensor.
+ .
+ This package contains the Python 3 bindings for Prelude.
+
+Package: ruby-libprelude
+Section: ruby
+Architecture: any
+Multi-Arch: same
+Depends: libprelude23 (= ${binary:Version}), ${misc:Depends}, ruby,
+ ${shlibs:Depends}
+Build-Profiles: <!noruby>
+Provides: libprelude-ruby
+Description: Security Information and Events Management system [ Ruby bindings ]
+ The Prelude Library is a collection of generic functions providing
+ communication between the Prelude SIEM suite components. It provides a
+ convenient interface for sending alerts to Prelude Manager with transparent
+ SSL, failover and replication support, asynchronous events and timer
+ interfaces, an abstracted configuration API (hooking at the commandline, the
+ configuration line, or wide configuration, available from the Manager), and a
+ generic plugin API. It allows you to easily turn your favorite security
+ program into a Prelude sensor.
+ .
+ This package contains the ruby bindings for Prelude.
+
+Package: libprelude-lua
+Architecture: any
+Multi-Arch: same
+Section: interpreters
+Depends: libprelude23 (= ${binary:Version}), ${misc:Depends}, lua5.1,
+ ${shlibs:Depends}
+Build-Profiles: <!nolua>
+Description: Security Information and Events Management system [ Lua bindings ]
+ The Prelude Library is a collection of generic functions providing
+ communication between the Prelude SIEM suite components. It provides a
+ convenient interface for sending alerts to Prelude Manager with transparent
+ SSL, failover and replication support, asynchronous events and timer
+ interfaces, an abstracted configuration API (hooking at the commandline, the
+ configuration line, or wide configuration, available from the Manager), and a
+ generic plugin API. It allows you to easily turn your favorite security
+ program into a Prelude sensor.
+ .
+ This package contains the Lua bindings for Prelude.

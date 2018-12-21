@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-prelude-hash">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-prelude-hash.top_of_page">prelude-hash</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>prelude-hash</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-prelude-hash.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-hash-new">prelude_hash_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-hash-new2">prelude_hash_new2</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-hash-destroy">prelude_hash_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-hash-set">prelude_hash_set</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-hash-get">prelude_hash_get</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-hash-elem-destroy">prelude_hash_elem_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-hash-iterate">prelude_hash_iterate</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-prelude-hash.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="typedef_keyword">typedef</entry><entry role="function_name"><link linkend="prelude-hash-t">prelude_hash_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-prelude-hash.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-hash.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="prelude-hash-new" role="function">
+<title>prelude_hash_new&#160;()</title>
+<indexterm zone="prelude-hash-new"><primary>prelude_hash_new</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_hash_new (<parameter><link linkend="prelude-hash-t"><type>prelude_hash_t</type></link> **hash</parameter>,
+                  <parameter>unsigned <link linkend="int"><type>int</type></link> (*hash_func) (const void *)</parameter>,
+                  <parameter><link linkend="int"><type>int</type></link> (*key_cmp_func) (const void *, const void *)</parameter>,
+                  <parameter><link linkend="void"><type>void</type></link> (*key_destroy_func) (void *)</parameter>,
+                  <parameter><link linkend="void"><type>void</type></link> (*value_destroy_func) (void *)</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-hash-new2" role="function">
+<title>prelude_hash_new2&#160;()</title>
+<indexterm zone="prelude-hash-new2"><primary>prelude_hash_new2</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_hash_new2 (<parameter><link linkend="prelude-hash-t"><type>prelude_hash_t</type></link> **hash</parameter>,
+                   <parameter><link linkend="size-t"><type>size_t</type></link> size</parameter>,
+                   <parameter>unsigned <link linkend="int"><type>int</type></link> (*hash_func) (const void *)</parameter>,
+                   <parameter><link linkend="int"><type>int</type></link> (*key_cmp_func) (const void *, const void *)</parameter>,
+                   <parameter><link linkend="void"><type>void</type></link> (*key_destroy_func) (void *)</parameter>,
+                   <parameter><link linkend="void"><type>void</type></link> (*value_destroy_func) (void *)</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-hash-destroy" role="function">
+<title>prelude_hash_destroy&#160;()</title>
+<indexterm zone="prelude-hash-destroy"><primary>prelude_hash_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_hash_destroy (<parameter><link linkend="prelude-hash-t"><type>prelude_hash_t</type></link> *hash</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-hash-set" role="function">
+<title>prelude_hash_set&#160;()</title>
+<indexterm zone="prelude-hash-set"><primary>prelude_hash_set</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_hash_set (<parameter><link linkend="prelude-hash-t"><type>prelude_hash_t</type></link> *hash</parameter>,
+                  <parameter><link linkend="void"><type>void</type></link> *key</parameter>,
+                  <parameter><link linkend="void"><type>void</type></link> *value</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-hash-get" role="function">
+<title>prelude_hash_get&#160;()</title>
+<indexterm zone="prelude-hash-get"><primary>prelude_hash_get</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>&#160;*
+prelude_hash_get (<parameter><link linkend="prelude-hash-t"><type>prelude_hash_t</type></link> *hash</parameter>,
+                  <parameter>const <link linkend="void"><type>void</type></link> *key</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-hash-elem-destroy" role="function">
+<title>prelude_hash_elem_destroy&#160;()</title>
+<indexterm zone="prelude-hash-elem-destroy"><primary>prelude_hash_elem_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_hash_elem_destroy (<parameter><link linkend="prelude-hash-t"><type>prelude_hash_t</type></link> *hash</parameter>,
+                           <parameter>const <link linkend="void"><type>void</type></link> *key</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-hash-iterate" role="function">
+<title>prelude_hash_iterate&#160;()</title>
+<indexterm zone="prelude-hash-iterate"><primary>prelude_hash_iterate</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_hash_iterate (<parameter><link linkend="prelude-hash-t"><type>prelude_hash_t</type></link> *hash</parameter>,
+                      <parameter><link linkend="void"><type>void</type></link> (*cb) (void *data)</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-hash.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="prelude-hash-t" role="typedef">
+<title>prelude_hash_t</title>
+<indexterm zone="prelude-hash-t"><primary>prelude_hash_t</primary></indexterm>
+<programlisting language="C">typedef struct prelude_hash prelude_hash_t;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

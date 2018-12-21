@@ -1,0 +1,13 @@
+Package: libpreludecpp8-dbgsym
+Source: libprelude
+Version: 4.1.0-4.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Installed-Size: 593
+Depends: libpreludecpp8 (= 4.1.0-4.2)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libpreludecpp8
+Build-Ids: a72b5659a9eef37d7d33b5c9a095b1f32bd0b8f9 b0c30ca1b91f849fa21e497799bf452e6abc2786

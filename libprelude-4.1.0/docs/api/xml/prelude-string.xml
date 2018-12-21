@@ -1,0 +1,996 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-prelude-string">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-prelude-string.top_of_page">prelude-string</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>prelude-string</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-prelude-string.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-new">prelude_string_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-new-nodup">prelude_string_new_nodup</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-new-ref">prelude_string_new_ref</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-new-dup">prelude_string_new_dup</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-new-dup-fast">prelude_string_new_dup_fast</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-destroy">prelude_string_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-destroy-internal">prelude_string_destroy_internal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-new-nodup-fast">prelude_string_new_nodup_fast</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-new-ref-fast">prelude_string_new_ref_fast</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-set-dup-fast">prelude_string_set_dup_fast</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-set-dup">prelude_string_set_dup</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-set-nodup-fast">prelude_string_set_nodup_fast</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-set-nodup">prelude_string_set_nodup</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-set-ref-fast">prelude_string_set_ref_fast</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-set-ref">prelude_string_set_ref</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-copy-ref">prelude_string_copy_ref</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-copy-dup">prelude_string_copy_dup</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-string-t"><returnvalue>prelude_string_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-string-ref">prelude_string_ref</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-clone">prelude_string_clone</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="size-t"><returnvalue>size_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-get-len">prelude_string_get_len</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-string-get-string-or-default">prelude_string_get_string_or_default</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-string-get-string">prelude_string_get_string</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-get-string-released">prelude_string_get_string_released</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-is-empty">prelude_string_is_empty</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-clear">prelude_string_clear</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-cat">prelude_string_cat</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-ncat">prelude_string_ncat</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-sprintf">prelude_string_sprintf</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-vprintf">prelude_string_vprintf</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-string-set-constant">prelude_string_set_constant</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-string-new-constant">prelude_string_new_constant</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-string-compare">prelude_string_compare</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-prelude-string.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="typedef_keyword">typedef</entry><entry role="function_name"><link linkend="prelude-string-t">prelude_string_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-prelude-string.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-string.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="prelude-string-new" role="function">
+<title>prelude_string_new&#160;()</title>
+<indexterm zone="prelude-string-new"><primary>prelude_string_new</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_new (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> **string</parameter>);</programlisting>
+<para>Create a new <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object, and store in in <parameter>string</parameter>
+.</para>
+<refsect3 id="prelude-string-new.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer where to store the created <link linkend="prelude-string-t"><type>prelude_string_t</type></link>.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-new.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-new-nodup" role="function">
+<title>prelude_string_new_nodup&#160;()</title>
+<indexterm zone="prelude-string-new-nodup"><primary>prelude_string_new_nodup</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_new_nodup (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> **string</parameter>,
+                          <parameter><link linkend="char"><type>char</type></link> *str</parameter>);</programlisting>
+<para>Create a new <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object with a reference to <parameter>str</parameter>
+ as
+initial value.  <parameter>str</parameter>
+ is owned by <parameter>string</parameter>
+ and will be freed upon
+<link linkend="prelude-string-destroy"><function>prelude_string_destroy()</function></link>.</para>
+<refsect3 id="prelude-string-new-nodup.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer where to store the created <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>str</para></entry>
+<entry role="parameter_description"><para>Initial string value.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-new-nodup.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-new-ref" role="function">
+<title>prelude_string_new_ref&#160;()</title>
+<indexterm zone="prelude-string-new-ref"><primary>prelude_string_new_ref</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_new_ref (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> **string</parameter>,
+                        <parameter>const <link linkend="char"><type>char</type></link> *str</parameter>);</programlisting>
+<para>Create a new <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object with a reference to <parameter>str</parameter>
+ as
+initial value. <parameter>str</parameter>
+ won't be freed upon <link linkend="prelude-string-destroy"><function>prelude_string_destroy()</function></link>.</para>
+<refsect3 id="prelude-string-new-ref.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer where to store the created <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>str</para></entry>
+<entry role="parameter_description"><para>Initial string value.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-new-ref.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-new-dup" role="function">
+<title>prelude_string_new_dup&#160;()</title>
+<indexterm zone="prelude-string-new-dup"><primary>prelude_string_new_dup</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_new_dup (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> **string</parameter>,
+                        <parameter>const <link linkend="char"><type>char</type></link> *str</parameter>);</programlisting>
+<para>Create a new <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object with a copy of <parameter>str</parameter>
+ as it's
+initial value. The copy is owned by the <parameter>string</parameter>
+ and will be freed
+upon <link linkend="prelude-string-destroy"><function>prelude_string_destroy()</function></link>.</para>
+<refsect3 id="prelude-string-new-dup.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer where to store the created <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>str</para></entry>
+<entry role="parameter_description"><para>Initial string value.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-new-dup.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-new-dup-fast" role="function">
+<title>prelude_string_new_dup_fast&#160;()</title>
+<indexterm zone="prelude-string-new-dup-fast"><primary>prelude_string_new_dup_fast</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_new_dup_fast (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> **string</parameter>,
+                             <parameter>const <link linkend="char"><type>char</type></link> *str</parameter>,
+                             <parameter><link linkend="size-t"><type>size_t</type></link> len</parameter>);</programlisting>
+<para>Create a new <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object with a copy of <parameter>str</parameter>
+ as it's
+initial value.  The copy is owned by the <parameter>string</parameter>
+ and will be freed
+upon <link linkend="prelude-string-destroy"><function>prelude_string_destroy()</function></link>.</para>
+<refsect3 id="prelude-string-new-dup-fast.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer where to store the created <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>str</para></entry>
+<entry role="parameter_description"><para>Initial string value.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>len</para></entry>
+<entry role="parameter_description"><para>Lenght of <parameter>str</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-new-dup-fast.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-destroy" role="function">
+<title>prelude_string_destroy&#160;()</title>
+<indexterm zone="prelude-string-destroy"><primary>prelude_string_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_string_destroy (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>);</programlisting>
+<para>Decrease refcount and destroy <parameter>string</parameter>
+.
+<parameter>string</parameter>
+ content content is destroyed if applicable (dup and nodup,
+or a referenced string that have been modified.</para>
+<refsect3 id="prelude-string-destroy.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-destroy-internal" role="function">
+<title>prelude_string_destroy_internal&#160;()</title>
+<indexterm zone="prelude-string-destroy-internal"><primary>prelude_string_destroy_internal</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_string_destroy_internal (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-string-new-nodup-fast" role="function">
+<title>prelude_string_new_nodup_fast&#160;()</title>
+<indexterm zone="prelude-string-new-nodup-fast"><primary>prelude_string_new_nodup_fast</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_new_nodup_fast (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> **string</parameter>,
+                               <parameter><link linkend="char"><type>char</type></link> *str</parameter>,
+                               <parameter><link linkend="size-t"><type>size_t</type></link> len</parameter>);</programlisting>
+<para>Create a new <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object with a reference to <parameter>str</parameter>
+ as
+initial value.  <parameter>str</parameter>
+ is owned by <parameter>string</parameter>
+ and will be freed upon
+<link linkend="prelude-string-destroy"><function>prelude_string_destroy()</function></link>.</para>
+<refsect3 id="prelude-string-new-nodup-fast.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer where to store the created <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>str</para></entry>
+<entry role="parameter_description"><para>Initial string value.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>len</para></entry>
+<entry role="parameter_description"><para>Lenght of <parameter>str</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-new-nodup-fast.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-new-ref-fast" role="function">
+<title>prelude_string_new_ref_fast&#160;()</title>
+<indexterm zone="prelude-string-new-ref-fast"><primary>prelude_string_new_ref_fast</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_new_ref_fast (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> **string</parameter>,
+                             <parameter>const <link linkend="char"><type>char</type></link> *str</parameter>,
+                             <parameter><link linkend="size-t"><type>size_t</type></link> len</parameter>);</programlisting>
+<para>Create a new <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object with a reference to <parameter>str</parameter>
+ as
+initial value. <parameter>str</parameter>
+ won't be freed upon <link linkend="prelude-string-destroy"><function>prelude_string_destroy()</function></link>.</para>
+<refsect3 id="prelude-string-new-ref-fast.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer where to store the created <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>str</para></entry>
+<entry role="parameter_description"><para>Initial string value.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>len</para></entry>
+<entry role="parameter_description"><para>Length of <parameter>str</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-new-ref-fast.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-set-dup-fast" role="function">
+<title>prelude_string_set_dup_fast&#160;()</title>
+<indexterm zone="prelude-string-set-dup-fast"><primary>prelude_string_set_dup_fast</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_set_dup_fast (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>,
+                             <parameter>const <link linkend="char"><type>char</type></link> *buf</parameter>,
+                             <parameter><link linkend="size-t"><type>size_t</type></link> len</parameter>);</programlisting>
+<para>Store a copy of the string pointed by <parameter>buf</parameter>
+ in <parameter>string</parameter>
+.
+The <parameter>buf</parameter>
+ copy will be freed upon <link linkend="prelude-string-destroy"><function>prelude_string_destroy()</function></link>.</para>
+<refsect3 id="prelude-string-set-dup-fast.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>buf</para></entry>
+<entry role="parameter_description"><para>String to store in <parameter>string</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>len</para></entry>
+<entry role="parameter_description"><para>Lenght of <parameter>buf</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-set-dup-fast.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-set-dup" role="function">
+<title>prelude_string_set_dup&#160;()</title>
+<indexterm zone="prelude-string-set-dup"><primary>prelude_string_set_dup</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_set_dup (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>,
+                        <parameter>const <link linkend="char"><type>char</type></link> *buf</parameter>);</programlisting>
+<para>Store a copy of the string pointed by <parameter>buf</parameter>
+ in <parameter>string</parameter>
+.
+The <parameter>buf</parameter>
+ copy will be freed upon <link linkend="prelude-string-destroy"><function>prelude_string_destroy()</function></link>.</para>
+<refsect3 id="prelude-string-set-dup.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>buf</para></entry>
+<entry role="parameter_description"><para>String to store in <parameter>string</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-set-dup.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-set-nodup-fast" role="function">
+<title>prelude_string_set_nodup_fast&#160;()</title>
+<indexterm zone="prelude-string-set-nodup-fast"><primary>prelude_string_set_nodup_fast</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_set_nodup_fast (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>,
+                               <parameter><link linkend="char"><type>char</type></link> *buf</parameter>,
+                               <parameter><link linkend="size-t"><type>size_t</type></link> len</parameter>);</programlisting>
+<para>Store a reference to the string pointed by <parameter>buf</parameter>
+ in <parameter>string</parameter>
+.
+The referenced <parameter>buf</parameter>
+ will be freed upon <link linkend="prelude-string-destroy"><function>prelude_string_destroy()</function></link>.</para>
+<refsect3 id="prelude-string-set-nodup-fast.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>buf</para></entry>
+<entry role="parameter_description"><para>String to store in <parameter>string</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>len</para></entry>
+<entry role="parameter_description"><para>Lenght of <parameter>buf</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-set-nodup-fast.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-set-nodup" role="function">
+<title>prelude_string_set_nodup&#160;()</title>
+<indexterm zone="prelude-string-set-nodup"><primary>prelude_string_set_nodup</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_set_nodup (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>,
+                          <parameter><link linkend="char"><type>char</type></link> *buf</parameter>);</programlisting>
+<para>Store a reference to the string pointed by <parameter>buf</parameter>
+ in <parameter>string</parameter>
+.
+The referenced <parameter>buf</parameter>
+ will be freed upon <link linkend="prelude-string-destroy"><function>prelude_string_destroy()</function></link>.</para>
+<refsect3 id="prelude-string-set-nodup.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>buf</para></entry>
+<entry role="parameter_description"><para>String to store in <parameter>string</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-set-nodup.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-set-ref-fast" role="function">
+<title>prelude_string_set_ref_fast&#160;()</title>
+<indexterm zone="prelude-string-set-ref-fast"><primary>prelude_string_set_ref_fast</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_set_ref_fast (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>,
+                             <parameter>const <link linkend="char"><type>char</type></link> *buf</parameter>,
+                             <parameter><link linkend="size-t"><type>size_t</type></link> len</parameter>);</programlisting>
+<para>Store a reference to the string pointed by <parameter>buf</parameter>
+ in <parameter>string</parameter>
+.
+The referenced <parameter>buf</parameter>
+ value won't be modified or freed.</para>
+<refsect3 id="prelude-string-set-ref-fast.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>buf</para></entry>
+<entry role="parameter_description"><para>String to store in <parameter>string</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>len</para></entry>
+<entry role="parameter_description"><para>Lenght of <parameter>buf</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-set-ref-fast.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-set-ref" role="function">
+<title>prelude_string_set_ref&#160;()</title>
+<indexterm zone="prelude-string-set-ref"><primary>prelude_string_set_ref</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_set_ref (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>,
+                        <parameter>const <link linkend="char"><type>char</type></link> *buf</parameter>);</programlisting>
+<para>Store a reference to the string pointed by <parameter>buf</parameter>
+ in <parameter>string</parameter>
+.
+The referenced <parameter>buf</parameter>
+ value won't be modified or freed.</para>
+<refsect3 id="prelude-string-set-ref.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>buf</para></entry>
+<entry role="parameter_description"><para>String to store in <parameter>string</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-set-ref.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-copy-ref" role="function">
+<title>prelude_string_copy_ref&#160;()</title>
+<indexterm zone="prelude-string-copy-ref"><primary>prelude_string_copy_ref</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_copy_ref (<parameter>const <link linkend="prelude-string-t"><type>prelude_string_t</type></link> *src</parameter>,
+                         <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *dst</parameter>);</programlisting>
+<para>Reference <parameter>src</parameter>
+ content within <parameter>dst</parameter>
+.
+The referenced content won't be modified or freed.</para>
+<refsect3 id="prelude-string-copy-ref.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>src</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object to copy data from.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>dst</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object to copy data to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-copy-ref.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-copy-dup" role="function">
+<title>prelude_string_copy_dup&#160;()</title>
+<indexterm zone="prelude-string-copy-dup"><primary>prelude_string_copy_dup</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_copy_dup (<parameter>const <link linkend="prelude-string-t"><type>prelude_string_t</type></link> *src</parameter>,
+                         <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *dst</parameter>);</programlisting>
+<para>Copy <parameter>src</parameter>
+ content within <parameter>dst</parameter>
+.
+The content is owned by <parameter>src</parameter>
+ and independent of <parameter>dst</parameter>
+.</para>
+<refsect3 id="prelude-string-copy-dup.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>src</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object to copy data from.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>dst</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object to copy data to.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-copy-dup.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-ref" role="function">
+<title>prelude_string_ref&#160;()</title>
+<indexterm zone="prelude-string-ref"><primary>prelude_string_ref</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-string-t"><returnvalue>prelude_string_t</returnvalue></link>&#160;*
+prelude_string_ref (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>);</programlisting>
+<para>Increase <parameter>string</parameter>
+ reference count.</para>
+<refsect3 id="prelude-string-ref.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object to reference.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-ref.returns" role="returns">
+<title>Returns</title>
+<para> <parameter>string</parameter>
+.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-clone" role="function">
+<title>prelude_string_clone&#160;()</title>
+<indexterm zone="prelude-string-clone"><primary>prelude_string_clone</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_clone (<parameter>const <link linkend="prelude-string-t"><type>prelude_string_t</type></link> *src</parameter>,
+                      <parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> **dst</parameter>);</programlisting>
+<para>Clone <parameter>src</parameter>
+ within a new <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object stored into <parameter>dst</parameter>
+.
+Data carried by <parameter>dst</parameter>
+ and <parameter>src</parameter>
+ are independant.</para>
+<refsect3 id="prelude-string-clone.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>src</para></entry>
+<entry role="parameter_description"><para>Pointer to an existing <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>dst</para></entry>
+<entry role="parameter_description"><para>Pointer to an address where to store the created <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-clone.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-get-len" role="function">
+<title>prelude_string_get_len&#160;()</title>
+<indexterm zone="prelude-string-get-len"><primary>prelude_string_get_len</primary></indexterm>
+<programlisting language="C"><link linkend="size-t"><returnvalue>size_t</returnvalue></link>
+prelude_string_get_len (<parameter>const <link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>);</programlisting>
+<para>Return the length of the string carried by <parameter>string</parameter>
+ object.</para>
+<refsect3 id="prelude-string-get-len.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-get-len.returns" role="returns">
+<title>Returns</title>
+<para> The length of the string owned by <parameter>string</parameter>
+.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-get-string-or-default" role="function">
+<title>prelude_string_get_string_or_default&#160;()</title>
+<indexterm zone="prelude-string-get-string-or-default"><primary>prelude_string_get_string_or_default</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_string_get_string_or_default (<parameter>const <link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>,
+                                      <parameter>const <link linkend="char"><type>char</type></link> *def</parameter>);</programlisting>
+<para>Return the string carried on by <parameter>string</parameter>
+ object, or <parameter>def</parameter>
+ if it is empty.
+There should be no operation done on the returned string since it is still
+owned by <parameter>string</parameter>
+.</para>
+<refsect3 id="prelude-string-get-string-or-default.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>def</para></entry>
+<entry role="parameter_description"><para>Default value to a return in case <parameter>string</parameter>
+is empty.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-get-string-or-default.returns" role="returns">
+<title>Returns</title>
+<para> The string owned by <parameter>string</parameter>
+or <parameter>def</parameter>
+.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-get-string" role="function">
+<title>prelude_string_get_string&#160;()</title>
+<indexterm zone="prelude-string-get-string"><primary>prelude_string_get_string</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_string_get_string (<parameter>const <link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>);</programlisting>
+<para>Return the string carried on by <parameter>string</parameter>
+ object.
+There should be no operation done on the returned string since
+it is still owned by <parameter>string</parameter>
+.</para>
+<refsect3 id="prelude-string-get-string.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-get-string.returns" role="returns">
+<title>Returns</title>
+<para> The string owned by <parameter>string</parameter>
+if any.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-get-string-released" role="function">
+<title>prelude_string_get_string_released&#160;()</title>
+<indexterm zone="prelude-string-get-string-released"><primary>prelude_string_get_string_released</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_get_string_released (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>,
+                                    <parameter><link linkend="char"><type>char</type></link> **outptr</parameter>);</programlisting>
+<para>Get <parameter>string</parameter>
+ content, and release it so that further operation on
+<parameter>string</parameter>
+ won't modify the returned content.</para>
+<refsect3 id="prelude-string-get-string-released.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>outptr</para></entry>
+<entry role="parameter_description"><para>Pointer to an address where to store the released string.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-get-string-released.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-is-empty" role="function">
+<title>prelude_string_is_empty&#160;()</title>
+<indexterm zone="prelude-string-is-empty"><primary>prelude_string_is_empty</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+prelude_string_is_empty (<parameter>const <link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>);</programlisting>
+<para>Check whether <parameter>string</parameter>
+ is empty.</para>
+<refsect3 id="prelude-string-is-empty.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-is-empty.returns" role="returns">
+<title>Returns</title>
+<para> TRUE if <parameter>string</parameter>
+is empty, FALSE otherwise.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-clear" role="function">
+<title>prelude_string_clear&#160;()</title>
+<indexterm zone="prelude-string-clear"><primary>prelude_string_clear</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_string_clear (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>);</programlisting>
+<para>Reset <parameter>string</parameter>
+ content to zero.</para>
+<refsect3 id="prelude-string-clear.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-cat" role="function">
+<title>prelude_string_cat&#160;()</title>
+<indexterm zone="prelude-string-cat"><primary>prelude_string_cat</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_cat (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *dst</parameter>,
+                    <parameter>const <link linkend="char"><type>char</type></link> *str</parameter>);</programlisting>
+<para>The <link linkend="prelude-string-cat"><function>prelude_string_cat()</function></link> function appends the <parameter>str</parameter>
+ string to the <parameter>dst</parameter>
+
+prelude_string_t object over-writing the <literal>\0' character at the end of
+@dst, and then adds a termi-nating </literal>\0' character.</para>
+<refsect3 id="prelude-string-cat.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>dst</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>str</para></entry>
+<entry role="parameter_description"><para>Pointer to a string.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-cat.returns" role="returns">
+<title>Returns</title>
+<para> <parameter>len</parameter>
+, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-ncat" role="function">
+<title>prelude_string_ncat&#160;()</title>
+<indexterm zone="prelude-string-ncat"><primary>prelude_string_ncat</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_ncat (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *dst</parameter>,
+                     <parameter>const <link linkend="char"><type>char</type></link> *str</parameter>,
+                     <parameter><link linkend="size-t"><type>size_t</type></link> len</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-string-sprintf" role="function">
+<title>prelude_string_sprintf&#160;()</title>
+<indexterm zone="prelude-string-sprintf"><primary>prelude_string_sprintf</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_sprintf (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>,
+                        <parameter>const <link linkend="char"><type>char</type></link> *fmt</parameter>);</programlisting>
+<para>Produce output according to <parameter>fmt</parameter>
+, and write output to the given
+<parameter>string</parameter>
+. See snprintf(3) to learn more about <parameter>fmt</parameter>
+ format.</para>
+<refsect3 id="prelude-string-sprintf.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fmt</para></entry>
+<entry role="parameter_description"><para>Format string to use.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>...</para></entry>
+<entry role="parameter_description"><para>Variable argument list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-sprintf.returns" role="returns">
+<title>Returns</title>
+<para> The number of characters written, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-vprintf" role="function">
+<title>prelude_string_vprintf&#160;()</title>
+<indexterm zone="prelude-string-vprintf"><primary>prelude_string_vprintf</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_vprintf (<parameter><link linkend="prelude-string-t"><type>prelude_string_t</type></link> *string</parameter>,
+                        <parameter>const <link linkend="char"><type>char</type></link> *fmt</parameter>);</programlisting>
+<para>Produce output according to <parameter>fmt</parameter>
+, storing argument provided in <parameter>ap</parameter>
+
+variable argument list, and write the output to the given <parameter>string</parameter>
+.
+See sprintf(3) for more information on <parameter>fmt</parameter>
+ format.</para>
+<refsect3 id="prelude-string-vprintf.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>string</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fmt</para></entry>
+<entry role="parameter_description"><para>Format string to use.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>ap</para></entry>
+<entry role="parameter_description"><para>Variable argument list.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-vprintf.returns" role="returns">
+<title>Returns</title>
+<para> The number of characters written, or a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-string-set-constant" role="macro">
+<title>prelude_string_set_constant()</title>
+<indexterm zone="prelude-string-set-constant"><primary>prelude_string_set_constant</primary></indexterm>
+<programlisting language="C">#define             prelude_string_set_constant(string, str)</programlisting>
+</refsect2>
+<refsect2 id="prelude-string-new-constant" role="macro">
+<title>prelude_string_new_constant()</title>
+<indexterm zone="prelude-string-new-constant"><primary>prelude_string_new_constant</primary></indexterm>
+<programlisting language="C">#define             prelude_string_new_constant(string, str)</programlisting>
+</refsect2>
+<refsect2 id="prelude-string-compare" role="function">
+<title>prelude_string_compare&#160;()</title>
+<indexterm zone="prelude-string-compare"><primary>prelude_string_compare</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_string_compare (<parameter>const <link linkend="prelude-string-t"><type>prelude_string_t</type></link> *str1</parameter>,
+                        <parameter>const <link linkend="prelude-string-t"><type>prelude_string_t</type></link> *str2</parameter>);</programlisting>
+<para>Compare <parameter>str1</parameter>
+ and <parameter>str2</parameter>
+.</para>
+<refsect3 id="prelude-string-compare.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>str1</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object to compare with <parameter>str2</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>str2</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-string-t"><type>prelude_string_t</type></link> object to compare with <parameter>str1</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-string-compare.returns" role="returns">
+<title>Returns</title>
+<para> 0 if <parameter>str1</parameter>
+and <parameter>str2</parameter>
+value are equal, a negative value otherwise.</para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-string.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="prelude-string-t" role="typedef">
+<title>prelude_string_t</title>
+<indexterm zone="prelude-string-t"><primary>prelude_string_t</primary></indexterm>
+<programlisting language="C">typedef struct prelude_string prelude_string_t;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

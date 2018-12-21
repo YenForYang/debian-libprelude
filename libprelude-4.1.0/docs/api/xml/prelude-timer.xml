@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-prelude-timer">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-prelude-timer.top_of_page">prelude-timer</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>prelude-timer</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-prelude-timer.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-timer-get-expire">prelude_timer_get_expire</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-timer-get-data">prelude_timer_get_data</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-timer-get-callback">prelude_timer_get_callback</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-timer-set-expire">prelude_timer_set_expire</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-timer-set-data">prelude_timer_set_data</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="prelude-timer-set-callback">prelude_timer_set_callback</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-timer-init">prelude_timer_init</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-timer-init-list">prelude_timer_init_list</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-timer-reset">prelude_timer_reset</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-timer-destroy">prelude_timer_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-timer-wake-up">prelude_timer_wake_up</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-timer-flush">prelude_timer_flush</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-timer-lock-critical-region">prelude_timer_lock_critical_region</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-timer-unlock-critical-region">prelude_timer_unlock_critical_region</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-prelude-timer.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="prelude-timer-t">prelude_timer_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-prelude-timer.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-timer.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="prelude-timer-get-expire" role="macro">
+<title>prelude_timer_get_expire()</title>
+<indexterm zone="prelude-timer-get-expire"><primary>prelude_timer_get_expire</primary></indexterm>
+<programlisting language="C">#define prelude_timer_get_expire(timer) (timer)-&gt;expire
+</programlisting>
+</refsect2>
+<refsect2 id="prelude-timer-get-data" role="macro">
+<title>prelude_timer_get_data()</title>
+<indexterm zone="prelude-timer-get-data"><primary>prelude_timer_get_data</primary></indexterm>
+<programlisting language="C">#define prelude_timer_get_data(timer) (timer)-&gt;data
+</programlisting>
+</refsect2>
+<refsect2 id="prelude-timer-get-callback" role="macro">
+<title>prelude_timer_get_callback()</title>
+<indexterm zone="prelude-timer-get-callback"><primary>prelude_timer_get_callback</primary></indexterm>
+<programlisting language="C">#define prelude_timer_get_callback(timer) (timer)-&gt;function
+</programlisting>
+</refsect2>
+<refsect2 id="prelude-timer-set-expire" role="macro">
+<title>prelude_timer_set_expire()</title>
+<indexterm zone="prelude-timer-set-expire"><primary>prelude_timer_set_expire</primary></indexterm>
+<programlisting language="C">#define prelude_timer_set_expire(timer, x) prelude_timer_get_expire((timer)) = (x)
+</programlisting>
+</refsect2>
+<refsect2 id="prelude-timer-set-data" role="macro">
+<title>prelude_timer_set_data()</title>
+<indexterm zone="prelude-timer-set-data"><primary>prelude_timer_set_data</primary></indexterm>
+<programlisting language="C">#define prelude_timer_set_data(timer, x) prelude_timer_get_data((timer)) = (x)
+</programlisting>
+</refsect2>
+<refsect2 id="prelude-timer-set-callback" role="macro">
+<title>prelude_timer_set_callback()</title>
+<indexterm zone="prelude-timer-set-callback"><primary>prelude_timer_set_callback</primary></indexterm>
+<programlisting language="C">#define prelude_timer_set_callback(timer, x) prelude_timer_get_callback((timer)) = (x)
+</programlisting>
+</refsect2>
+<refsect2 id="prelude-timer-init" role="function">
+<title>prelude_timer_init&#160;()</title>
+<indexterm zone="prelude-timer-init"><primary>prelude_timer_init</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_timer_init (<parameter><link linkend="prelude-timer-t"><type>prelude_timer_t</type></link> *timer</parameter>);</programlisting>
+<para>Initialize a timer (add it to the timer list).</para>
+<refsect3 id="prelude-timer-init.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>timer</para></entry>
+<entry role="parameter_description"><para>timer to initialize.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-timer-init-list" role="function">
+<title>prelude_timer_init_list&#160;()</title>
+<indexterm zone="prelude-timer-init-list"><primary>prelude_timer_init_list</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_timer_init_list (<parameter><link linkend="prelude-timer-t"><type>prelude_timer_t</type></link> *timer</parameter>);</programlisting>
+<para>Initialize <parameter>timer</parameter>
+ list member. This is useful if
+you're going to call <link linkend="prelude-timer-destroy"><function>prelude_timer_destroy()</function></link> on timer
+for which <link linkend="prelude-timer-init"><function>prelude_timer_init()</function></link> was never called.</para>
+<refsect3 id="prelude-timer-init-list.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>timer</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-timer-t"><type>prelude_timer_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-timer-reset" role="function">
+<title>prelude_timer_reset&#160;()</title>
+<indexterm zone="prelude-timer-reset"><primary>prelude_timer_reset</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_timer_reset (<parameter><link linkend="prelude-timer-t"><type>prelude_timer_t</type></link> *timer</parameter>);</programlisting>
+<para>Reset timer 'timer', as if it was just started.</para>
+<refsect3 id="prelude-timer-reset.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>timer</para></entry>
+<entry role="parameter_description"><para>the timer to reset.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-timer-destroy" role="function">
+<title>prelude_timer_destroy&#160;()</title>
+<indexterm zone="prelude-timer-destroy"><primary>prelude_timer_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_timer_destroy (<parameter><link linkend="prelude-timer-t"><type>prelude_timer_t</type></link> *timer</parameter>);</programlisting>
+<para>Destroy the timer 'timer',
+this remove it from the active timer list.</para>
+<refsect3 id="prelude-timer-destroy.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>timer</para></entry>
+<entry role="parameter_description"><para>the timer to destroy.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-timer-wake-up" role="function">
+<title>prelude_timer_wake_up&#160;()</title>
+<indexterm zone="prelude-timer-wake-up"><primary>prelude_timer_wake_up</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_timer_wake_up (<parameter><type>void</type></parameter>);</programlisting>
+<para>Wake up timer that need it.
+This function should be called every second to work properly.</para>
+<refsect3 id="prelude-timer-wake-up.returns" role="returns">
+<title>Returns</title>
+<para> Number of second in which <link linkend="prelude-timer-wake-up"><function>prelude_timer_wake_up()</function></link> should be called again.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-timer-flush" role="function">
+<title>prelude_timer_flush&#160;()</title>
+<indexterm zone="prelude-timer-flush"><primary>prelude_timer_flush</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_timer_flush (<parameter><type>void</type></parameter>);</programlisting>
+<para>Expire every timer.</para>
+</refsect2>
+<refsect2 id="prelude-timer-lock-critical-region" role="function">
+<title>prelude_timer_lock_critical_region&#160;()</title>
+<indexterm zone="prelude-timer-lock-critical-region"><primary>prelude_timer_lock_critical_region</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_timer_lock_critical_region (<parameter><type>void</type></parameter>);</programlisting>
+<para>Deactivate timer wake-up until <link linkend="timer-unlock-critical-region"><function>timer_unlock_critical_region()</function></link> is called.</para>
+</refsect2>
+<refsect2 id="prelude-timer-unlock-critical-region" role="function">
+<title>prelude_timer_unlock_critical_region&#160;()</title>
+<indexterm zone="prelude-timer-unlock-critical-region"><primary>prelude_timer_unlock_critical_region</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_timer_unlock_critical_region (<parameter><type>void</type></parameter>);</programlisting>
+<para>Reactivate timer wake-up after <link linkend="timer-lock-critical-regions"><function>timer_lock_critical_regions()</function></link> has been called.</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-timer.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="prelude-timer-t" role="struct">
+<title>prelude_timer_t</title>
+<indexterm zone="prelude-timer-t"><primary>prelude_timer_t</primary></indexterm>
+<programlisting language="C">typedef struct {
+        prelude_list_t list;
+
+        int expire;
+        time_t start_time;
+
+        void *data;
+        void (*function)(void *data);
+} prelude_timer_t;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

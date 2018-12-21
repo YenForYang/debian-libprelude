@@ -1,0 +1,975 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-idmef-message-write">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-idmef-message-write.top_of_page">idmef-message-write</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>idmef-message-write</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-idmef-message-write.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-additional-data-write">idmef_additional_data_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-reference-write">idmef_reference_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-classification-write">idmef_classification_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-user-id-write">idmef_user_id_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-user-write">idmef_user_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-address-write">idmef_address_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-process-write">idmef_process_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-web-service-write">idmef_web_service_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-snmp-service-write">idmef_snmp_service_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-service-write">idmef_service_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-node-write">idmef_node_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-source-write">idmef_source_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-file-access-write">idmef_file_access_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-inode-write">idmef_inode_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-checksum-write">idmef_checksum_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-file-write">idmef_file_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-linkage-write">idmef_linkage_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-target-write">idmef_target_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-analyzer-write">idmef_analyzer_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-alertident-write">idmef_alertident_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-impact-write">idmef_impact_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-action-write">idmef_action_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-confidence-write">idmef_confidence_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-assessment-write">idmef_assessment_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-tool-alert-write">idmef_tool_alert_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-correlation-alert-write">idmef_correlation_alert_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-overflow-alert-write">idmef_overflow_alert_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-alert-write">idmef_alert_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-heartbeat-write">idmef_heartbeat_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="idmef-message-write">idmef_message_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-idmef-message-write.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-idmef-message-write.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="idmef-additional-data-write" role="function">
+<title>idmef_additional_data_write&#160;()</title>
+<indexterm zone="idmef-additional-data-write"><primary>idmef_additional_data_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_additional_data_write (<parameter><link linkend="idmef-additional-data-t"><type>idmef_additional_data_t</type></link> *additional_data</parameter>,
+                             <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>additional_data</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-additional-data-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>additional_data</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-additional-data-t"><type>idmef_additional_data_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-additional-data-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-reference-write" role="function">
+<title>idmef_reference_write&#160;()</title>
+<indexterm zone="idmef-reference-write"><primary>idmef_reference_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_reference_write (<parameter><link linkend="idmef-reference-t"><type>idmef_reference_t</type></link> *reference</parameter>,
+                       <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>reference</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-reference-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>reference</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-reference-t"><type>idmef_reference_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-reference-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-classification-write" role="function">
+<title>idmef_classification_write&#160;()</title>
+<indexterm zone="idmef-classification-write"><primary>idmef_classification_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_classification_write (<parameter><link linkend="idmef-classification-t"><type>idmef_classification_t</type></link> *classification</parameter>,
+                            <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>classification</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-classification-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>classification</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-classification-t"><type>idmef_classification_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-classification-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-user-id-write" role="function">
+<title>idmef_user_id_write&#160;()</title>
+<indexterm zone="idmef-user-id-write"><primary>idmef_user_id_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_user_id_write (<parameter><link linkend="idmef-user-id-t"><type>idmef_user_id_t</type></link> *user_id</parameter>,
+                     <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>user_id</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-user-id-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>user_id</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-user-id-t"><type>idmef_user_id_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-user-id-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-user-write" role="function">
+<title>idmef_user_write&#160;()</title>
+<indexterm zone="idmef-user-write"><primary>idmef_user_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_user_write (<parameter><link linkend="idmef-user-t"><type>idmef_user_t</type></link> *user</parameter>,
+                  <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>user</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-user-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>user</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-user-t"><type>idmef_user_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-user-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-address-write" role="function">
+<title>idmef_address_write&#160;()</title>
+<indexterm zone="idmef-address-write"><primary>idmef_address_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_address_write (<parameter><link linkend="idmef-address-t"><type>idmef_address_t</type></link> *address</parameter>,
+                     <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>address</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-address-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>address</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-address-t"><type>idmef_address_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-address-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-process-write" role="function">
+<title>idmef_process_write&#160;()</title>
+<indexterm zone="idmef-process-write"><primary>idmef_process_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_process_write (<parameter><link linkend="idmef-process-t"><type>idmef_process_t</type></link> *process</parameter>,
+                     <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>process</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-process-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>process</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-process-t"><type>idmef_process_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-process-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-web-service-write" role="function">
+<title>idmef_web_service_write&#160;()</title>
+<indexterm zone="idmef-web-service-write"><primary>idmef_web_service_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_web_service_write (<parameter><link linkend="idmef-web-service-t"><type>idmef_web_service_t</type></link> *web_service</parameter>,
+                         <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>web_service</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-web-service-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>web_service</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-web-service-t"><type>idmef_web_service_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-web-service-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-snmp-service-write" role="function">
+<title>idmef_snmp_service_write&#160;()</title>
+<indexterm zone="idmef-snmp-service-write"><primary>idmef_snmp_service_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_snmp_service_write (<parameter><link linkend="idmef-snmp-service-t"><type>idmef_snmp_service_t</type></link> *snmp_service</parameter>,
+                          <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>snmp_service</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-snmp-service-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>snmp_service</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-snmp-service-t"><type>idmef_snmp_service_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-snmp-service-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-service-write" role="function">
+<title>idmef_service_write&#160;()</title>
+<indexterm zone="idmef-service-write"><primary>idmef_service_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_service_write (<parameter><link linkend="idmef-service-t"><type>idmef_service_t</type></link> *service</parameter>,
+                     <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>service</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-service-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>service</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-service-t"><type>idmef_service_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-service-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-node-write" role="function">
+<title>idmef_node_write&#160;()</title>
+<indexterm zone="idmef-node-write"><primary>idmef_node_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_node_write (<parameter><link linkend="idmef-node-t"><type>idmef_node_t</type></link> *node</parameter>,
+                  <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>node</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-node-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>node</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-node-t"><type>idmef_node_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-node-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-source-write" role="function">
+<title>idmef_source_write&#160;()</title>
+<indexterm zone="idmef-source-write"><primary>idmef_source_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_source_write (<parameter><link linkend="idmef-source-t"><type>idmef_source_t</type></link> *source</parameter>,
+                    <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>source</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-source-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>source</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-source-t"><type>idmef_source_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-source-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-file-access-write" role="function">
+<title>idmef_file_access_write&#160;()</title>
+<indexterm zone="idmef-file-access-write"><primary>idmef_file_access_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_file_access_write (<parameter><link linkend="idmef-file-access-t"><type>idmef_file_access_t</type></link> *file_access</parameter>,
+                         <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>file_access</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-file-access-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>file_access</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-file-access-t"><type>idmef_file_access_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-file-access-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-inode-write" role="function">
+<title>idmef_inode_write&#160;()</title>
+<indexterm zone="idmef-inode-write"><primary>idmef_inode_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_inode_write (<parameter><link linkend="idmef-inode-t"><type>idmef_inode_t</type></link> *inode</parameter>,
+                   <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>inode</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-inode-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>inode</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-inode-t"><type>idmef_inode_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-inode-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-checksum-write" role="function">
+<title>idmef_checksum_write&#160;()</title>
+<indexterm zone="idmef-checksum-write"><primary>idmef_checksum_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_checksum_write (<parameter><link linkend="idmef-checksum-t"><type>idmef_checksum_t</type></link> *checksum</parameter>,
+                      <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>checksum</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-checksum-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>checksum</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-checksum-t"><type>idmef_checksum_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-checksum-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-file-write" role="function">
+<title>idmef_file_write&#160;()</title>
+<indexterm zone="idmef-file-write"><primary>idmef_file_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_file_write (<parameter><link linkend="idmef-file-t"><type>idmef_file_t</type></link> *file</parameter>,
+                  <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>file</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-file-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>file</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-file-t"><type>idmef_file_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-file-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-linkage-write" role="function">
+<title>idmef_linkage_write&#160;()</title>
+<indexterm zone="idmef-linkage-write"><primary>idmef_linkage_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_linkage_write (<parameter><link linkend="idmef-linkage-t"><type>idmef_linkage_t</type></link> *linkage</parameter>,
+                     <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>linkage</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-linkage-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>linkage</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-linkage-t"><type>idmef_linkage_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-linkage-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-target-write" role="function">
+<title>idmef_target_write&#160;()</title>
+<indexterm zone="idmef-target-write"><primary>idmef_target_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_target_write (<parameter><link linkend="idmef-target-t"><type>idmef_target_t</type></link> *target</parameter>,
+                    <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>target</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-target-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>target</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-target-t"><type>idmef_target_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-target-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-analyzer-write" role="function">
+<title>idmef_analyzer_write&#160;()</title>
+<indexterm zone="idmef-analyzer-write"><primary>idmef_analyzer_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_analyzer_write (<parameter><link linkend="idmef-analyzer-t"><type>idmef_analyzer_t</type></link> *analyzer</parameter>,
+                      <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>analyzer</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-analyzer-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>analyzer</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-analyzer-t"><type>idmef_analyzer_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-analyzer-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-alertident-write" role="function">
+<title>idmef_alertident_write&#160;()</title>
+<indexterm zone="idmef-alertident-write"><primary>idmef_alertident_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_alertident_write (<parameter><link linkend="idmef-alertident-t"><type>idmef_alertident_t</type></link> *alertident</parameter>,
+                        <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>alertident</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-alertident-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>alertident</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-alertident-t"><type>idmef_alertident_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-alertident-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-impact-write" role="function">
+<title>idmef_impact_write&#160;()</title>
+<indexterm zone="idmef-impact-write"><primary>idmef_impact_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_impact_write (<parameter><link linkend="idmef-impact-t"><type>idmef_impact_t</type></link> *impact</parameter>,
+                    <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>impact</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-impact-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>impact</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-impact-t"><type>idmef_impact_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-impact-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-action-write" role="function">
+<title>idmef_action_write&#160;()</title>
+<indexterm zone="idmef-action-write"><primary>idmef_action_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_action_write (<parameter><link linkend="idmef-action-t"><type>idmef_action_t</type></link> *action</parameter>,
+                    <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>action</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-action-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>action</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-action-t"><type>idmef_action_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-action-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-confidence-write" role="function">
+<title>idmef_confidence_write&#160;()</title>
+<indexterm zone="idmef-confidence-write"><primary>idmef_confidence_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_confidence_write (<parameter><link linkend="idmef-confidence-t"><type>idmef_confidence_t</type></link> *confidence</parameter>,
+                        <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>confidence</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-confidence-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>confidence</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-confidence-t"><type>idmef_confidence_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-confidence-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-assessment-write" role="function">
+<title>idmef_assessment_write&#160;()</title>
+<indexterm zone="idmef-assessment-write"><primary>idmef_assessment_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_assessment_write (<parameter><link linkend="idmef-assessment-t"><type>idmef_assessment_t</type></link> *assessment</parameter>,
+                        <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>assessment</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-assessment-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>assessment</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-assessment-t"><type>idmef_assessment_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-assessment-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-tool-alert-write" role="function">
+<title>idmef_tool_alert_write&#160;()</title>
+<indexterm zone="idmef-tool-alert-write"><primary>idmef_tool_alert_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_tool_alert_write (<parameter><link linkend="idmef-tool-alert-t"><type>idmef_tool_alert_t</type></link> *tool_alert</parameter>,
+                        <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>tool_alert</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-tool-alert-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>tool_alert</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-tool-alert-t"><type>idmef_tool_alert_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-tool-alert-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-correlation-alert-write" role="function">
+<title>idmef_correlation_alert_write&#160;()</title>
+<indexterm zone="idmef-correlation-alert-write"><primary>idmef_correlation_alert_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_correlation_alert_write (<parameter><link linkend="idmef-correlation-alert-t"><type>idmef_correlation_alert_t</type></link> *correlation_alert</parameter>,
+                               <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>correlation_alert</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-correlation-alert-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>correlation_alert</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-correlation-alert-t"><type>idmef_correlation_alert_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-correlation-alert-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-overflow-alert-write" role="function">
+<title>idmef_overflow_alert_write&#160;()</title>
+<indexterm zone="idmef-overflow-alert-write"><primary>idmef_overflow_alert_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_overflow_alert_write (<parameter><link linkend="idmef-overflow-alert-t"><type>idmef_overflow_alert_t</type></link> *overflow_alert</parameter>,
+                            <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>overflow_alert</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-overflow-alert-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>overflow_alert</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-overflow-alert-t"><type>idmef_overflow_alert_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-overflow-alert-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-alert-write" role="function">
+<title>idmef_alert_write&#160;()</title>
+<indexterm zone="idmef-alert-write"><primary>idmef_alert_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_alert_write (<parameter><link linkend="idmef-alert-t"><type>idmef_alert_t</type></link> *alert</parameter>,
+                   <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>alert</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-alert-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>alert</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-alert-t"><type>idmef_alert_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-alert-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-heartbeat-write" role="function">
+<title>idmef_heartbeat_write&#160;()</title>
+<indexterm zone="idmef-heartbeat-write"><primary>idmef_heartbeat_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_heartbeat_write (<parameter><link linkend="idmef-heartbeat-t"><type>idmef_heartbeat_t</type></link> *heartbeat</parameter>,
+                       <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>heartbeat</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-heartbeat-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>heartbeat</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-heartbeat-t"><type>idmef_heartbeat_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-heartbeat-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="idmef-message-write" role="function">
+<title>idmef_message_write&#160;()</title>
+<indexterm zone="idmef-message-write"><primary>idmef_message_write</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+idmef_message_write (<parameter><link linkend="idmef-message-t"><type>idmef_message_t</type></link> *message</parameter>,
+                     <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msg</parameter>);</programlisting>
+<para>Write <parameter>message</parameter>
+ within <parameter>msg</parameter>
+ message buffer. The buffer is
+associated with a <link linkend="prelude-io-t"><type>prelude_io_t</type></link> file descriptor where the data will be written.</para>
+<refsect3 id="idmef-message-write.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>message</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="idmef-message-t"><type>idmef_message_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> object, where the message should be written.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="idmef-message-write.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, a negative value if an error occured.</para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-idmef-message-write.other_details" role="details">
+<title role="details.title">Types and Values</title>
+
+</refsect1>
+
+</refentry>

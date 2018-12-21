@@ -1,0 +1,17 @@
+#!/bin/sh
+# prelude-admin/prelude-adduser.  Generated from prelude-adduser.in by configure.
+
+prefix=/usr
+exec_prefix=${prefix}
+bindir=${exec_prefix}/bin
+libdir=${prefix}/lib/x86_64-linux-gnu
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+
+echo "*"
+echo "* WARNING: prelude-adduser is deprecated and will be removed in the future."
+echo "* WARNING: Please use 'prelude-admin' instead."
+echo "*"
+
+$bindir/prelude-admin $@
+

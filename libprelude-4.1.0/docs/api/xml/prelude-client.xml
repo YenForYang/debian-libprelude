@@ -1,0 +1,755 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="libprelude-prelude-client">
+<refmeta>
+<refentrytitle role="top_of_page" id="libprelude-prelude-client.top_of_page">prelude-client</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBPRELUDE Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>prelude-client</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="libprelude-prelude-client.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="prelude-ident-t"><returnvalue>prelude_ident_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-client-get-unique-ident">prelude_client_get_unique_ident</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-set-connection-pool">prelude_client_set_connection_pool</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-connection-pool-t"><returnvalue>prelude_connection_pool_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-client-get-connection-pool">prelude_client_get_connection_pool</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-start">prelude_client_start</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-init">prelude_client_init</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-new">prelude_client_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-client-t"><returnvalue>prelude_client_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-client-ref">prelude_client_ref</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="idmef-analyzer-t"><returnvalue>idmef_analyzer_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-client-get-analyzer">prelude_client_get_analyzer</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-client-flags-t"><returnvalue>prelude_client_flags_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-get-flags">prelude_client_get_flags</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-set-required-permission">prelude_client_set_required_permission</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-connection-permission-t"><returnvalue>prelude_connection_permission_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-get-required-permission">prelude_client_get_required_permission</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-send-msg">prelude_client_send_msg</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-recv-msg">prelude_client_recv_msg</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-set-heartbeat-cb">prelude_client_set_heartbeat_cb</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-send-idmef">prelude_client_send_idmef</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-recv-idmef">prelude_client_recv_idmef</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-destroy">prelude_client_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-set-flags">prelude_client_set_flags</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-set-config-filename">prelude_client_set_config_filename</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-client-get-config-filename">prelude_client_get_config_filename</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-is-setup-needed">prelude_client_is_setup_needed</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="prelude-client-profile-t"><returnvalue>prelude_client_profile_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-client-get-profile">prelude_client_get_profile</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-new-msgbuf">prelude_client_new_msgbuf</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-handle-msg-default">prelude_client_handle_msg_default</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="prelude-client-get-setup-error">prelude_client_get_setup_error</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="prelude-client-print-setup-error">prelude_client_print_setup_error</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="libprelude-prelude-client.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-client-exit-status-t">prelude_client_exit_status_t</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="prelude-client-flags-t">prelude_client_flags_t</link></entry></row>
+<row><entry role="typedef_keyword">typedef</entry><entry role="function_name"><link linkend="prelude-client-t">prelude_client_t</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="libprelude-prelude-client.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-client.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="prelude-client-get-unique-ident" role="function">
+<title>prelude_client_get_unique_ident&#160;()</title>
+<indexterm zone="prelude-client-get-unique-ident"><primary>prelude_client_get_unique_ident</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-ident-t"><returnvalue>prelude_ident_t</returnvalue></link>&#160;*
+prelude_client_get_unique_ident (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-client-set-connection-pool" role="function">
+<title>prelude_client_set_connection_pool&#160;()</title>
+<indexterm zone="prelude-client-set-connection-pool"><primary>prelude_client_set_connection_pool</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_client_set_connection_pool (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>,
+                                    <parameter><link linkend="prelude-connection-pool-t"><type>prelude_connection_pool_t</type></link> *pool</parameter>);</programlisting>
+<para>Use this function in order to set your own list of peer that <parameter>client</parameter>
+
+should send message too. This might be usefull in case you don't want
+this to be automated by <link linkend="prelude-client-init"><function>prelude_client_init()</function></link>.</para>
+<refsect3 id="prelude-client-set-connection-pool.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>pointer to a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pool</para></entry>
+<entry role="parameter_description"><para>pointer to a <link linkend="prelude-client-pool-t"><type>prelude_client_pool_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-get-connection-pool" role="function">
+<title>prelude_client_get_connection_pool&#160;()</title>
+<indexterm zone="prelude-client-get-connection-pool"><primary>prelude_client_get_connection_pool</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-connection-pool-t"><returnvalue>prelude_connection_pool_t</returnvalue></link>&#160;*
+prelude_client_get_connection_pool (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>);</programlisting>
+<para>Return a pointer to the <link linkend="prelude-connection-pool-t"><type>prelude_connection_pool_t</type></link> object used by <parameter>client</parameter>
+
+to send messages.</para>
+<refsect3 id="prelude-client-get-connection-pool.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>pointer to a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-get-connection-pool.returns" role="returns">
+<title>Returns</title>
+<para> a pointer to a <link linkend="prelude-connection-pool-t"><type>prelude_connection_pool_t</type></link> object.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-start" role="function">
+<title>prelude_client_start&#160;()</title>
+<indexterm zone="prelude-client-start"><primary>prelude_client_start</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_client_start (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>);</programlisting>
+<para>This function start the <parameter>client</parameter>
+ object, triggering
+a connection from the client to it's server if any were
+specified, and sending the initial <parameter>client</parameter>
+ heartbeat.</para>
+<para>If <parameter>client</parameter>
+ was not initialized, then <link linkend="prelude-client-init"><function>prelude_client_init()</function></link>
+will be called and thus this function might fail if the
+client was not registered.</para>
+<refsect3 id="prelude-client-start.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer to a client object to initialize.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-start.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, -1 if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-init" role="function">
+<title>prelude_client_init&#160;()</title>
+<indexterm zone="prelude-client-init"><primary>prelude_client_init</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_client_init (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>);</programlisting>
+<para>This function initialize the <parameter>client</parameter>
+ object, meaning reading generic
+options from the <link linkend="prelude-client-new"><function>prelude_client_new()</function></link> provided configuration file
+and the array of arguments specified through <link linkend="prelude-init"><function>prelude_init()</function></link>.</para>
+<para>Calling this function is optional and should be done only if you need more
+granularity between <link linkend="prelude-client-new"><function>prelude_client_new()</function></link> and <link linkend="prelude-client-start"><function>prelude_client_start()</function></link>:</para>
+<para>prelude_client_start() will call <link linkend="prelude-client-init"><function>prelude_client_init()</function></link> for you if needed.</para>
+<refsect3 id="prelude-client-init.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object to initialize.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-init.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, -1 if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-new" role="function">
+<title>prelude_client_new&#160;()</title>
+<indexterm zone="prelude-client-new"><primary>prelude_client_new</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_client_new (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> **client</parameter>,
+                    <parameter>const <link linkend="char"><type>char</type></link> *profile</parameter>);</programlisting>
+<para>This function initialize the <parameter>client</parameter>
+ object.</para>
+<refsect3 id="prelude-client-new.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer to a client object to initialize.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>profile</para></entry>
+<entry role="parameter_description"><para>Default profile name for this analyzer.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-new.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success or a negative value if an error occur.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-ref" role="function">
+<title>prelude_client_ref&#160;()</title>
+<indexterm zone="prelude-client-ref"><primary>prelude_client_ref</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-client-t"><returnvalue>prelude_client_t</returnvalue></link>&#160;*
+prelude_client_ref (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-client-get-analyzer" role="function">
+<title>prelude_client_get_analyzer&#160;()</title>
+<indexterm zone="prelude-client-get-analyzer"><primary>prelude_client_get_analyzer</primary></indexterm>
+<programlisting language="C"><link linkend="idmef-analyzer-t"><returnvalue>idmef_analyzer_t</returnvalue></link>&#160;*
+prelude_client_get_analyzer (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>);</programlisting>
+<para>Provide access to the <link linkend="idmef-analyzer-t"><type>idmef_analyzer_t</type></link> object associated to <parameter>client</parameter>
+.
+This analyzer object is sent along with every alerts and heartbeats emited
+by this client. The analyzer object is created by <link linkend="prelude-client-init"><function>prelude_client_init()</function></link>.</para>
+<refsect3 id="prelude-client-get-analyzer.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-get-analyzer.returns" role="returns">
+<title>Returns</title>
+<para> the <link linkend="idmef-analyzer-t"><type>idmef_analyzer_t</type></link> object associated with <parameter>client</parameter>
+.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-get-flags" role="function">
+<title>prelude_client_get_flags&#160;()</title>
+<indexterm zone="prelude-client-get-flags"><primary>prelude_client_get_flags</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-client-flags-t"><returnvalue>prelude_client_flags_t</returnvalue></link>
+prelude_client_get_flags (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>);</programlisting>
+<para>Get flags set through <link linkend="prelude-client-set-flags"><function>prelude_client_set_flags()</function></link>.</para>
+<refsect3 id="prelude-client-get-flags.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer on a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-get-flags.returns" role="returns">
+<title>Returns</title>
+<para> an or'ed list of <link linkend="prelude-client-flags-t"><type>prelude_client_flags_t</type></link>.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-set-required-permission" role="function">
+<title>prelude_client_set_required_permission&#160;()</title>
+<indexterm zone="prelude-client-set-required-permission"><primary>prelude_client_set_required_permission</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_client_set_required_permission
+                               (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>,
+                                <parameter><link linkend="prelude-connection-permission-t"><type>prelude_connection_permission_t</type></link> permission</parameter>);</programlisting>
+<para>Set the required <parameter>permission</parameter>
+ for <parameter>client</parameter>
+.
+The default is <link linkend="PRELUDE-CONNECTION-PERMISSION-IDMEF-WRITE:CAPS"><type>PRELUDE_CONNECTION_PERMISSION_IDMEF_WRITE</type></link> | <link linkend="PRELUDE-CONNECTION-PERMISSION-ADMIN-READ:CAPS"><type>PRELUDE_CONNECTION_PERMISSION_ADMIN_READ</type></link>.
+Value set through this function should be set before <link linkend="prelude-client-start"><function>prelude_client_start()</function></link>.</para>
+<para>If the client certificate for connecting to one of the specified manager doesn't have theses permission
+the client will reject the certificate and ask for registration.</para>
+<refsect3 id="prelude-client-set-required-permission.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer on a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>permission</para></entry>
+<entry role="parameter_description"><para>Required permission for <parameter>client</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-get-required-permission" role="function">
+<title>prelude_client_get_required_permission&#160;()</title>
+<indexterm zone="prelude-client-get-required-permission"><primary>prelude_client_get_required_permission</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-connection-permission-t"><returnvalue>prelude_connection_permission_t</returnvalue></link>
+prelude_client_get_required_permission
+                               (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>);</programlisting>
+<refsect3 id="prelude-client-get-required-permission.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer on a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-get-required-permission.returns" role="returns">
+<title>Returns</title>
+<para> <parameter>client</parameter>
+permission as set with <link linkend="prelude-client-set-required-permission"><function>prelude_client_set_required_permission()</function></link></para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-send-msg" role="function">
+<title>prelude_client_send_msg&#160;()</title>
+<indexterm zone="prelude-client-send-msg"><primary>prelude_client_send_msg</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_client_send_msg (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>,
+                         <parameter><link linkend="prelude-msg-t"><type>prelude_msg_t</type></link> *msg</parameter>);</programlisting>
+<para>Send <parameter>msg</parameter>
+ to the peers <parameter>client</parameter>
+ is communicating with.</para>
+<para>The message will be sent asynchronously if <parameter>PRELUDE_CLIENT_FLAGS_ASYNC_SEND</parameter>
+
+was set using <link linkend="prelude-client-set-flags"><function>prelude_client_set_flags()</function></link> in which case the caller should
+not call <link linkend="prelude-msg-destroy"><function>prelude_msg_destroy()</function></link> on <parameter>msg</parameter>
+.</para>
+<refsect3 id="prelude-client-send-msg.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>pointer to a message that <parameter>client</parameter>
+should send.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-recv-msg" role="function">
+<title>prelude_client_recv_msg&#160;()</title>
+<indexterm zone="prelude-client-recv-msg"><primary>prelude_client_recv_msg</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_client_recv_msg (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>,
+                         <parameter><link linkend="int"><type>int</type></link> timeout</parameter>,
+                         <parameter><link linkend="prelude-msg-t"><type>prelude_msg_t</type></link> **msg</parameter>);</programlisting>
+<para>Wait <parameter>timeout</parameter>
+ second for a message on <parameter>client</parameter>
+ connection pool.</para>
+<para>A <parameter>timeout</parameter>
+ of -1, mean <link linkend="prelude-client-recv-msg"><function>prelude_client_recv_msg()</function></link> will block until
+a message is received. A <parameter>timeout</parameter>
+ of 0 mean that it will return
+immediatly.</para>
+<refsect3 id="prelude-client-recv-msg.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>timeout</para></entry>
+<entry role="parameter_description"><para>Number of millisecond to wait for a message.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>Pointer where the received <link linkend="prelude-msg-t"><type>prelude_msg_t</type></link> should be stored.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-recv-msg.returns" role="returns">
+<title>Returns</title>
+<para> 0 on timeout, a negative value on error, 1 on success.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-set-heartbeat-cb" role="function">
+<title>prelude_client_set_heartbeat_cb&#160;()</title>
+<indexterm zone="prelude-client-set-heartbeat-cb"><primary>prelude_client_set_heartbeat_cb</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_client_set_heartbeat_cb (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>,
+                                 <parameter><link linkend="void"><type>void</type></link> (*cb) (prelude_client_t *client, idmef_message_t *hb)</parameter>);</programlisting>
+<para>Use if you want to override the default function used to
+automatically send heartbeat to <parameter>client</parameter>
+ peers.</para>
+<refsect3 id="prelude-client-set-heartbeat-cb.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>pointer to a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>cb</para></entry>
+<entry role="parameter_description"><para>pointer to a function handling heartbeat sending.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-send-idmef" role="function">
+<title>prelude_client_send_idmef&#160;()</title>
+<indexterm zone="prelude-client-send-idmef"><primary>prelude_client_send_idmef</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_client_send_idmef (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>,
+                           <parameter><link linkend="idmef-message-t"><type>idmef_message_t</type></link> *msg</parameter>);</programlisting>
+<para>Send <parameter>msg</parameter>
+ to the peers <parameter>client</parameter>
+ is communicating with.</para>
+<para>The message will be sent asynchronously if <parameter>PRELUDE_CLIENT_FLAGS_ASYNC_SEND</parameter>
+
+was set using <link linkend="prelude-client-set-flags"><function>prelude_client_set_flags()</function></link>.</para>
+<refsect3 id="prelude-client-send-idmef.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>pointer to an IDMEF message to be sent to <parameter>client</parameter>
+peers.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-recv-idmef" role="function">
+<title>prelude_client_recv_idmef&#160;()</title>
+<indexterm zone="prelude-client-recv-idmef"><primary>prelude_client_recv_idmef</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_client_recv_idmef (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>,
+                           <parameter><link linkend="int"><type>int</type></link> timeout</parameter>,
+                           <parameter><link linkend="idmef-message-t"><type>idmef_message_t</type></link> **idmef</parameter>);</programlisting>
+<para>Wait <parameter>timeout</parameter>
+ second for a message on <parameter>client</parameter>
+ connection pool.</para>
+<para>A <parameter>timeout</parameter>
+ of -1, mean <link linkend="prelude-client-recv-idmef"><function>prelude_client_recv_idmef()</function></link> will block until
+a message is received. A <parameter>timeout</parameter>
+ of 0 mean that it will return
+immediatly.</para>
+<refsect3 id="prelude-client-recv-idmef.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer to a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>timeout</para></entry>
+<entry role="parameter_description"><para>Number of second to wait for a message.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>idmef</para></entry>
+<entry role="parameter_description"><para>Pointer where the received <link linkend="idmef-message-t"><type>idmef_message_t</type></link> should be stored.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-recv-idmef.returns" role="returns">
+<title>Returns</title>
+<para> 0 on timeout, a negative value on error, 1 on success.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-destroy" role="function">
+<title>prelude_client_destroy&#160;()</title>
+<indexterm zone="prelude-client-destroy"><primary>prelude_client_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_client_destroy (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>,
+                        <parameter><link linkend="prelude-client-exit-status-t"><type>prelude_client_exit_status_t</type></link> status</parameter>);</programlisting>
+<para>Destroy <parameter>client</parameter>
+, and send an heartbeat containing the 'exiting'
+status in case <parameter>status</parameter>
+ is PRELUDE_CLIENT_EXIT_STATUS_SUCCESS.</para>
+<para>This is useful for analyzer expected to be running periodically,
+and that shouldn't be treated as behaving anormaly in case no
+heartbeat is sent.</para>
+<para>Please note that your are not supposed to run this function
+from a signal handler.</para>
+<refsect3 id="prelude-client-destroy.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer on a client object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>status</para></entry>
+<entry role="parameter_description"><para>Exit status for the client.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-set-flags" role="function">
+<title>prelude_client_set_flags&#160;()</title>
+<indexterm zone="prelude-client-set-flags"><primary>prelude_client_set_flags</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_client_set_flags (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>,
+                          <parameter><link linkend="prelude-client-flags-t"><type>prelude_client_flags_t</type></link> flags</parameter>);</programlisting>
+<para>Set specific flags in the <parameter>client</parameter>
+ structure.
+This function can be called anytime after the creation of the
+<parameter>client</parameter>
+ object.</para>
+<para>When settings asynchronous flags such as <link linkend="PRELUDE-CLIENT-FLAGS-ASYNC-SEND:CAPS"><type>PRELUDE_CLIENT_FLAGS_ASYNC_SEND</type></link>
+or <link linkend="PRELUDE-CLIENT-FLAGS-ASYNC-TIMER:CAPS"><type>PRELUDE_CLIENT_FLAGS_ASYNC_TIMER</type></link>, be carefull to call
+<link linkend="prelude-client-set-flags"><function>prelude_client_set_flags()</function></link> in the same process you want to use the
+asynchronous API from. Threads aren't copied accross <link linkend="fork"><function>fork()</function></link>.</para>
+<refsect3 id="prelude-client-set-flags.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>Pointer on a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>flags</para></entry>
+<entry role="parameter_description"><para>Or'd list of flags used by <parameter>client</parameter>
+.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-set-flags.returns" role="returns">
+<title>Returns</title>
+<para> 0 if setting <parameter>flags</parameter>
+succeed, -1 otherwise.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-set-config-filename" role="function">
+<title>prelude_client_set_config_filename&#160;()</title>
+<indexterm zone="prelude-client-set-config-filename"><primary>prelude_client_set_config_filename</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_client_set_config_filename (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>,
+                                    <parameter>const <link linkend="char"><type>char</type></link> *filename</parameter>);</programlisting>
+<para>The default for a client is to use a template configuration file (idmef-client.conf).
+By using this function you might override the default and provide your own
+configuration file to use for <parameter>client</parameter>
+. The format of the configuration file need
+to be compatible with the Prelude format.</para>
+<refsect3 id="prelude-client-set-config-filename.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>pointer on a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>filename</para></entry>
+<entry role="parameter_description"><para>Configuration file to use for this client.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-set-config-filename.returns" role="returns">
+<title>Returns</title>
+<para> 0 on success, -1 if an error occured.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-get-config-filename" role="function">
+<title>prelude_client_get_config_filename&#160;()</title>
+<indexterm zone="prelude-client-get-config-filename"><primary>prelude_client_get_config_filename</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_client_get_config_filename (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>);</programlisting>
+<para>Return the filename where <parameter>client</parameter>
+ configuration is stored.
+This filename is originally set by the <link linkend="prelude-client-new"><function>prelude_client_new()</function></link> function.</para>
+<refsect3 id="prelude-client-get-config-filename.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>client</para></entry>
+<entry role="parameter_description"><para>pointer on a <link linkend="prelude-client-t"><type>prelude_client_t</type></link> object.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-get-config-filename.returns" role="returns">
+<title>Returns</title>
+<para> a pointer to <parameter>client</parameter>
+configuration filename.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-is-setup-needed" role="function" condition="deprecated:use standard error API.">
+<title>prelude_client_is_setup_needed&#160;()</title>
+<indexterm zone="prelude-client-is-setup-needed" role="deprecated"><primary>prelude_client_is_setup_needed</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-bool-t"><returnvalue>prelude_bool_t</returnvalue></link>
+prelude_client_is_setup_needed (<parameter><link linkend="int"><type>int</type></link> error</parameter>);</programlisting>
+<warning><para><literal>prelude_client_is_setup_needed</literal> is deprecated and should not be used in newly-written code.</para> <para>use standard error API.</para>
+</warning>
+<para>This function should be called as a result of an error by
+the <link linkend="prelude-client-start"><function>prelude_client_start()</function></link> function, to know if the analyzer
+need to be registered.</para>
+<refsect3 id="prelude-client-is-setup-needed.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>error</para></entry>
+<entry role="parameter_description"><para>Error returned by <link linkend="prelude-client-start"><function>prelude_client_start()</function></link>.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="prelude-client-is-setup-needed.returns" role="returns">
+<title>Returns</title>
+<para> TRUE if setup is needed, FALSE otherwise.</para>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-get-profile" role="function">
+<title>prelude_client_get_profile&#160;()</title>
+<indexterm zone="prelude-client-get-profile"><primary>prelude_client_get_profile</primary></indexterm>
+<programlisting language="C"><link linkend="prelude-client-profile-t"><returnvalue>prelude_client_profile_t</returnvalue></link>&#160;*
+prelude_client_get_profile (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-client-new-msgbuf" role="function">
+<title>prelude_client_new_msgbuf&#160;()</title>
+<indexterm zone="prelude-client-new-msgbuf"><primary>prelude_client_new_msgbuf</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_client_new_msgbuf (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>,
+                           <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> **msgbuf</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-client-handle-msg-default" role="function">
+<title>prelude_client_handle_msg_default&#160;()</title>
+<indexterm zone="prelude-client-handle-msg-default"><primary>prelude_client_handle_msg_default</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+prelude_client_handle_msg_default (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>,
+                                   <parameter><link linkend="prelude-msg-t"><type>prelude_msg_t</type></link> *msg</parameter>,
+                                   <parameter><link linkend="prelude-msgbuf-t"><type>prelude_msgbuf_t</type></link> *msgbuf</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="prelude-client-get-setup-error" role="function" condition="deprecated:">
+<title>prelude_client_get_setup_error&#160;()</title>
+<indexterm zone="prelude-client-get-setup-error" role="deprecated"><primary>prelude_client_get_setup_error</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+prelude_client_get_setup_error (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>);</programlisting>
+<warning><para><literal>prelude_client_get_setup_error</literal> is deprecated and should not be used in newly-written code.</para></warning>
+</refsect2>
+<refsect2 id="prelude-client-print-setup-error" role="function">
+<title>prelude_client_print_setup_error&#160;()</title>
+<indexterm zone="prelude-client-print-setup-error"><primary>prelude_client_print_setup_error</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+prelude_client_print_setup_error (<parameter><link linkend="prelude-client-t"><type>prelude_client_t</type></link> *client</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="libprelude-prelude-client.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="prelude-client-exit-status-t" role="enum">
+<title>enum prelude_client_exit_status_t</title>
+<indexterm zone="prelude-client-exit-status-t"><primary>prelude_client_exit_status_t</primary></indexterm>
+<refsect3 id="prelude-client-exit-status-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-CLIENT-EXIT-STATUS-SUCCESS:CAPS">PRELUDE_CLIENT_EXIT_STATUS_SUCCESS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-CLIENT-EXIT-STATUS-FAILURE:CAPS">PRELUDE_CLIENT_EXIT_STATUS_FAILURE</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-flags-t" role="enum">
+<title>enum prelude_client_flags_t</title>
+<indexterm zone="prelude-client-flags-t"><primary>prelude_client_flags_t</primary></indexterm>
+<refsect3 id="prelude-client-flags-t.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-CLIENT-FLAGS-ASYNC-SEND:CAPS">PRELUDE_CLIENT_FLAGS_ASYNC_SEND</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-CLIENT-FLAGS-ASYNC-TIMER:CAPS">PRELUDE_CLIENT_FLAGS_ASYNC_TIMER</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-CLIENT-FLAGS-HEARTBEAT:CAPS">PRELUDE_CLIENT_FLAGS_HEARTBEAT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-CLIENT-FLAGS-CONNECT:CAPS">PRELUDE_CLIENT_FLAGS_CONNECT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="PRELUDE-CLIENT-FLAGS-AUTOCONFIG:CAPS">PRELUDE_CLIENT_FLAGS_AUTOCONFIG</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="prelude-client-t" role="typedef">
+<title>prelude_client_t</title>
+<indexterm zone="prelude-client-t"><primary>prelude_client_t</primary></indexterm>
+<programlisting language="C">typedef struct prelude_client prelude_client_t;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>
